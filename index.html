@@ -3,7 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Pad van Genade — ’n privaat, offline Afrikaanse Bybelhulpmiddel vir elke dag en elke stryd.">
+<meta name="description" content="Pad van Genade — ’n privaat Afrikaanse Bybelhulpmiddel wat heeltemal in jou blaaier werk, vir elke dag en elke stryd.">
+<meta name="theme-color" content="#315f59">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pad van Genade — Bybelwoord vir elke stryd">
+<meta property="og:description" content="’n Privaat Afrikaanse Bybelhulpmiddel: dagverse, stryd-onderwerpe en ’n joernaal — alles bly op jou toestel.">
+<meta property="og:locale" content="af_ZA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%96%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23315f59'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia,serif'%3EPG%3C/text%3E%3C/svg%3E">
 <title>Pad van Genade — Bybelwoord vir elke stryd</title>
 <style>
 :root {
@@ -16,6 +23,8 @@
   --soft: #e5efec;
   --gold: #a77934;
   --gold-soft: #fbf7ef;
+  --brand-hover: #244a45;
+  --topic-border: #cbded9;
   --r: 18px;
 }
 * { box-sizing: border-box; }
@@ -78,10 +87,26 @@ nav {
   color: var(--brand);
   font-weight: 700;
 }
+.navin button:focus-visible, .btn:focus-visible, .chip:focus-visible, .topic:focus-visible, .search:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
 
 main { padding: 28px 0 60px; }
 .page { display: none; }
 .page.active { display: block; }
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--card);
+  color: var(--brand);
+  padding: 10px 16px;
+  border-radius: 0 0 10px 0;
+  z-index: 200;
+  font-weight: 700;
+}
+.skip-link:focus { left: 0; }
 
 .card {
   background: var(--card);
@@ -115,7 +140,7 @@ main { padding: 28px 0 60px; }
   border-color: var(--brand);
   color: white;
 }
-.btn.primary:hover { background: #244a45; }
+.btn.primary:hover { background: var(--brand-hover); }
 
 .grid { display: grid; grid-template-columns: 320px 1fr; gap: 22px; }
 .search {
@@ -154,7 +179,7 @@ main { padding: 28px 0 60px; }
   margin: 4px 0;
   transition: all 0.15s ease;
 }
-.topic:hover, .topic.sel { background: var(--soft); border-color: #cbded9; }
+.topic:hover, .topic.sel { background: var(--soft); border-color: var(--topic-border); }
 .topic strong { display: block; color: var(--ink); }
 .topic small { color: var(--muted); font-size: 0.82rem; }
 
@@ -229,12 +254,16 @@ footer {
     --brand: #74b8ab;
     --gold: #dfb56c;
     --gold-soft: #2d281e;
+    --brand-hover: #8fd0c2;
+    --topic-border: #3c554f;
   }
   nav { background: rgba(20, 28, 27, 0.95); }
+  header { background: linear-gradient(135deg, #1c3b37, #10201e); }
 }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Gaan na hoofinhoud</a>
 
 <header>
   <div class="wrap brand">
@@ -247,28 +276,30 @@ footer {
   </div>
 </header>
 
-<nav>
-  <div class="wrap navin">
-    <button class="active" data-page="home">Vandag</button>
-    <button data-page="topics">Waarmee worstel jy?</button>
-    <button data-page="journal">My joernaal</button>
-    <button data-page="help">Kry hulp</button>
-    <button data-page="about">Oor die projek</button>
+<nav aria-label="Hoofnavigasie">
+  <div class="wrap navin" role="tablist" aria-label="Bladsye">
+    <button class="active" role="tab" id="tab-home" aria-selected="true" aria-controls="home" data-page="home">Vandag</button>
+    <button role="tab" id="tab-topics" aria-selected="false" aria-controls="topics" data-page="topics">Waarmee worstel jy?</button>
+    <button role="tab" id="tab-journal" aria-selected="false" aria-controls="journal" data-page="journal">My joernaal</button>
+    <button role="tab" id="tab-help" aria-selected="false" aria-controls="help" data-page="help">Kry hulp</button>
+    <button role="tab" id="tab-about" aria-selected="false" aria-controls="about" data-page="about">Oor die projek</button>
   </div>
 </nav>
 
-<main class="wrap">
+<main id="main" class="wrap">
   <!-- TUISBLADSUS -->
-  <section id="home" class="page active">
+  <section id="home" class="page active" role="tabpanel" aria-labelledby="tab-home">
     <div class="card daily">
       <div class="eyebrow">Vers vir vandag (<span id="day-num"></span> van 365)</div>
       <div id="dv" class="verse"></div>
       <div id="dr" class="ref"></div>
       <p class="muted">Oorspronklike Afrikaanse parafrase en Bybelse kernteks. Vergelyk met jou eie Bybelvertaling.</p>
       <div class="actions">
-        <button class="btn primary" onclick="nextDaily()">Nog ’n vers</button>
-        <button class="btn" onclick="go('topics')">Kies waarmee ek worstel</button>
+        <button class="btn primary" id="nextDailyBtn">Nog ’n vers</button>
+        <button class="btn" id="resetDailyBtn" title="Wys weer vandag se vers">Terug na vandag se vers</button>
+        <button class="btn" data-goto="topics">Kies waarmee ek worstel</button>
       </div>
+      <p id="streakLine" class="muted" hidden></p>
     </div>
 
     <div class="card">
@@ -278,44 +309,47 @@ footer {
       <div class="notice">
         <strong>Ek het vandag gestruikel:</strong> Moenie die terugval gebruik as ’n rede om verder weg te hardloop nie.
         <br><br>
-        <button class="btn primary" onclick="openTopic('Ek het vandag gestruikel')">Begin weer hier</button>
+        <button class="btn primary" data-topic="Ek het vandag gestruikel">Begin weer hier</button>
       </div>
     </div>
   </section>
 
   <!-- ONDERWERPE BLADSUS -->
-  <section id="topics" class="page">
+  <section id="topics" class="page" role="tabpanel" aria-labelledby="tab-topics">
     <div class="grid">
       <aside class="card">
         <div class="eyebrow">Onderwerpe</div>
-        <input id="q" class="search" placeholder="Soek: woede, pornografie, angs, twyfel…" oninput="render()">
-        <div id="chips" class="chips"></div>
+        <label for="q" class="muted" style="display:block; margin-top:12px;">Soek onderwerpe of verse:</label>
+        <input id="q" class="search" placeholder="Woede, pornografie, angs, twyfel…" autocomplete="off">
+        <div id="chips" class="chips" role="group" aria-label="Filter groepe"></div>
         <div id="list" class="topic-list"></div>
       </aside>
 
-      <article id="detail" class="card">
+      <article id="detail" class="card" aria-live="polite">
         <p class="muted">Kies ’n onderwerp aan die linkerkant. Elke keer as jy “Nog ’n vers” kies, kry jy die volgende vers vir dieselfde onderwerp.</p>
       </article>
     </div>
   </section>
 
   <!-- JOERNAAL BLADSUS -->
-  <section id="journal" class="page">
+  <section id="journal" class="page" role="tabpanel" aria-labelledby="tab-journal">
     <div class="card journal">
       <div class="eyebrow">My joernaal</div>
       <h2 style="font: 2rem Georgia, serif; margin: 8px 0 12px;">Wat gebeur vandag in jou hart?</h2>
       <p>Die joernaal bly heeltemal privaat op hierdie toestel se plaaslike geheue (localStorage). Dit word nooit na ’n bediener gestuur nie.</p>
+      <label for="journalInput" class="muted" style="margin-top:14px; display:inline-block;">Jou privaat inskrywing:</label>
       <textarea id="journalInput" placeholder="Skryf jou gedagtes, gebed, terugval, oorwinning of volgende stap hier..."></textarea>
       <div class="actions">
-        <button class="btn primary" onclick="saveJ()">Stoor joernaal</button>
-        <button class="btn" onclick="clearJ()">Maak skoon</button>
+        <button class="btn primary" id="saveJBtn">Stoor joernaal</button>
+        <button class="btn" id="exportJBtn">Laai af (JSON)</button>
+        <button class="btn" id="clearJBtn">Maak skoon</button>
       </div>
-      <p id="journalStatus" class="muted" style="margin-top: 10px; font-weight: 600; color: var(--brand);"></p>
+      <p id="journalStatus" class="muted" role="status" aria-live="polite" style="margin-top: 10px; font-weight: 600; color: var(--brand);"></p>
     </div>
   </section>
 
   <!-- HULP BLADSUS -->
-  <section id="help" class="page">
+  <section id="help" class="page" role="tabpanel" aria-labelledby="tab-help">
     <div class="card">
       <div class="eyebrow">Kry hulp</div>
       <h2 style="font: 2rem Georgia, serif; margin: 8px 0 12px;">Jy hoef nie alleen te herstel nie.</h2>
@@ -347,7 +381,7 @@ footer {
   </section>
 
   <!-- OOR BLADSUS -->
-  <section id="about" class="page">
+  <section id="about" class="page" role="tabpanel" aria-labelledby="tab-about">
     <div class="card">
       <div class="eyebrow">Oor Pad van Genade</div>
       <h2 style="font: 2rem Georgia, serif; margin: 8px 0 12px;">’n Christelike hulpmiddel vir mense in die werklike wêreld.</h2>
@@ -356,13 +390,16 @@ footer {
       <div class="notice">
         <strong>Bybeltekste:</strong> Die webwerf gebruik oorspronklike Afrikaanse parafrases met akkurate Skrifverwysings uit al 66 Boeke van die Bybel (Genesis tot Openbaring).
       </div>
+      <div class="notice" style="border-left-color: var(--brand); background: var(--soft);">
+        <strong>Privaatheid:</strong> Hierdie toepassing werk heeltemal in jou blaaier. Jou joernaal, gunstelinge en leesvordering word slegs op hierdie toestel (localStorage) gestoor en nooit na ’n bediener gestuur nie.
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    Pad van Genade
+    Pad van Genade · Alles bly privaat op jou toestel. Geen rekening, geen bediener.
   </div>
 </footer>
 
@@ -521,6 +558,46 @@ const DATA = [
         "explain": "Moenie skuld gebruik as ’n rede om verder weg te hardloop nie. Bring dit na God en na die hulp wat jy nodig het.",
         "prayer": "Here, ek bely wat gebeur het. Wys my wat ek moet leer. Amen.",
         "step": "Skryf die sneller neer en kontak jou verantwoordingspersoon."
+      }
+    ]
+  },
+  {
+    "group": "Gedagtes",
+    "name": "Twyfel en droogte",
+    "verses": [
+      {
+        "ref": "Markus 9:24",
+        "verse": "Ek glo, Here; help my met my ongeloof!",
+        "explain": "Eerlike twyfel is nie die teenoorgestelde van geloof nie. Die man wat dit gesê het, is presies die soort mens Jesus ontvang.",
+        "prayer": "Here, ek vra eerlik. Geloof waar ek kan, en help waar ek twyfel. Amen.",
+        "step": "Skryf een vraag neer wat jy nie durf sê nie, en bring dit so in gebed voor God."
+      },
+      {
+        "ref": "Judas 1:22-23",
+        "verse": "Wees barmhartig teenoor dié wat twyfel.",
+        "explain": "God behandel twyfelende mense met barmhartigheid, nie minagting nie. Dieselfde houding mag jy oor jou eie hart hê terwyl jy groei.",
+        "prayer": "Here, moenie my twyfel teen my gebruik nie; ontmoet my hierin. Amen.",
+        "step": "Praat vandag met ’n betroubare gelowige — sonder oordeel — oor wat jy werklik voel."
+      }
+    ]
+  },
+  {
+    "group": "Emosies",
+    "name": "Eensaamheid en isolasie",
+    "verses": [
+      {
+        "ref": "Psalm 68:6",
+        "verse": "God laat die eenzaam in gesinne woon.",
+        "explain": "God se eerste antwoord op eensaamheid is dikwels mense. Gemeenskap is nie ’n luukse nie; dit is deel van sy plan.",
+        "prayer": "Here, ek voel alleen. Wys my een brug wat ek vandag kan bou. Amen.",
+        "step": "Stuur een boodskap aan iemand wat jy lank nie gesien het nie, en bevestig ’n ontmoeting."
+      },
+      {
+        "ref": "Hebreërs 10:24-25",
+        "verse": "Laat ons op mekaar let om mekaar aan te moedig tot liefde en goeie werke; verlaat ons byeenkomste nie.",
+        "explain": "Geloof is bedoel om saam geleef te word. Moenie wag tot jy jou gereed voel nie; begin met een klein samekoms.",
+        "prayer": "Here, breek my isolasie oop. Gee my moed om naby mense te kom. Amen.",
+        "step": "Beloof jouself aan een weeklikse byeenkoms of groep waar jy fisies of aanlyn kan opdok."
       }
     ]
   }
@@ -900,43 +977,115 @@ const DAILY_DATA = [
 // ============================================================================
 // APPLICATION STATE & CONTROLLER LOGIC
 // ============================================================================
-let curTopic = -1;
+
+// Safe localStorage helpers (never crash on corrupt data or blocked storage)
+function loadJSON(key, fallback) {
+  try {
+    const raw = localStorage.getItem(key);
+    if (raw == null) return fallback;
+    const parsed = JSON.parse(raw);
+    return (parsed && typeof parsed === "object") ? parsed : fallback;
+  } catch (e) {
+    console.warn("Onleesbare data vir sleutel", key, "— verstekword gebruik.", e);
+    return fallback;
+  }
+}
+function saveJSON(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); }
+  catch (e) { console.warn("Stoor misluk vir", key, e); }
+}
+
+// Stable IDs: slug from topic name — survives reordering of DATA.
+const slugify = name => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+DATA.forEach(t => { t.id = slugify(t.name); });
+const topicById = id => DATA.find(t => t.id === id);
+
+let curTopic = null;                       // topic id
 let currentGroupFilter = "Alles";
-let topicPositions = JSON.parse(localStorage.getItem("pvg_pos") || "{}");
-let favoriteTopics = JSON.parse(localStorage.getItem("pvg_favs") || "[]");
+let topicPositions = loadJSON("pvg_pos", {});     // keyed by topic id
+let favoriteTopics = (() => {
+  const favs = loadJSON("pvg_favs", []);
+  return Array.isArray(favs) ? favs.filter(id => topicById(id)) : [];
+})();
 
 const $ = sel => document.querySelector(sel);
 
-// Calculate Day of Year (1 - 365)
+// Calculate Day of Year (1 - 365), leap-year safe (Dec 31 maps to day 365)
 function getDayOfYear() {
   const now = new Date();
   const start = new Date(now.getFullYear(), 0, 0);
   const diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
   const oneDay = 1000 * 60 * 60 * 24;
-  const day = Math.floor(diff / oneDay);
-  return Math.max(0, Math.min(day - 1, DAILY_DATA.length - 1));
+  const day = Math.floor(diff / oneDay);          // 1..366
+  return Math.max(0, Math.min(day, DAILY_DATA.length) - 1);
 }
 
-let dailyIndex = getDayOfYear();
+const todayIdx = getDayOfYear();
+let dailyIndex = todayIdx;                 // separate from the "today" verse; reset restores it
+
+// HTML escaping for any dynamic string interpolated into innerHTML (XSS protection)
+function esc(s) {
+  return String(s)
+    .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+}
 
 function go(pageId) {
   document.querySelectorAll(".page").forEach(el => el.classList.remove("active"));
   const target = $("#" + pageId);
   if (target) target.classList.add("active");
 
-  document.querySelectorAll("nav button").forEach(btn => {
-    btn.classList.toggle("active", btn.dataset.page === pageId);
+  document.querySelectorAll("nav button[data-page]").forEach(btn => {
+    const isActive = btn.dataset.page === pageId;
+    btn.classList.toggle("active", isActive);
+    btn.setAttribute("aria-selected", String(isActive));
   });
 
-  if (pageId === "topics") {
-    render();
-  }
+  if (location.hash !== "#" + pageId) history.pushState(null, "", "#" + pageId);
+
+  if (pageId === "topics") render();
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
-document.querySelectorAll("nav button").forEach(btn => {
+document.querySelectorAll("nav button[data-page]").forEach(btn => {
   btn.addEventListener("click", () => go(btn.dataset.page));
 });
+
+// Keyboard support for the tablist (arrow keys move between tabs)
+document.querySelector(".navin").addEventListener("keydown", e => {
+  const tabs = [...document.querySelectorAll("nav button[data-page]")];
+  const i = tabs.indexOf(document.activeElement);
+  if (i < 0) return;
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    e.preventDefault();
+    const next = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+    next.focus();
+    go(next.dataset.page);
+  }
+});
+
+// Hash routing: back/forward buttons and deep links work
+window.addEventListener("popstate", () => {
+  const id = (location.hash || "").slice(1);
+  if (["home", "topics", "journal", "help", "about"].includes(id)) go(id);
+});
+
+function markVisitedToday() {
+  const today = new Date().toISOString().slice(0, 10);
+  let streak = loadJSON("pvg_streak", { count: 0, last: "" });
+  if (streak.last !== today) {
+    const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+    streak = { count: (streak.last === yesterday ? streak.count : 0) + 1, last: today };
+    saveJSON("pvg_streak", streak);
+  }
+  const line = $("#streakLine");
+  if (line) {
+    line.hidden = false;
+    line.textContent = streak.count > 1
+      ? "🔥 Reeks: jy is " + streak.count + " dae lank hier."
+      : "Welkom! Kom ons bou ’n gewoonte — kom weer môre.";
+  }
+}
 
 function loadDailyVerse() {
   const verse = DAILY_DATA[dailyIndex];
@@ -946,7 +1095,13 @@ function loadDailyVerse() {
 }
 
 function nextDaily() {
-  dailyIndex = Math.floor(Math.random() * DAILY_DATA.length);
+  // cycle deterministically instead of randomly overwriting "today" forever
+  dailyIndex = (dailyIndex + 1) % DAILY_DATA.length;
+  loadDailyVerse();
+}
+
+function resetDaily() {
+  dailyIndex = todayIdx;
   loadDailyVerse();
 }
 
@@ -956,20 +1111,20 @@ function render() {
 
   $("#chips").innerHTML = groups.map(g => {
     const isSelected = currentGroupFilter === g;
-    return `<button class="chip ${isSelected ? "on" : ""}" onclick="setGroup(${JSON.stringify(g)})">${g}</button>`;
+    return `<button class="chip ${isSelected ? "on" : ""}" role="button" aria-pressed="${isSelected}" data-group="${esc(g)}">${esc(g)}</button>`;
   }).join("");
 
-  let filtered = DATA.map((item, idx) => ({ ...item, idx }));
+  let filtered = DATA.slice();
 
   if (currentGroupFilter === "★ Gestoorde") {
-    filtered = filtered.filter(x => favoriteTopics.includes(x.idx));
+    filtered = filtered.filter(x => favoriteTopics.includes(x.id));
   } else if (currentGroupFilter !== "Alles") {
     filtered = filtered.filter(x => x.group === currentGroupFilter);
   }
 
   if (query) {
-    filtered = filtered.filter(x => 
-      x.name.toLowerCase().includes(query) || 
+    filtered = filtered.filter(x =>
+      x.name.toLowerCase().includes(query) ||
       x.group.toLowerCase().includes(query) ||
       x.verses.some(v => v.verse.toLowerCase().includes(query) || v.ref.toLowerCase().includes(query))
     );
@@ -982,100 +1137,150 @@ function render() {
   }
 
   listContainer.innerHTML = filtered.map(x => {
-    const isSel = curTopic === x.idx;
-    const isFav = favoriteTopics.includes(x.idx);
+    const isSel = curTopic === x.id;
+    const isFav = favoriteTopics.includes(x.id);
     return `
-      <button class="topic ${isSel ? "sel" : ""}" onclick="showTopic(${x.idx})">
-        <strong>${isFav ? "★ " : ""}${x.name}</strong>
-        <small>${x.group} · ${x.verses.length} verse</small>
+      <button class="topic ${isSel ? "sel" : ""}" data-topic-id="${esc(x.id)}">
+        <strong>${isFav ? "★ " : ""}${esc(x.name)}</strong>
+        <small>${esc(x.group)} · ${x.verses.length} verse</small>
       </button>
     `;
   }).join("");
 }
+
+// Event delegation: chips, topic list, home-page buttons, journal buttons
+document.addEventListener("click", e => {
+  const chip = e.target.closest("#chips .chip");
+  if (chip) { setGroup(chip.dataset.group); return; }
+
+  const topicBtn = e.target.closest("[data-topic-id]");
+  if (topicBtn) { showTopic(topicBtn.dataset.topicId); return; }
+
+  const gotoBtn = e.target.closest("[data-goto]");
+  if (gotoBtn) { go(gotoBtn.dataset.goto); return; }
+
+  const openBtn = e.target.closest("[data-topic]");
+  if (openBtn) { openTopic(openBtn.dataset.topic); return; }
+
+  const advanceBtn = e.target.closest("#advanceVerse");
+  if (advanceBtn && curTopic) { showTopic(curTopic, true); return; }
+
+  const favBtn = e.target.closest("#toggleFav");
+  if (favBtn && curTopic) { toggleFavorite(curTopic); return; }
+
+  const journalBtn = e.target.closest("#journalLink");
+  if (journalBtn) { go("journal"); return; }
+
+  const resetBtn = e.target.closest("#resetDailyBtn");
+  if (resetBtn) { resetDaily(); return; }
+
+  if (e.target.closest("#nextDailyBtn")) { nextDaily(); return; }
+  if (e.target.closest("#saveJBtn")) { saveJ(); return; }
+  if (e.target.closest("#clearJBtn")) { clearJ(); return; }
+  if (e.target.closest("#exportJBtn")) { exportJ(); return; }
+});
+
+$("#q").addEventListener("input", render);
 
 function setGroup(g) {
   currentGroupFilter = g;
   render();
 }
 
-function showTopic(topicIdx, advance = false) {
-  curTopic = topicIdx;
-  const topic = DATA[topicIdx];
+function showTopic(topicId, advance = false) {
+  const topic = topicById(topicId);
   if (!topic) return;
+  curTopic = topicId;
 
-  if (topicPositions[topicIdx] == null) {
-    topicPositions[topicIdx] = 0;
+  if (topicPositions[topicId] == null) {
+    topicPositions[topicId] = 0;
   } else if (advance) {
-    topicPositions[topicIdx] = (topicPositions[topicIdx] + 1) % topic.verses.length;
+    topicPositions[topicId] = (topicPositions[topicId] + 1) % topic.verses.length;
   }
+  // guard against stale positions pointing past the end of a shortened verse list
+  if (topicPositions[topicId] >= topic.verses.length) topicPositions[topicId] = 0;
 
-  localStorage.setItem("pvg_pos", JSON.stringify(topicPositions));
+  saveJSON("pvg_pos", topicPositions);
 
-  const currentVerse = topic.verses[topicPositions[topicIdx]];
-  const isFav = favoriteTopics.includes(topicIdx);
+  const currentVerse = topic.verses[topicPositions[topicId]];
+  const isFav = favoriteTopics.includes(topicId);
 
   $("#detail").innerHTML = `
-    <div class="eyebrow">${topic.group}</div>
-    <h2 style="font: 2rem Georgia, serif; margin: 6px 0 12px;">${topic.name}</h2>
-    
+    <div class="eyebrow">${esc(topic.group)}</div>
+    <h2 style="font: 2rem Georgia, serif; margin: 6px 0 12px;">${esc(topic.name)}</h2>
+
     <div class="versebox">
-      <div class="ref">${currentVerse.ref}</div>
-      Quote: <blockquote>“${currentVerse.verse}”</blockquote>
+      <div class="ref">${esc(currentVerse.ref)}</div>
+      <blockquote>“${esc(currentVerse.verse)}”</blockquote>
       <small class="muted">Oorspronklike Afrikaanse parafrase. Vergelyk met jou eie Bybelvertaling.</small>
     </div>
 
     <div class="section">
       <h3>Wat sê dit?</h3>
-      <p>${currentVerse.explain}</p>
+      <p>${esc(currentVerse.explain)}</p>
     </div>
 
     <div class="section">
       <h3>Gebed</h3>
-      <p>${currentVerse.prayer}</p>
+      <p>${esc(currentVerse.prayer)}</p>
     </div>
 
     <div class="section">
       <h3>Vandag se stap</h3>
-      <p>${currentVerse.step}</p>
+      <p>${esc(currentVerse.step)}</p>
     </div>
 
     <div class="actions">
-      <button class="btn primary" onclick="showTopic(${topicIdx}, true)">Nog ’n vers vir hierdie onderwerp</button>
-      <button class="btn" onclick="toggleFavorite(${topicIdx})">${isFav ? "★ Gestoorde onderwerp" : "☆ Stoor onderwerp"}</button>
-      <button class="btn" onclick="go('journal')">Skryf in joernaal</button>
+      <button class="btn primary" id="advanceVerse">Nog ’n vers vir hierdie onderwerp</button>
+      <button class="btn" id="toggleFav">${isFav ? "★ Gestoorde onderwerp" : "☆ Stoor onderwerp"}</button>
+      <button class="btn" id="journalLink">Skryf in joernaal</button>
     </div>
   `;
 
   render();
 }
 
-function toggleFavorite(topicIdx) {
-  if (favoriteTopics.includes(topicIdx)) {
-    favoriteTopics = favoriteTopics.filter(x => x !== topicIdx);
+function toggleFavorite(topicId) {
+  if (favoriteTopics.includes(topicId)) {
+    favoriteTopics = favoriteTopics.filter(x => x !== topicId);
   } else {
-    favoriteTopics.push(topicIdx);
+    favoriteTopics.push(topicId);
   }
-  localStorage.setItem("pvg_favs", JSON.stringify(favoriteTopics));
-  showTopic(topicIdx);
+  saveJSON("pvg_favs", favoriteTopics);
+  showTopic(topicId);
 }
 
 function openTopic(name) {
-  const foundIdx = DATA.findIndex(x => x.name.toLowerCase() === name.toLowerCase());
-  if (foundIdx > -1) {
+  const found = topicById(slugify(name)) || DATA.find(x => x.name.toLowerCase() === name.toLowerCase());
+  if (found) {
     go("topics");
-    showTopic(foundIdx);
+    showTopic(found.id);
   }
 }
 
 // ============================================================================
-// JOURNAL MANAGEMENT
+// JOURNAL MANAGEMENT (autosave with debounce + JSON export)
 // ============================================================================
-function saveJ() {
+let saveTimer = null;
+
+function saveJ(showStatus = true) {
   const text = $("#journalInput").value;
-  localStorage.setItem("pvg_journal", text);
-  const status = $("#journalStatus");
-  status.textContent = "Joernaal suksesvol gestoor op jou toestel (" + new Date().toLocaleTimeString() + ").";
-  setTimeout(() => { status.textContent = ""; }, 4000);
+  try {
+    localStorage.setItem("pvg_journal", text);
+    if (showStatus) {
+      const status = $("#journalStatus");
+      status.textContent = "Joernaal gestoor op jou toestel (" + new Date().toLocaleTimeString() + ").";
+      setTimeout(() => { status.textContent = ""; }, 4000);
+    }
+  } catch (e) {
+    $("#journalStatus").textContent = "Kon nie stoor nie — jou blaaier se berging is dalk vol of geblokkeer.";
+  }
+}
+
+function scheduleAutosave() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => saveJ(false), 800);
+  $("#journalStatus").textContent = "Stoor…";
 }
 
 function clearJ() {
@@ -1087,13 +1292,37 @@ function clearJ() {
   }
 }
 
+function exportJ() {
+  const payload = {
+    exported: new Date().toISOString(),
+    app: "Pad van Genade",
+    journal: $("#journalInput").value,
+    favorites: favoriteTopics.map(id => (topicById(id) || {}).name).filter(Boolean),
+    readingStreak: loadJSON("pvg_streak", { count: 0, last: "" })
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "pad-van-genade-joernaal-" + new Date().toISOString().slice(0, 10) + ".json";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
 // ============================================================================
 // INITIALIZATION
 // ============================================================================
 document.addEventListener("DOMContentLoaded", () => {
   loadDailyVerse();
+  markVisitedToday();
   $("#journalInput").value = localStorage.getItem("pvg_journal") || "";
+  $("#journalInput").addEventListener("input", scheduleAutosave);
   render();
+
+  const id = (location.hash || "").slice(1);
+  if (["home", "topics", "journal", "help", "about"].includes(id)) go(id);
 });
 </script>
 

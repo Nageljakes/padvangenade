@@ -68,7 +68,11 @@ async function boot() {
     state.dailyIndex = dailyIndexForToday();
     markVisit();
     render();
+    // Read the topic out of the hash BEFORE setPage rewrites it, otherwise the
+    // deep link is erased before we can read it.
+    const deepTopic = routeTopicFromHash();
     setPage(routeFromHash());
+    if (deepTopic) openTopic(deepTopic);
   } catch (err) {
     renderFatal(err);
   }
@@ -92,9 +96,10 @@ function setPage(page, opts = {}) {
     const isReader = el.id === "page-reader";
     el.hidden = !(el.id === `page-${page}` || (isReader && page === "struggle"));
   });
-  $$(".nav__link").forEach((el) =>
-    el.setAttribute("aria-current", el.dataset.page === page ? "page" : "false")
-  );
+  $$(".nav__link").forEach((el) => {
+    if (el.dataset.page === page) el.setAttribute("aria-current", "page");
+    else el.removeAttribute("aria-current");
+  });
   const hash = opts.topic ? `#/${page}/${opts.topic}` : `#/${page}`;
   if (location.hash !== hash) history.replaceState(null, "", hash);
   window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
@@ -384,7 +389,8 @@ function openTopic(slug, { passage = 0 } = {}) {
   state.topic = slug;
   state.passage = state.positions[slug] ?? passage;
   if (state.passage >= topic.passages.length) state.passage = 0;
-  setPage("struggle");
+  // Keep the slug in the URL so a particular topic can be linked to directly.
+  setPage("struggle", { topic: slug });
   renderTopicResults();
   renderReader();
   $("#page-reader")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -511,13 +517,17 @@ function renderShare() {
   if (state.topic) {
     const topic = state.content.topics.find((x) => x.slug === state.topic);
     if (topic) {
+      // Share can render before the reader has clamped state.passage, so pick
+      // the verse defensively rather than indexing off the end of the array.
+      const idx = Math.min(state.passage, topic.passages.length - 1);
+      const verse = topic.passages[idx];
       cards.push({
         title: t("sharePrayer"),
         text: `${L(topic.pastoral).prayer}\n\n— ${t("brand")}`,
       });
       cards.push({
         title: t("shareCardVerse"),
-        text: `${L(topic.passages[state.passage]).text}\n— ${L(topic.passages[state.passage]).ref}`,
+        text: `${L(verse).text}\n— ${L(verse).ref}`,
       });
     }
   } else if (entry) {
@@ -547,7 +557,6 @@ function renderShare() {
           </div>
         </div>`).join("")}
     </div>
-    <textarea id="share-buffer" hidden></textarea>
   `;
 
   // Cards are rendered escaped; the share actions re-read the same source text
@@ -665,9 +674,28 @@ function bindGlobal() {
     const copy = e.target.closest("[data-share-copy]");
     if (copy) return shareText("copy", Number(copy.dataset.shareCopy));
     const wa = e.target.closest("[data-share-wa]");
-    if (wa) return shareText("wa", Number(wa.dataset.shareWa));
+    // These are anchors for keyboard/touch parity with the buttons, so stop the
+    // default "#" navigation before handing off to WhatsApp.
+    if (wa) { e.preventDefault(); return shareText("wa", Number(wa.dataset.shareWa)); }
     const sms = e.target.closest("[data-share-sms]");
     if (sms) { e.preventDefault(); return shareText("sms", Number(sms.dataset.shareSms)); }
+  });
+
+  // Arrow keys move between nav links, matching the tablist pattern. The
+  // original site had this and it is genuinely easier with a keyboard.
+  $(".nav__bar").addEventListener("keydown", (e) => {
+    const keys = ["ArrowRight", "ArrowLeft", "Home", "End"];
+    if (!keys.includes(e.key)) return;
+    const links = $$(".nav__link");
+    const i = links.indexOf(document.activeElement);
+    if (i < 0) return;
+    e.preventDefault();
+    const next =
+      e.key === "Home" ? links[0]
+      : e.key === "End" ? links[links.length - 1]
+      : links[(i + (e.key === "ArrowRight" ? 1 : -1) + links.length) % links.length];
+    next.focus();
+    setPage(next.dataset.page);
   });
 
   document.addEventListener("input", (e) => {

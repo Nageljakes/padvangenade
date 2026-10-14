@@ -410,6 +410,10 @@ main { padding-block: clamp(1.75rem, 5vw, 3rem) 4rem; min-height: 60vh; }
   .masthead { padding-block: 1.75rem; }
   .pager { flex-direction: column; align-items: stretch; }
   .pager .btn { width: 100%; }
+  /* Give the language switch breathing room and fit one more nav item. */
+  .nav__bar { gap: .4rem; }
+  .nav__link { padding: .85rem .6rem; font-size: .9rem; }
+  .langswitch button { padding: .32rem .5rem; }
 }
 
 @media print {

@@ -1,28 +1,101 @@
 {
   "_readme": "Editorial source for Pad van Genade. Groups and topics in order. Every passage must name a real book/chapter/verse; tools/build.py resolves the actual text from the two public-domain sources, so no verse wording is ever hand-typed here. `field` supplies the short label shown above the verse in each language. Pastoral content (reflect/prayer/step) is authored per topic per language.",
-
   "groups": [
-    { "id": "verslawing",   "af": "Verslawing",           "en": "Addiction",              "blurb": { "af": "Wat jou keuses oor die hand begin beheer.", "en": "When your choices start controlling you." } },
-    { "id": "emosies",      "af": "Emosies",              "en": "Emotions",               "blurb": { "af": "Wat in jou binneste te woed voel.", "en": "What roars inside you." } },
-    { "id": "geloof",       "af": "Geloof en twyfel",     "en": "Faith and doubt",        "blurb": { "af": "Wanneer die Bybel en jou hart uitpas.", "en": "When Scripture and your heart disagree." } },
-    { "id": "verhoudings",  "af": "Verhoudings",          "en": "Relationships",          "blurb": { "af": "Huwelik, gesin, vriende, gemeente.", "en": "Marriage, family, friends, church." } },
-    { "id": "lewe",         "af": "Lewe en praktyk",      "en": "Life and practice",      "blurb": { "af": "Geld, werk, siekte, tyd.", "en": "Money, work, illness, time." } },
-    { "id": "pyn",          "af": "Pyn en rou",           "en": "Pain and grief",         "blurb": { "af": "Wanneer iets gebreek het wat nie terugkom nie.", "en": "When something breaks and does not come back." } }
+    {
+      "id": "verslawing",
+      "af": "Verslawing",
+      "en": "Addiction",
+      "blurb": {
+        "af": "Wat jou keuses oor die hand begin beheer.",
+        "en": "When your choices start controlling you."
+      }
+    },
+    {
+      "id": "emosies",
+      "af": "Emosies",
+      "en": "Emotions",
+      "blurb": {
+        "af": "Wat in jou binneste te woed voel.",
+        "en": "What roars inside you."
+      }
+    },
+    {
+      "id": "geloof",
+      "af": "Geloof en twyfel",
+      "en": "Faith and doubt",
+      "blurb": {
+        "af": "Wanneer die Bybel en jou hart uitpas.",
+        "en": "When Scripture and your heart disagree."
+      }
+    },
+    {
+      "id": "verhoudings",
+      "af": "Verhoudings",
+      "en": "Relationships",
+      "blurb": {
+        "af": "Huwelik, gesin, vriende, gemeente.",
+        "en": "Marriage, family, friends, church."
+      }
+    },
+    {
+      "id": "lewe",
+      "af": "Lewe en praktyk",
+      "en": "Life and practice",
+      "blurb": {
+        "af": "Geld, werk, siekte, tyd.",
+        "en": "Money, work, illness, time."
+      }
+    },
+    {
+      "id": "pyn",
+      "af": "Pyn en rou",
+      "en": "Pain and grief",
+      "blurb": {
+        "af": "Wanneer iets gebreek het wat nie terugkom nie.",
+        "en": "When something breaks and does not come back."
+      }
+    }
   ],
-
   "topics": [
     {
       "slug": "pornografie",
       "group": "verslawing",
-      "title": { "af": "Pornografie", "en": "Pornography" },
+      "title": {
+        "af": "Pornografie",
+        "en": "Pornography"
+      },
       "intro": {
         "af": "Dit is nie net ’n sake van skrif teenstanders nie. Dit is ’n gewoonte wat jou dag, jou fokus en jou verhoudings stil-stuk-stuk vat. ’n Paar Skrifverse help jou om die sneller te herken en die waarheid oor genade te sien.",
         "en": "This is not only a matter of guilt. It is a habit that quietly takes your day, your focus and your relationships. A few passages help you recognise the pattern early and see the truth about grace."
       },
       "passages": [
-        { "book": "1co", "ch": 6, "vs": 18, "field": { "af": "Vlug weg", "en": "Flee" } },
-        { "book": "psa", "ch": 34, "vs": 18, "field": { "af": "Hy is naby", "en": "He is near" } },
-        { "book": "1co", "ch": 6, "vs": 19, "field": { "af": "Jou liggaam is ’n tempel", "en": "Your body is a temple" } }
+        {
+          "book": "1co",
+          "ch": 6,
+          "vs": 18,
+          "field": {
+            "af": "Vlug weg",
+            "en": "Flee"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Hy is naby",
+            "en": "He is near"
+          }
+        },
+        {
+          "book": "1co",
+          "ch": 6,
+          "vs": 19,
+          "field": {
+            "af": "Jou liggaam is ’n tempel",
+            "en": "Your body is a temple"
+          }
+        }
       ],
       "pastoral": {
         "af": {
@@ -40,15 +113,42 @@
     {
       "slug": "alkohol",
       "group": "verslawing",
-      "title": { "af": "Alkohol", "en": "Alcohol" },
+      "title": {
+        "af": "Alkohol",
+        "en": "Alcohol"
+      },
       "intro": {
         "af": "As drank reeds werklik werklik funksioneer in jou lewe, is die vraag nie net oor hoeveel nie. ’n Groot deel van die geneesing begin met erkenning en met hulp uit buite jou eie.",
         "en": "If drinking has become load-bearing in your life, the question is not only how much. Much of the healing begins with honesty and with help from outside your own strength."
       },
       "passages": [
-        { "book": "1co", "ch": 6, "vs": 12, "field": { "af": "Laat niks jou beheer", "en": "Let nothing control you" } },
-        { "book": "jhn", "ch": 8, "vs": 36, "field": { "af": "Vryheid", "en": "Freedom" } },
-        { "book": "php", "ch": 4, "vs": 13, "field": { "af": "Krag in Christus", "en": "Strength in Christ" } }
+        {
+          "book": "1co",
+          "ch": 6,
+          "vs": 12,
+          "field": {
+            "af": "Laat niks jou beheer",
+            "en": "Let nothing control you"
+          }
+        },
+        {
+          "book": "jhn",
+          "ch": 8,
+          "vs": 36,
+          "field": {
+            "af": "Vryheid",
+            "en": "Freedom"
+          }
+        },
+        {
+          "book": "php",
+          "ch": 4,
+          "vs": 13,
+          "field": {
+            "af": "Krag in Christus",
+            "en": "Strength in Christ"
+          }
+        }
       ],
       "pastoral": {
         "af": {
@@ -66,15 +166,42 @@
     {
       "slug": "woede",
       "group": "emosies",
-      "title": { "af": "Woede", "en": "Anger" },
+      "title": {
+        "af": "Woede",
+        "en": "Anger"
+      },
       "intro": {
         "af": "Woede is nie altyd ’n duiwel nie — Jesus het self teen die geldwisselaars uitgeloop. Maar woede wat jou herhaaldelik oorweldig, is nie meer dieselfde ding nie.",
         "en": "Anger is not always the enemy — Jesus himself overturned the money changers. But anger that keeps overwhelming you is a different matter."
       },
       "passages": [
-        { "book": "jas", "ch": 1, "vs": 19, "field": { "af": "Wees stadig", "en": "Be slow to anger" } },
-        { "book": "eph", "ch": 4, "vs": 26, "field": { "af": "Moenie sonder kwaadheid word nie", "en": "Do not let sin reign" } },
-        { "book": "rom", "ch": 12, "vs": 19, "field": { "af": "Laat die Here jou reg maak", "en": "Vengeance belongs to the Lord" } }
+        {
+          "book": "jas",
+          "ch": 1,
+          "vs": 19,
+          "field": {
+            "af": "Wees stadig",
+            "en": "Be slow to anger"
+          }
+        },
+        {
+          "book": "eph",
+          "ch": 4,
+          "vs": 26,
+          "field": {
+            "af": "Moenie sonder kwaadheid word nie",
+            "en": "Do not let sin reign"
+          }
+        },
+        {
+          "book": "rom",
+          "ch": 12,
+          "vs": 19,
+          "field": {
+            "af": "Laat die Here jou reg maak",
+            "en": "Vengeance belongs to the Lord"
+          }
+        }
       ],
       "pastoral": {
         "af": {
@@ -92,15 +219,42 @@
     {
       "slug": "angs",
       "group": "emosies",
-      "title": { "af": "Angs en bekommernis", "en": "Anxiety and worry" },
+      "title": {
+        "af": "Angs en bekommernis",
+        "en": "Anxiety and worry"
+      },
       "intro": {
         "af": "Bekommernis oor môre is 'n menslike ding. Die Bybel below nie om nie te bekommer nie — dit below om nie te dra wat nie joune is nie.",
         "en": "Worrying about tomorrow is human. Scripture does not tell you to stop worrying; it tells you not to carry what is not yours to carry."
       },
       "passages": [
-        { "book": "php", "ch": 4, "vs": 6, "field": { "af": "Sorg niks nie", "en": "Be anxious about nothing" } },
-        { "book": "mat", "ch": 6, "vs": 34, "field": { "af": "Elke dag se sorg", "en": "Each day’s worry" } },
-        { "book": "1pe", "ch": 5, "vs": 7, "field": { "af": "Gooi jou besorgenis op Hom", "en": "Cast your anxiety on Him" } }
+        {
+          "book": "php",
+          "ch": 4,
+          "vs": 6,
+          "field": {
+            "af": "Sorg niks nie",
+            "en": "Be anxious about nothing"
+          }
+        },
+        {
+          "book": "mat",
+          "ch": 6,
+          "vs": 34,
+          "field": {
+            "af": "Elke dag se sorg",
+            "en": "Each day’s worry"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 5,
+          "vs": 7,
+          "field": {
+            "af": "Gooi jou besorgenis op Hom",
+            "en": "Cast your anxiety on Him"
+          }
+        }
       ],
       "pastoral": {
         "af": {
@@ -118,15 +272,42 @@
     {
       "slug": "skuldsprong",
       "group": "lewe",
-      "title": { "af": "Skuldsprong en finansiële druk", "en": "Debt and financial pressure" },
+      "title": {
+        "af": "Skuldsprong en finansiële druk",
+        "en": "Debt and financial pressure"
+      },
       "intro": {
         "af": "In ’n land waar maandelikse uitgaw teenoor ’n onseker inkomste staan, is skuld nie ’n tegnou ’n godsdiens. Hierdie verse help jou om werklike dinge te doen sonder om jou waarde daaraan te verloor.",
         "en": "In a country where monthly costs meet uncertain income, debt is as much a pastoral reality as a financial one. These passages help you act practically without losing your dignity."
       },
       "passages": [
-        { "book": "php", "ch": 4, "vs": 19, "field": { "af": "Jou behoeftes", "en": "Your needs" } },
-        { "book": "mat", "ch": 6, "vs": 25, "field": { "af": "Moenie besorg wees oor et nie", "en": "Do not worry about food" } },
-        { "book": "pro", "ch": 22, "vs": 7, "field": { "af": "Die regverdige en sy skuld", "en": "The righteous and their debt" } }
+        {
+          "book": "php",
+          "ch": 4,
+          "vs": 19,
+          "field": {
+            "af": "Jou behoeftes",
+            "en": "Your needs"
+          }
+        },
+        {
+          "book": "mat",
+          "ch": 6,
+          "vs": 25,
+          "field": {
+            "af": "Moenie besorg wees oor et nie",
+            "en": "Do not worry about food"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 22,
+          "vs": 7,
+          "field": {
+            "af": "Die regverdige en sy skuld",
+            "en": "The righteous and their debt"
+          }
+        }
       ],
       "pastoral": {
         "af": {
@@ -144,15 +325,42 @@
     {
       "slug": "verlies",
       "group": "pyn",
-      "title": { "af": "Verlies en rou", "en": "Loss and grief" },
+      "title": {
+        "af": "Verlies en rou",
+        "en": "Loss and grief"
+      },
       "intro": {
         "af": "Die Bybel praat nie min oor die wat wees en rou nie. Jesus huil self. Hierdie verse is vir die dae wanneer daar niks regtig voel nie.",
         "en": "The Bible does not speak lightly of those who grieve. Jesus wept himself. These passages are for the days when nothing feels right."
       },
       "passages": [
-        { "book": "lam", "ch": 3, "vs": 22, "field": { "af": "Sy goedertigheid is ewig", "en": "His mercies are new" } },
-        { "book": "psa", "ch": 34, "vs": 18, "field": { "af": "Naby die gebroke", "en": "Near the brokenhearted" } },
-        { "book": "mat", "ch": 5, "vs": 4, "field": { "af": "Die salig rou", "en": "Blessed are those who mourn" } }
+        {
+          "book": "lam",
+          "ch": 3,
+          "vs": 22,
+          "field": {
+            "af": "Sy goedertigheid is ewig",
+            "en": "His mercies are new"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Naby die gebroke",
+            "en": "Near the brokenhearted"
+          }
+        },
+        {
+          "book": "mat",
+          "ch": 5,
+          "vs": 4,
+          "field": {
+            "af": "Die salig rou",
+            "en": "Blessed are those who mourn"
+          }
+        }
       ],
       "pastoral": {
         "af": {
@@ -164,6 +372,2766 @@
           "reflect": "Grief is not a sign that your faith is weak. In the Bible it is precisely those God draws near. Do not rush or suppress your mourning.",
           "prayer": "Lord, I grieve in front of you because you hide nothing from me. Hold me through the days when I do not know how to live.",
           "step": "Speak today to someone who knows what it is to lose. If you have no one, call Lifeline (0861 322 322)."
+        }
+      }
+    },
+    {
+      "slug": "rook",
+      "group": "verslawing",
+      "title": {
+        "af": "Rook: wanneer die gewoonte jou lewe vat",
+        "en": "Tobacco: when the habit takes your life"
+      },
+      "intro": {
+        "af": "Rook is in Suid-Afrika nie net ’n persoonlike gewoonte nie; dit is ’n maatsklike en finansiële saak wat gesinne laat sukkel en siektes laat beleef wat niemand kan dra nie. As jy rook, weet jy waarskynlik al van die skade, maar die gewoonte is sterker as die wils.",
+        "en": "In South Africa smoking is not just a private habit; it is a financial and social reality that leaves families struggling and communities sick. If you smoke, you almost certainly know the damage, but the habit is stronger than your willpower."
+      },
+      "passages": [
+        {
+          "book": "isa",
+          "ch": 43,
+          "vs": 1,
+          "field": {
+            "af": "God wat jou geskape het, roep jou by naam",
+            "en": "The One who created you calls you by name"
+          }
+        },
+        {
+          "book": "2ti",
+          "ch": 1,
+          "vs": 7,
+          "field": {
+            "af": "God gee moed en krag",
+            "en": "God gives power and strength"
+          }
+        },
+        {
+          "book": "1co",
+          "ch": 6,
+          "vs": 19,
+          "field": {
+            "af": "Jou liggaam is die tempel van die Gees",
+            "en": "Your body is the temple of the Spirit"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Daar is iets om te sê oor die verantwoordelikheid om jou liggaam nie weg te gee nie, maar baie rokers is nie lui of dom nie — hulle is vasgevang in ’n dwelm wat die brein oorweldig. Die skade is nie net fisiek nie: as jy elke maand vir ’n pak uitspandeer wat ’n maat kos, is die skuld, die spanning en die skaamte in jou huis werklike pyn wat uitgespreek moet word.",
+          "prayer": "Hereer, ek erken dat ek altyd weggeign het teen wat my liggaam en jou Woord sê. Breek hierdie ketting en gee my die krag om vandag net een uur lank vir rook te kies nie. Ek staan voor U met my pak en my hart en vra U om my lewe te herstel.",
+          "step": "Maak vandag 'n afspraak met jou huisarts vir rookstopbegeleiding en niemensvervanging (bv. Champix of bupropion), en laai die WGO se rookstop-app af om jou dae te tel. Jy hoef nie die probleem op jou eie op te los nie."
+        },
+        "en": {
+          "reflect": "There is something to say about caring for the body you were given, but most smokers are neither lazy nor foolish — they are trapped in a substance that overrides the brain. The damage is not only physical: when a pack a month swallows a family meal budget, the debt, the tension and the shame at home are real wounds that need to be spoken out loud.",
+          "prayer": "Lord, I admit I have always ignored what my body and your Word say. Break this chain and give me strength to choose one hour today not to smoke. I stand before you with my packet and my heart, asking you to restore my life.",
+          "step": "Book a GP appointment today for quit-smoking support and nicotine replacement (such as Champix or bupropion), and download the WHO quit-smoking app to track your days. You do not have to solve this on your own."
+        }
+      }
+    },
+    {
+      "slug": "kranksvrye-misbruik",
+      "group": "verslawing",
+      "title": {
+        "af": "Kranksvrye medisyne misbruik",
+        "en": "Misusing prescription medicine"
+      },
+      "intro": {
+        "af": "Tabak, alkohol en dwelms is sigbaar, maar daar is ’n dwelm wat in elke huis se kas leef: medisyne wat vir iemand anders se siekte uitgeskryf is. Omgewone mense verander dit soms in iets wat rus gee wanneer alles te vinnig voel.",
+        "en": "Tobacco, alcohol and drugs are visible, but one drug lives in every household cabinet: medicine prescribed for someone else’s illness. Ordinary people sometimes turn it into something that brings peace when everything feels too sharp."
+      },
+      "passages": [
+        {
+          "book": "col",
+          "ch": 3,
+          "vs": 12,
+          "field": {
+            "af": "Kies God se wil in plaas van menslike begeertes",
+            "en": "Choose God’s will over human desires"
+          }
+        },
+        {
+          "book": "2pe",
+          "ch": 2,
+          "vs": 19,
+          "field": {
+            "af": "Die Here ontskep jou tot ’n huisgesin van sy eie",
+            "en": "The Lord claims you as his own household"
+          }
+        },
+        {
+          "book": "rom",
+          "ch": 12,
+          "vs": 1,
+          "field": {
+            "af": "Offer your body as a living sacrifice",
+            "en": "Present your bodies as living sacrifices"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Hierdie is dikwels ’n onsigbare verslawing wat albei gesinne se lede se gesondheid en finansies vernietig, terwyl die skande mense weg van hulp hou. Die ander kant van die medalie is ewe net so werklik: ’n mens wat elke aand iets neem om te slaap of om nie aan die rekeninge te dink nie, gebruik nie medisyne nie maar dwing sy brein om sonder dit te sukkel.",
+          "prayer": "Hereer, ek erken dat ek medisyne of drank gebruik het om dinge stil te maak wat net U stil kan maak. Ek vra nie vir ’n maklike dag nie, maar vir ’n skoon kop wat U alleen kan gee. Leier my vandag na die hulp wat ek nie wil vra nie.",
+          "step": "Bel die SA Verslavingshulplyn op 0800 12 13 14 (gratis, 24/7) of vra hierdie week jou huisarts of plaaslike kliniek om na ’n verslawingsberadingsdiens te verwys, en tel hoeveel medisyne in jou huis is wat nie van jou af nie."
+        },
+        "en": {
+          "reflect": "This is often an invisible addiction that damages the health and finances of whole families, while shame keeps people away from help. The other side of the coin is just as real: someone taking something every evening to sleep or to stop thinking about the bills is not using medicine any more but forcing their brain to struggle without it.",
+          "prayer": "Lord, I admit I used pills or drinks to silence things that only you can silence. I am not asking for an easy day; I am asking for a clear mind that you alone can give. Lead me today towards the help I am afraid to ask for.",
+          "step": "Call the SA Substance Abuse Helpline on 0800 12 13 14 (free, 24/7) or ask your GP or local clinic this week to refer you to a substance abuse counselling service, and count how many medicines in your home are not yours."
+        }
+      }
+    },
+    {
+      "slug": "dobbelary",
+      "group": "verslawing",
+      "title": {
+        "af": "Dobbelary: die illusie van beheer",
+        "en": "Gambling: the illusion of control"
+      },
+      "intro": {
+        "af": "’n Dobbelaar dink hy kies sy getalle. In werklikheid kies hy die illusie van beheer teenoor ’n spel wat vir hom ontwerp is. Van slotmasjiene tot township-sportsboeke en selfoon-apps is die verleiding oral, veral wanneer werk skaars is.",
+        "en": "A gambler thinks he is choosing his numbers. In reality he is choosing the illusion of control in a game designed against him. From slot machines to township sports books and phone apps, the temptation is everywhere, especially when work is scarce."
+      },
+      "passages": [
+        {
+          "book": "heb",
+          "ch": 13,
+          "vs": 5,
+          "field": {
+            "af": "Die Here weet die duistere dinge van die hart",
+            "en": "God knows the dark things of the heart"
+          }
+        },
+        {
+          "book": "1ti",
+          "ch": 6,
+          "vs": 10,
+          "field": {
+            "af": "Geld is ’n groot verlies",
+            "en": "Money is a dangerous trap"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 13,
+          "vs": 20,
+          "field": {
+            "af": "Die ryke neem sy rykdom met in die afsterwe",
+            "en": "The rich take their wealth with them when they die"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Hierdie is nie net ’n finansiële probleem nie. Die dobbelaar leef in ’n kring van hoop wat nooit waar word: die volgende weddenskap, die volgende dag se beter. Die werklike skade is ook in die huwelik, by die kinders wat op die ma se skouers sit, en in die gemeentelike groep wat min saam het en nie verstaan waarom jy nooit geld het nie.",
+          "prayer": "Hereer, ek erken dat ek my hoop op geld geskep het wat ek nooit besit het, en ek het geskaduwee oor die mense wat op my staat. Sit jouself in my plek en trek my uit hierdie kring waarin elke verlies belowe om verder te verloor. Gee my vandag rus in plaas van die volgende weddenskap.",
+          "step": "Skryf vandag op elke debetkaart, weddenskap-app, boekmaker of lotery-snip wat jy gebruik, maak dit toe of verwyder dit van jou foon, en bel SASSA op 0800 60 10 11 of jou bank se kliëntediens om ’n betaal-agreement of debatblok te vra."
+        },
+        "en": {
+          "reflect": "This is not only a money problem. The gambler lives in a circle of hope that never becomes real: the next bet, the better tomorrow. The real damage is also in the marriage, in the children on the mother’s shoulders, and in a community group that has little and does not understand why you never have money.",
+          "prayer": "Lord, I admit I built my hope on money I never owned, and I have shadowed the people who depend on me. Take your place in mine and pull me out of this circle where every loss whispers to lose more. Give me rest today instead of the next bet.",
+          "step": "Write down today every debit card, betting app, bookmaker or lottery slip you use, close or delete them from your phone, and call SASSA on 0800 60 10 11 or your bank’s customer service line to ask about a payment arrangement or debt block."
+        }
+      }
+    },
+    {
+      "slug": "sosiale-media",
+      "group": "verslawing",
+      "title": {
+        "af": "Sosiale media en die ononderbroke skerm",
+        "en": "Social media and the endless screen"
+      },
+      "intro": {
+        "af": "Jyfers wat ten minste een keer elke dag opgeslaan word, toon nie hoe gelukkig almal anders is nie; hulle toon net hoe vaak jy kies om nie te kyk nie.",
+        "en": "The numbers that get saved at least once a day do not show how happy everyone else is; they only show how often you chose to keep scrolling."
+      },
+      "passages": [
+        {
+          "book": "mat",
+          "ch": 6,
+          "vs": 21,
+          "field": {
+            "af": "Waar jou skat is, daar is ook jou hart",
+            "en": "Where your treasure is, there your heart will be also"
+          }
+        },
+        {
+          "book": "1co",
+          "ch": 12,
+          "vs": 31,
+          "field": {
+            "af": "Eet en drink, maar onthou jy kan nie beter leef nie",
+            "en": "Eat and drink, but remember you cannot live better"
+          }
+        },
+        {
+          "book": "eph",
+          "ch": 5,
+          "vs": 16,
+          "field": {
+            "af": "Wees versigtig, die tyd is duur",
+            "en": "Be careful, the days are precious"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Scroll is nie net tydverlies nie. Vir mense wat werkloos of alleen is, is die skerm die plek waar hulle vergelyk, waar hulle leer voel minder waard, en waar drie ure per dag stilletjie verdwynet sonder om eens te rus nie. Die vraag is nie of die inhoud sleg is nie, maar of jy aandag verloor wat God aan jou gegee het — jou gesin, jou buur, jou eie hart.",
+          "prayer": "Hereer, ek erken dat ek my ure en my hart op vreemde mense se lewens gee terwyl die mense langs my pad op U wag. Maak my oë oop vandag; wys my wat werklik hierdie stond saam met my, en gee my die krag om af te sit.",
+          "step": "Skakel vandag alle kennisgewinge vir elke sosiale app af (behalwe oproepe en gesinsboodskappe), stel ’n 30-minuut tydsperk in jou foon se skermtyd-instellings in, en bel in daardie ure een kind, ’n ouer of ’n buur."
+        },
+        "en": {
+          "reflect": "Scrolling is not only wasted time. For people who are unemployed or alone, the screen is where they compare, where they learn to feel worth less, and where three hours a day disappear without rest. The question is not whether the content is bad, but whether you are losing the attention God gave you — your family, your neighbour, your own heart.",
+          "prayer": "Lord, I admit I have given my hours and my heart to other people’s lives while the people beside my road waited for you. Open my eyes today; show me what is actually here with me, and give me strength to put the phone down.",
+          "step": "Turn off notifications for every social app today (except calls and family messages), set a 30-minute limit in your phone’s screen time settings, and spend those hours phoning one child, parent or neighbour."
+        }
+      }
+    },
+    {
+      "slug": "winkel-swakte",
+      "group": "verslawing",
+      "title": {
+        "af": "Winkelswakte: koop om die leegte te vul",
+        "en": "Compulsive buying: shopping to fill the emptiness"
+      },
+      "intro": {
+        "af": "Winkel-swakte gaan nie oor goedkoop of duur goed nie. Dit gaan oor die oomblik wanneer die skerm oopgaan, die hart rus word, en jy vergeet vir ’n paar minute van die angs, die skuld en die skande wat wag.",
+        "en": "Compulsive buying is not about cheap or expensive things. It is about the moment the screen opens, the heart settles, and for a few minutes you forget the anxiety, the debt and the shame that are waiting."
+      },
+      "passages": [
+        {
+          "book": "mat",
+          "ch": 6,
+          "vs": 21,
+          "field": {
+            "af": "Die oog se lig en die liggaam se volheid",
+            "en": "The eye’s light and the fullness of the body"
+          }
+        },
+        {
+          "book": "luk",
+          "ch": 12,
+          "vs": 15,
+          "field": {
+            "af": "Wees versigtig vir die begeer na wat jy nie het nie",
+            "en": "Watch out for greed over what you do not have"
+          }
+        },
+        {
+          "book": "heb",
+          "ch": 13,
+          "vs": 8,
+          "field": {
+            "af": "Jesus Christus is gister en vandag en tot in eeuwigheid dieselfde",
+            "en": "Jesus Christ is the same yesterday, today and forever"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Baie Suid-Afrikanse gesinne koop om te oorleef: ’n skooluniform, ’n ma se mediese, ’n maat se kos. Wanneer die inkomste stilstaan, word gerieflike aankope en troos-aankope gelyk ’n oorlewingswyse en terselfdertyd ’n ketting van skuld. Die Here vra nie dat jy vir altyd ryk word nie; Hy vra dat jy ophou om jou hart se eenigheid aan goed te verkoop.",
+          "prayer": "Hereer, ek erken dat ek goed gekoop het om te voel dat ek genoeg is of dat ek reg het om daar te arriveer. Sewe my vandag wat werklik genoeg is, en wys my hoe om my hart te vervang sonder om dit te koop.",
+          "step": "Skep vandag ’n lys van elke lening of aftakeling met rente, bel SASSA op 0800 60 10 11 of jou krediteurooster om ’n betaal-agreement te vra, en stel vir jouself ’n 48-uur koop-stop buite kos en medisyne."
+        },
+        "en": {
+          "reflect": "Many South African families shop in order to survive: a school uniform, a mother’s medicine, a bag of food. When income stalls, convenience buys and comfort purchases become a way to survive and at the same time a chain of debt. The Lord is not asking you to become rich; he is asking you to stop selling your heart’s unity to goods.",
+          "prayer": "Lord, I admit I bought things to feel that I am enough or that I deserve to have arrived. Show me today what is truly enough, and show me how to fill my heart without buying it.",
+          "step": "Make a list today of every loan or debt with interest, call SASSA on 0800 60 10 11 or your credit provider to ask for a payment arrangement, and set yourself a 48-hour buying freeze outside groceries and medicine."
+        }
+      }
+    },
+    {
+      "slug": "eetstoornis",
+      "group": "verslawing",
+      "title": {
+        "af": "Eetstoornis en liggaamsbeeld",
+        "en": "Eating disorders and body image"
+      },
+      "intro": {
+        "af": "In ’n land waar kos duur is, is eet soms nie net ’n saak van honger of oorvloed nie. Vir baie vroue en tieners is die stryd met die liggaam ’n stille oorlog wat elke maaltyd tot skande maak.",
+        "en": "In a country where food is expensive, eating is not only about hunger or plenty. For many women and teenagers the battle with the body is a silent war that turns every meal into shame."
+      },
+      "passages": [
+        {
+          "book": "1co",
+          "ch": 6,
+          "vs": 19,
+          "field": {
+            "af": "Jou liggaam is die tempel van die Gees",
+            "en": "Your body is the temple of the Spirit"
+          }
+        },
+        {
+          "book": "zec",
+          "ch": 4,
+          "vs": 6,
+          "field": {
+            "af": "Was skoon, maak alles skoon",
+            "en": "Wash and make everything clean"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 139,
+          "vs": 14,
+          "field": {
+            "af": "Ek dank jou dat jy my wonderlik gemaak het",
+            "en": "I thank you that you made me wonderfully"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Hierdie is ’n siekte wat selfs diep godsdiensige mense se daaglikse lewe aantas: oordrewe vasting, oordrewe oefening, of ’n ongesonde verhouding met kos wat die liggaam werklik beskadig. Dit is nie ’n gebrek aan geloof of ’n karakterfout nie — dit is ’n geestes- en liggaamsgesondheidsprobleem wat mediese en sielkundige hulp vereis, net nie net dapper woorde nie.",
+          "prayer": "Hereer, ek erken dat ek my liggaam en my kos met haat en angs gevat het. Jy wat my liggaam geskape het, genees hierdie wond en gee my ’n gesonde verhouding met die daelikse brood wat ek nie kan koop of verdien nie. Gee my die moed om die regte hulp te vra.",
+          "step": "Bel hierdie week jou plaaslike kliniek of die SA Verslavingshulplyn 0800 12 13 14 en vra vir ’n verwysing na ’n professionele sielkundige of eetstoornisdiens, en spreek intussen met iemand wat jy vertrou — of bel SADAG op 0800 567 567."
+        },
+        "en": {
+          "reflect": "This is an illness that even deeply religious people feel in daily life: obsessive fasting, excessive exercise, or an unhealthy relationship with food that genuinely harms the body. It is not a lack of faith or a character flaw — it is a mental and physical health problem requiring medical and psychological care, not just brave words.",
+          "prayer": "Lord, I admit I have treated my body and my food with hatred and fear. You who made my body, heal this wound and give me a healthy relationship with the daily bread I cannot buy or earn. Give me courage to ask for the right help.",
+          "step": "Call your local clinic or the SA Substance Abuse Helpline on 0800 12 13 14 this week and ask for a referral to a professional counselling or eating disorder service, and in the meantime speak to someone you trust — or phone SADAG on 0800 567 567."
+        }
+      }
+    },
+    {
+      "slug": "koukie-intern",
+      "group": "verslawing",
+      "title": {
+        "af": "Koukie-intern: die geheime skerm in jou sak",
+        "en": "Internet pornography: the secret screen in your pocket"
+      },
+      "intro": {
+        "af": "Hierdie is die dwelm wat nie ’n bottel of ’n sigaretpak afgee nie. Dit is gratis, dit is altyd een skerm se skerm weg, en dit groei in die donker sonder dat iemand weet.",
+        "en": "This is the drug that comes in no bottle or packet. It is free, it is always one screen away, and it grows in the dark where nobody knows."
+      },
+      "passages": [
+        {
+          "book": "rom",
+          "ch": 13,
+          "vs": 14,
+          "field": {
+            "af": "Trek die ou mens uit en trek die nuwe mens aan",
+            "en": "Put off the old self and put on the new self"
+          }
+        },
+        {
+          "book": "php",
+          "ch": 4,
+          "vs": 8,
+          "field": {
+            "af": "Doen alles waardevol om mense te red",
+            "en": "Do whatever is of value to save people"
+          }
+        },
+        {
+          "book": "heb",
+          "ch": 12,
+          "vs": 1,
+          "field": {
+            "af": "Ons sien Jesus, die Onsigtbare",
+            "en": "We are seeing Jesus, the Invisible One"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Manne en vroue wat hierdie vang, is nie sleg mense nie — hulle is mense wat deur ’n stelsel van algemeen beskikbare stimuli en ’n leegte wat met skande, vervelingheid of verdriet gepaardgaan, vasgevang word. Dit groei stil en werk werklik skade net soos enige ander dwelm, en jy kan dit nie alleen verslaan nie.",
+          "prayer": "Hereer, ek erken dat ek hierdie skerm oopmaak wanneer ek alleen, moeg of ontsteld voel, en ek vra om belydenis sonder spot. Maak my oë oop terwyl ek U om hulp vra, en bevry my van hierdie gevangenis sonder om my sonder oplossing te laat.",
+          "step": "Skakel vandag alle inhoudfilters, incognito-modus en nagmodus af, installeer ’n gebrokeer-app of vra iemand wat jy vertrou om jou foon se instellings te help verander, en spreek met ’n kerkberaadslid of pastor sodat jy nie alleen staan nie."
+        },
+        "en": {
+          "reflect": "Men and women caught by this are not bad people — they are people trapped by a system of universally available stimuli and an emptiness tied to shame, boredom or grief. It grows quietly and does real harm just like any other drug, and you cannot defeat it alone.",
+          "prayer": "Lord, I admit I open this screen when I am lonely, tired or hurt, and I ask for confession without mockery. Open my eyes as I ask you for help, and set me free from this prison without leaving me without hope.",
+          "step": "Turn off all content filters, incognito mode and night mode today, install a blocker app or ask someone you trust to help change your phone settings, and speak to a church counsellor or pastor so that you do not stand alone."
+        }
+      }
+    },
+    {
+      "slug": "godsdiens-hamer",
+      "group": "verslawing",
+      "title": {
+        "af": "Godsdiens-hamer: wanneer die vuur uitgaan",
+        "en": "Dryness toward God: when the fire goes out"
+      },
+      "intro": {
+        "af": "Soms is die Bybel wel op die tafel en die TV-kerk aan, maar iets tussen jou en God het stil geword: geen vreugde nie, geen brand net die pligte van ’n moege mens.",
+        "en": "Sometimes the Bible is on the table and the TV church is on, but something between you and God has gone quiet: no joy, no fire, only the duties of a tired person."
+      },
+      "passages": [
+        {
+          "book": "psa",
+          "ch": 13,
+          "vs": 1,
+          "field": {
+            "af": "Hoe lank sal U my verlaat?",
+            "en": "How long will you leave me?"
+          }
+        },
+        {
+          "book": "mat",
+          "ch": 11,
+          "vs": 28,
+          "field": {
+            "af": "Kom my toe, almal wat swaar werk het",
+            "en": "Come to me, all you who labour"
+          }
+        },
+        {
+          "book": "isa",
+          "ch": 40,
+          "vs": 31,
+          "field": {
+            "af": "Die wat op die Here wag, sal nuwe krag ontvang",
+            "en": "Those who wait on the Lord will renew their strength"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Geestelike uitbranding is nie ontrouheid nie. Dit is die effek van jare se diens sonder rus: ’n moegheid wat nie siektee is nie, ’n gevoel dat jou gebed teen die muur praat, of die oortuiging dat God stilswyg. Die Bybel selfs praat hiervan — ’n siel wat moeg geword het en wag vir die Here.",
+          "prayer": "Hereer, ek is moeg van my eie godsdiens. Ek bring my vandag na jou met die gevoel dat ek misluk het, en ek vra nie vir vuur wat ek verdien het nie, maar vir jou rus wat ek verdien het. Wakkee my asseblief op.",
+          "step": "Kies hierdie week een praktiese rusdag sonder diens en sonder bedieningstelefoon, en maak ’n lys van alles wat jy slegs vir ander mense se oë doen en God sien dinge wat nie op die lys gaan nie; hou dit ’n maand vol."
+        },
+        "en": {
+          "reflect": "Spiritual burnout is not disloyalty. It is the effect of years of service without rest: a tiredness that is not illness, a sense that your prayers hit a wall, or the conviction that God is silent. Scripture itself speaks of this — a soul that grew weary and waits for the Lord.",
+          "prayer": "Lord, I am tired of my own religion. I bring myself to you today feeling that I have failed, and I ask not for the fire I deserve but for the rest I do. Wake me up, please.",
+          "step": "Choose one practical day of rest this week with no service and no ministry phone calls, and make a list of everything you do only for other people’s eyes — God sees what is not on the list; hold to that for a month."
+        }
+      }
+    },
+    {
+      "slug": "haat",
+      "group": "emosies",
+      "title": {
+        "af": "Haat en wrok: die gif wat in stilte groei",
+        "en": "Hatred and bitterness: the poison that grows in silence"
+      },
+      "intro": {
+        "af": "Party is die mense wat ons die meeste pyn doen nie vir lank gehaat nie; hulle is die wat ons elke dag onthou. Wrok sit die verlede weer aan diens.",
+        "en": "Sometimes the people who hurt us most are not the ones we hate for long; they are the ones we remember every day. Bitterness puts the past back on duty."
+      },
+      "passages": [
+        {
+          "book": "eph",
+          "ch": 4,
+          "vs": 26,
+          "field": {
+            "af": "Laat nie toorn by julle wonende bly nie",
+            "en": "Do not let anger linger in your hearts"
+          }
+        },
+        {
+          "book": "jas",
+          "ch": 1,
+          "vs": 19,
+          "field": {
+            "af": "Weet dit, my lieflike broers: hou elke aanspraak toe",
+            "en": "Beloved brothers, be quick to forgive"
+          }
+        },
+        {
+          "book": "jhn",
+          "ch": 8,
+          "vs": 12,
+          "field": {
+            "af": "Volg Ek die lig, so sal jy nie in duisternis wandel nie",
+            "en": "If I follow the light, you will never walk in darkness"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wrok is nie net ’n emosie nie — dit is ’n daelikse keuse om daardie gebeurtenis weer by jou te bring. Dit kan ’n ou mededinger, mishandeling, ’n onreg wat nooit erken is nie, of iemand wat jou diep beleedig het wees. Vergewe is nie ’n gevoel nie; dit is ’n keuse, en dit kan met hulp gedoen word.",
+          "prayer": "Hereer, ek dra hierdie wrok te swaar om te dra. Ek is kwaad, maar ek wil nie in hierdie gif bly nie. Gee my die krag om die persoon wat my pyn gedoen het my Goddelike reg te gee, sodat ek vry kan word.",
+          "step": "Skryf vandag ’n brief aan die persoon of situasie wat jy haat — jy hoef dit nie te stuur nie — lees dit hardop en sluit dit af met die Here se woorde, en vra hierdie week vir jou vertroude mense om saam met jou te bid."
+        },
+        "en": {
+          "reflect": "Bitterness is not only an emotion — it is a daily decision to bring that event back to you. It might be an old rival, abuse, an injustice never acknowledged, or someone who deeply wounded you. Forgiveness is not a feeling; it is a decision, and it can be done with help.",
+          "prayer": "Lord, I carry this bitterness too heavily to bear. I am angry, but I do not want to live in this poison. Give me strength to hand over the God-given rights I have against the person who hurt me, so I can be free.",
+          "step": "Write a letter today to the person or situation you hate — you do not have to send it — read it aloud, close it with the Lord’s words, and ask someone you trust to pray with you this week."
+        }
+      }
+    },
+    {
+      "slug": "jaloersheid",
+      "group": "emosies",
+      "title": {
+        "af": "Jaloersheid: die gif van vergelyking",
+        "en": "Jealousy: the poison of comparison"
+      },
+      "intro": {
+        "af": "Niemand kan jou lewe beleef behalwe jy nie. Maar jy kyk elke dag na ander mense se huise, motors, huwelike en kiekjes en wonder waarom jous nie genoeg is nie.",
+        "en": "No one can live your life but you. Yet every day you look at other people’s houses, cars, marriages and snapshots and wonder why you are not enough."
+      },
+      "passages": [
+        {
+          "book": "pro",
+          "ch": 14,
+          "vs": 30,
+          "field": {
+            "af": "Die hart is tevrede as die Here die hart besweer",
+            "en": "A heart at rest, because the Lord has tested it"
+          }
+        },
+        {
+          "book": "gal",
+          "ch": 5,
+          "vs": 1,
+          "field": {
+            "af": "Gaan staan en sien ofgewe aan die Here in die spieël",
+            "en": "Stand and look at the Lord in the mirror"
+          }
+        },
+        {
+          "book": "heb",
+          "ch": 12,
+          "vs": 14,
+          "field": {
+            "af": "Spoor na vrede met almal en na heiligheid",
+            "en": "Pursue peace with everyone and pursue holiness"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Jaloersheid vertel jou miskien dat jy minder waard is. Dit kan oor ’n broer of suster wees, oor iemand se verhouding, of selfs oor die Here se seën in jou eie lewe. Maar baie van die mense wat jy aanraak is steeds dieselfde mense — net uit ’n ander hoek gesien.",
+          "prayer": "Hereer, ek erken dat ek my waarde met ander mense se lewens vergelyk. Gee my oë wat op U val en nie op kiekjes nie, en gee my die moed om my eie pad te loop met rus in my hart.",
+          "step": "Kies vandag een persoon waarvan jy jaloers is en bid drie dinge hardop: vir hul seën, vir hul beskerming en vir hul vreugde — en merk hoe die gevoel in jou verander."
+        },
+        "en": {
+          "reflect": "Jealousy tells you that you are somehow less valuable. It can be envy of a brother or sister, of someone’s relationship, or even envy of God’s blessing in your own life. But many of the people you envy are the same people you touch every day — just seen from a different angle.",
+          "prayer": "Lord, I admit I compare my worth with other people’s lives. Give me eyes that fall on you and not on pictures, and give me courage to walk my own road with peace in my heart.",
+          "step": "Choose today one person you envy and pray three things aloud: for their blessing, their protection and their joy — and notice how the feeling changes in you."
+        }
+      }
+    },
+    {
+      "slug": "selfhaat",
+      "group": "emosies",
+      "title": {
+        "af": "Selfhaat: wanneer jy die vyand word",
+        "en": "Self-hatred: when you become the enemy"
+      },
+      "intro": {
+        "af": "Daar is stemme in jou hoof wat sê jy is nooit genoeg nie, al wat jy ook doen. Hierdie stem is nie altyd God se stem nie, al klink dit so.",
+        "en": "There are voices inside you that say you are never enough, no matter what you do. These voices are not always God’s voice, even when they sound like it."
+      },
+      "passages": [
+        {
+          "book": "psa",
+          "ch": 139,
+          "vs": 13,
+          "field": {
+            "af": "U het my in my moeder se liggaam gevorm",
+            "en": "You formed me in my mother’s womb"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Die Here is naby die gebreekte hart",
+            "en": "The Lord is close to the broken-hearted"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 12,
+          "vs": 9,
+          "field": {
+            "af": "My genade is genoeg, my krag word in swakheid volmaak",
+            "en": "My grace is sufficient, my power is made perfect in weakness"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Selfhaat is nie net ’n probleem van gedagte nie; dit verander hoe jy loop, hoe jy met mense praat, hoe jy bid en hoe jy oor die waarde van jou lewe voel. Dit kan na jare se mishandeling, ontsteling of konstante skaamte ’n gewoonte geword het wat jy nie meer kan afskud nie.",
+          "prayer": "Hereer, ek hoor ’n stem wat my sê ek is waardeloos, en ek weet nie altyd watter stem dit is nie. Gee my rus om te weet dat ek deur U geskape en gekoos is, en laat die stem van U Woord die argument in my wen.",
+          "step": "Skryf vandag elke naam of woorde wat jy oor jouself gebruik op ’n stuk papier, streep uit wat God nie sê nie, en lees net die waarhede hardop as ’n gebed van belydenis — en as die gedagte nie wil stilword nie, bel Lifeline op 0861 322 322."
+        },
+        "en": {
+          "reflect": "Self-hatred is not only a thought problem; it changes how you walk, how you speak to people, how you pray and how you feel about the worth of your life. It can become a habit you cannot shake off after years of abuse, disappointment or constant shame.",
+          "prayer": "Lord, I hear a voice saying I am worthless and I cannot always tell which voice it is. Give me peace to know I was created and chosen by you, and let the voice of your Word win the argument in me.",
+          "step": "Write down today every name or word you use about yourself, cross out what God does not say, and read only the truths aloud as a prayer of confession — and if the thoughts will not stop, phone Lifeline on 0861 322 322."
+        }
+      }
+    },
+    {
+      "slug": "tweyfel-oor-jou",
+      "group": "emosies",
+      "title": {
+        "af": "Twyfel oor jou eie geloof",
+        "en": "Doubting your own faith"
+      },
+      "intro": {
+        "af": "Baie wat in die Here glo wonder steeds of hulle reg is. Twyfel is nie altyd ’n teken dat God weg is nie; dit is soms ’n teken dat jy naderkom.",
+        "en": "Many who believe in the Lord still wonder if they are right. Doubt is not always a sign that God is gone; sometimes it is a sign you are approaching honestly."
+      },
+      "passages": [
+        {
+          "book": "jhn",
+          "ch": 20,
+          "vs": 29,
+          "field": {
+            "af": "Gelowig sonder gesien het, is salig",
+            "en": "Blessed are those who have not seen and have believed"
+          }
+        },
+        {
+          "book": "heb",
+          "ch": 11,
+          "vs": 1,
+          "field": {
+            "af": "Geloof is die werklikheid van wat ons hoop",
+            "en": "Faith is being certain of what we hope for"
+          }
+        },
+        {
+          "book": "mrk",
+          "ch": 9,
+          "vs": 24,
+          "field": {
+            "af": "Ek sê vir jou: staan op en kom",
+            "en": "I tell you, get up and come"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "As jy wonder of jy reg glo, weet jy reeds een ding: ’n dobbelaar of iemand koud onverskillig sou nie hierdie vraag stel nie. Jou twyfel bevat nog ’n begeerte om God te vind, en die Bybel sê die Here soek na mense wat Sy soek.",
+          "prayer": "Hereer, ek twyfel en ek weet nie altyd nie. Ek glo nog, maar my hart is onseker. Hou my vas aan wat ek nie kan sien nie, en laat my twyfel my nader aan U bring eerder as om my weg te dryf.",
+          "step": "Skryf jou twyfel vandag op — die dinge wat jy nie kan glo of nog nie glo nie — en bring dit voor die Here in gebed met jou hele hart, sonder om te wag tot jy voel dit is opgelos."
+        },
+        "en": {
+          "reflect": "If you wonder whether you truly believe, you already know one thing: a gambler or a coldly indifferent person would never ask this question. Your doubt still contains a desire to find God, and Scripture says God seeks those who seek him.",
+          "prayer": "Lord, I doubt and I am not always sure. I still believe, but my heart is unsteady. Hold fast to what I cannot see, and let my doubt bring me nearer to you instead of driving me away.",
+          "step": "Write your doubt down today — the things you cannot believe or do not yet believe — and bring it before the Lord in prayer with your whole heart, without waiting until you feel it is resolved."
+        }
+      }
+    },
+    {
+      "slug": "oordink",
+      "group": "emosies",
+      "title": {
+        "af": "Oordink: wanneer die gedagte draai en draai",
+        "en": "Overthinking: when thoughts turn and turn"
+      },
+      "intro": {
+        "af": "’n Vrag keer keer terug: wat as ek die werk verloor het? Wat as sy van my loop? Jy weet logika, maar die hart maak duisende rondtes sonder antwoord.",
+        "en": "A question keeps returning: what if I lose my job? What if she leaves me? You know logic, but the heart makes thousands of rounds with no answer."
+      },
+      "passages": [
+        {
+          "book": "php",
+          "ch": 4,
+          "vs": 6,
+          "field": {
+            "af": "Bees niks, maar dink aan alles",
+            "en": "Be anxious about nothing, but think about everything"
+          }
+        },
+        {
+          "book": "mat",
+          "ch": 6,
+          "vs": 34,
+          "field": {
+            "af": "Maak nie môre bekommerd nie",
+            "en": "Do not worry about tomorrow"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 5,
+          "vs": 7,
+          "field": {
+            "af": "Gooi al julle sorg op Hom",
+            "en": "Cast all your anxiety on him"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Oordink is nie net ’n denkfout nie — dit is ’n liggaam wat nie rus kry nie: ’n ma wat nie kan slaap nie, ’n man wie se hart hard slaan, ’n maag wat om die slegste vrees. Dit het dikwels ’n liggaamlike oorsaak — angs, tiroid, medikasie of slaaptekort — en dit verdien regte hulp, net nie net gebed nie.",
+          "prayer": "Hereer, ek is moeg om te draai aan dinge wat ek nie kan verander nie. Gee my rus vir vanjaand se nag, en lei my denke terug na wat werklik in my hande is.",
+          "step": "Skryf jou kwellende gedagte op en sorteer dit vandag: watter een kan jy hierdie week hanteer en watter een moet jy aan iemand anders oorhandig? Bel jou huisarts oor angs en slaap, of bel SADAG op 0800 567 567 as jy nie weet waar om te begin nie."
+        },
+        "en": {
+          "reflect": "Overthinking is not only a thinking error — it is a body that cannot rest: a mother who cannot sleep, a man whose heart races, a stomach clenched by fear of the worst. It often has a physical cause — anxiety, thyroid, medication or lack of sleep — and it deserves real help, not only prayer.",
+          "prayer": "Lord, I am tired of turning over things I cannot change. Give me rest for tonight, and lead my thoughts back to what is actually in my hands.",
+          "step": "Write your troubling thoughts down and sort them today: which can you handle this week and which must you hand to someone else? Call your GP about anxiety and sleep, or phone SADAG on 0800 567 567 if you do not know where to start."
+        }
+      }
+    },
+    {
+      "slug": "skuldgevoel",
+      "group": "emosies",
+      "title": {
+        "af": "Skuldgevoel en skaamte: die twee wat uitmekaar groei",
+        "en": "Guilt and shame: the two that grow apart"
+      },
+      "intro": {
+        "af": "Skuld sê: ek het iets verkeerds gedoen. Skaamte sê: ek is iets verkeerds. Die een kan verander word; die ander moet uit die lig gewas word.",
+        "en": "Guilt says: I have done something wrong. Shame says: I am something wrong. One can be changed; the other must be washed out of the light."
+      },
+      "passages": [
+        {
+          "book": "1jn",
+          "ch": 1,
+          "vs": 9,
+          "field": {
+            "af": "As ons belyd, is Hy getrou om ons te vergewe",
+            "en": "If we confess, he is faithful and just to forgive"
+          }
+        },
+        {
+          "book": "rom",
+          "ch": 8,
+          "vs": 1,
+          "field": {
+            "af": "Daar is nou geen verdoemeling vir die wat in Christus is",
+            "en": "There is now no condemnation for those in Christ"
+          }
+        },
+        {
+          "book": "zec",
+          "ch": 3,
+          "vs": 1,
+          "field": {
+            "af": "Ons geregtigheid, Here, nie hul s’n",
+            "en": "Our righteousness, Lord, and not theirs"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Skaamte is diepder as skuld: dit sê dat jy nie waardig is nie en lei tot versteek, isolasie en selfstraf. ’n Groot aantal mense dra jare se skuld — ’n daad, ’n verhouding, ’n kind se siekte — sonder om dit ooit aan iemand te vertel. Skuldbesef is ’n teken van ’n gewete; skaamte wat vir altyd bly is ’n ketting.",
+          "prayer": "Hereer, ek dra skuld wat ek nie meer kan dra nie. Ek belyden nou voor U wat ek voor almal versteek het, en ek erken dat U my vergewe en my ’n nuwe begin gee. Was my hart en maak my skoon.",
+          "step": "Spreek vandag belydenis uit voor iemand wat jy vertrou — ’n pastoor, ’n kerkberaadslid of ’n professionele berader — en as praat nie maklik voel nie, bel SADAG op 0800 567 567 of Higher Health op 0800 36 36 36."
+        },
+        "en": {
+          "reflect": "Shame is deeper than guilt: it says you are not worthy and leads to hiding, isolation and self-punishment. Many people carry years of guilt — an act, a relationship, a child’s illness — without ever telling anyone. Guilt is the sign of a conscience; shame that stays forever is a chain.",
+          "prayer": "Lord, I carry guilt I cannot bear any more. I confess now before you what I have hidden from everyone, and I agree that you forgive me and give me a new beginning. Wash my heart and make me clean.",
+          "step": "Speak your confession aloud today to someone you trust — a pastor, a church counsellor or a professional counsellor — and if talking feels impossible, phone SADAG on 0800 567 567 or Higher Health on 0800 36 36 36."
+        }
+      }
+    },
+    {
+      "slug": "trots",
+      "group": "emosies",
+      "title": {
+        "af": "Trots: wanneer trots ’n stewigsel word",
+        "en": "Pride: when pride becomes a uniform"
+      },
+      "intro": {
+        "af": "Trots kan oor twee goed wees: ’n gesonde waardering van wat God in jou gedoen het, en ’n trotse standpunt dat jy nie hulp nodig het nie. Die tweede een maak die Here se stem vir jou stem.",
+        "en": "Pride can be about two things: a healthy appreciation of what God has done in you, and a defiant stance that you do not need help. The second makes God’s voice become your voice."
+      },
+      "passages": [
+        {
+          "book": "pro",
+          "ch": 11,
+          "vs": 2,
+          "field": {
+            "af": "Wie kan teen Hom standhou sonder sy wil?",
+            "en": "Who can resist him without his will?"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 5,
+          "vs": 5,
+          "field": {
+            "af": "God verwerp die trotsiges maar gee genade aan die nederiges",
+            "en": "God opposes the proud but gives grace to the humble"
+          }
+        },
+        {
+          "book": "luk",
+          "ch": 14,
+          "vs": 11,
+          "field": {
+            "af": "Wie homself verhef, sal verlaag word",
+            "en": "Whoever humbles himself will be exalted"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Trots in ’n land met sulke ongelykheid kan maklik verdedig word: ek het my huis, my kinders en my posisie omdat ek hard gewerk het. Maar die hart wat nie kan belyden wanneer dinge misgaan nie, word ook nooit vry om hulp te vra nie. Dit gaan nie oor minheid nie; dit gaan oor ’n hart wat altyd wil reg wees.",
+          "prayer": "Hereer, my hart is trots en ek weet dit. Gee my die moed om te sê ek weet nie, om hulp te vra, en om te erken dat alles wat ek is uit U afkom.",
+          "step": "Doen vandag een ding wat ’n trotse mens sou vermy — vra om hulp, sê ek weet nie, of erken ’n fout — en merk dat die wêreld nie ingstort nie."
+        },
+        "en": {
+          "reflect": "Pride in a country with such inequality can be easily defended: I have my house, my children and my position because I worked hard. But the heart that cannot admit when things go wrong is also never free to ask for help. This is not about being humble; it is about a heart that always wants to be right.",
+          "prayer": "Lord, my heart is proud and I know it. Give me courage to say I do not know, to ask for help, and to admit that everything I am comes from you.",
+          "step": "Do one thing today a proud person would avoid — ask for help, say I do not know, or admit a fault — and notice that the world does not collapse."
+        }
+      }
+    },
+    {
+      "slug": "vrees",
+      "group": "emosies",
+      "title": {
+        "af": "Vrees vir die toekoms: wanneer sekuriteit verdwyn",
+        "en": "Fear of the future: when security disappears"
+      },
+      "intro": {
+        "af": "As jy werkloos is, as die maandelonkse nie genoeg is nie, as die water afgesny is of die kosprys styg, word vrees ’n permanente agtergrond. Die vraag is nie net hoe sal ek vandag sorg nie, maar wie sal ek oor ’n jaar wees.",
+        "en": "If you are unemployed, if the monthly income is not enough, if the water is cut or the food price rises, fear becomes a permanent background. The question is not only how will I provide today, but who will I be in a year."
+      },
+      "passages": [
+        {
+          "book": "pro",
+          "ch": 10,
+          "vs": 22,
+          "field": {
+            "af": "Die Here is my brug en my skild",
+            "en": "The Lord is my fortress and my shield"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 23,
+          "vs": 4,
+          "field": {
+            "af": "Al gaan ek deur die dal van die dood se skaduwee",
+            "en": "Even though I walk through the valley of death"
+          }
+        },
+        {
+          "book": "mat",
+          "ch": 6,
+          "vs": 31,
+          "field": {
+            "af": "Maak nie môre bekommerd nie",
+            "en": "Do not worry about tomorrow"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Hierdie vrees is nie net geestelik nie — dit is werklik. Werkloosheid, werkse onsekerheid en uitgesluitheid kan mense werklik siek maak, met paniekaanvalle en ’n onvermoë om te slaap. Die Bybel se vrede is nie ’n belofte dat daar nooit sal afval nie; dit is die wete dat jy nooit alleen sal staan nie.",
+          "prayer": "Hereer, ek is bang vir môre. Ek weet nie waar die volgende maand se werk vandaan kom nie. Gee my rus in U hande en die moed om vandag net die volgende stap te doen.",
+          "step": "Skryf jou drie grootste vrese vandag op en bring hulle voor die Here by persoonlike naam, en maak dan net een praktiese stap vir die komende week — ’n aansoek, ’n telefoonoproep of ’n SASSA-navraag op 0800 60 10 11."
+        },
+        "en": {
+          "reflect": "This fear is not only spiritual — it is real. Unemployment, job insecurity and exclusion can genuinely make people ill, with panic attacks and an inability to sleep. The Bible’s peace is not a promise that nothing will ever go wrong; it is knowing you will never stand alone.",
+          "prayer": "Lord, I am afraid of tomorrow. I do not know where next month’s work will come from. Give me rest in your hands and courage to take only the next step today.",
+          "step": "Write down your three biggest fears today and bring them to the Lord by name, then take just one practical step for the coming week — an application, a phone call, or a SASSA enquiry on 0800 60 10 11."
+        }
+      }
+    },
+    {
+      "slug": "gebedslewe",
+      "group": "geloof",
+      "title": {
+        "af": "Gebedslewe: wanneer die hemel stil bly",
+        "en": "Unanswered prayer: when heaven stays quiet"
+      },
+      "intro": {
+        "af": "Jy bid vir werk, bid vir genesing, bid vir ’n kind — en jy hou aan bid. Niks gebeur nie. Nou is die vraag nie of God luister nie, maar of Hy luister en stil is.",
+        "en": "You pray for work, you pray for healing, you pray for a child — and you keep praying. Nothing happens. Now the question is not whether God is listening, but whether he is listening and silent."
+      },
+      "passages": [
+        {
+          "book": "psa",
+          "ch": 10,
+          "vs": 2,
+          "field": {
+            "af": "My Here, hoekom het U my verlaat?",
+            "en": "My God, why have you forsaken me?"
+          }
+        },
+        {
+          "book": "lam",
+          "ch": 3,
+          "vs": 22,
+          "field": {
+            "af": "Sy vertroostings werk nooit op nie",
+            "en": "His compassions never fail"
+          }
+        },
+        {
+          "book": "heb",
+          "ch": 11,
+          "vs": 6,
+          "field": {
+            "af": "Wie God soek, vind Hom",
+            "en": "The one who seeks God finds him"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "’n Lang gebedslewe is een van die pynlikste toetsings wat ’n gelowige kan beleef. Dit is nie altyd ’n straf nie, maar dit is wel ’n gebied van verdriet, en jy mag hierdie verdriet voor God bring sonder om te doen soos jy wou dit makliker was. Die Bybel selfs is vol klag oor ’n God wat stil is.",
+          "prayer": "Hereer, ek bid al so lank en ek verstaan nie. Ek is moeg om te bid sonder antwoord. Bly by my in hierdie stilte, en wys my wat ek mis, ook al is dit nou net ’n vraag.",
+          "step": "Skryf jou gebed wat jy al lank opdra vandag op en lees dit elke oggend vir twee weke lank, en as jy angs of moegheid ervaar, bel Higher Health op 0800 36 36 36 of SADAG op 0800 567 567 vir professionele gesondheidsberading."
+        },
+        "en": {
+          "reflect": "A long unanswered prayer is one of the most painful tests a believer can face. It is not always a punishment, but it is a place of grief, and you may bring this grief to God without pretending you wish it were easier. Scripture itself is full of lament over a silent God.",
+          "prayer": "Lord, I have prayed so long and I do not understand. I am tired of praying without an answer. Stay with me in this silence, and show me what I am missing, even if for now it is only a question.",
+          "step": "Write down today the prayer you have carried for a long time and read it every morning for two weeks, and if you are experiencing anxiety or exhaustion, phone Higher Health on 0800 36 36 36 or SADAG on 0800 567 567 for professional health counselling."
+        }
+      }
+    },
+    {
+      "slug": "teregkomst",
+      "group": "geloof",
+      "title": {
+        "af": "Teregkomst: wanneer jy stadig van die pad afdwaal",
+        "en": "Drifting: when you slowly walk away"
+      },
+      "intro": {
+        "af": "Niemand loop weg met ’n groot besluit nie. Mense loop weg met ’n gemiste diens, ’n uitgestelde gebed, ’n paar nuwe vriende — en een dag merk hulle dat hulle ver van hulle ou kerk en hulle ou God is.",
+        "en": "Nobody walks away with a big decision. People walk away with a missed service, a delayed prayer, a few new friends — and one day they realise they are far from their old church and their old God."
+      },
+      "passages": [
+        {
+          "book": "heb",
+          "ch": 2,
+          "vs": 1,
+          "field": {
+            "af": "Gee aandag, sodat jy nie sal struikel nie",
+            "en": "Pay attention, so that you will not slip away"
+          }
+        },
+        {
+          "book": "amo",
+          "ch": 8,
+          "vs": 12,
+          "field": {
+            "af": "Neem jou lewe op as ’n wagkansie",
+            "en": "Take hold of your life as a watchman"
+          }
+        },
+        {
+          "book": "jon",
+          "ch": 2,
+          "vs": 1,
+          "field": {
+            "af": "Jy kan nie langer sê jy ken die Here nie",
+            "en": "You can no longer say you do not know the Lord"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Afdwaal is meestal nie ’n daad van ontrou nie maar ’n proses van afwesigheid: jy is moeg, jy is gekrenk, jy het verander. Die Bybel waarskuu vir die wat ongemerk verval, en selfs Petrus het geval. Die belofte is nie dat jy nooit struikel nie, maar dat jy opstaan.",
+          "prayer": "Hereer, ek het stadig van U af weggedwaal. Ek belyden dit sonder uitvlou. Trek my terug na U, en gee my in hierdie seisoen ’n mens wat my terugroep en by my bly.",
+          "step": "Kies vandag een kerk of gebedsgroep naby jou en gaan — en stuur vir iemand wat na jou kyk, ’n ouer, ’n kind of ’n vriend, ’n boodskap dat jy wil hê hulle hou aan mekaar vas."
+        },
+        "en": {
+          "reflect": "Drifting is usually not an act of betrayal but a process of absence: you are tired, hurt or changed. Scripture warns about those who fall away without noticing, and even Peter stumbled. The promise is not that you will never fall, but that you can get up.",
+          "prayer": "Lord, I have slowly drifted away from you. I confess it without excuses. Pull me back to you, and give me in this season a person who will call me back and stay with me.",
+          "step": "Choose one church or prayer group near you today and go — and send a message to someone who checks on you, a parent, a child or a friend, saying you want them to stay connected."
+        }
+      }
+    },
+    {
+      "slug": "wat-is-nu-jou",
+      "group": "geloof",
+      "title": {
+        "af": "Wat is nou? Nadat jy in die oë gekyk het",
+        "en": "What now? After a moral failure"
+      },
+      "intro": {
+        "af": "Dit kan ’n verhouding wees, ’n leuens, drank of geweld — iets wat jy nooit sou wou hê in die son nie. En nou is die vraag nie hoe om te vergewe nie, maar of daar nog ’n pad is.",
+        "en": "It may be a relationship, a lie, alcohol or violence — something you never wanted in the light of day. And now the question is not how to be forgiven, but whether there is still a way forward."
+      },
+      "passages": [
+        {
+          "book": "luk",
+          "ch": 15,
+          "vs": 20,
+          "field": {
+            "af": "Die seun het opgestaan en na sy paas gegaan",
+            "en": "The son got up and went to his father"
+          }
+        },
+        {
+          "book": "jhn",
+          "ch": 8,
+          "vs": 32,
+          "field": {
+            "af": "Die waarheid sal julle vrymaak",
+            "en": "The truth will set you free"
+          }
+        },
+        {
+          "book": "rom",
+          "ch": 8,
+          "vs": 1,
+          "field": {
+            "af": "Daar is nou geen verdoemeling vir die wat in Christus is",
+            "en": "There is now no condemnation for those in Christ"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "’n Morele mislukking het twee kante: ’n skuld wat belydenis en verandering vra, en ’n mens wat deur die gevolge moet leef. Baie bind dié twee saam, en die siel raak oorweldig. Maar belydenis sonder verandering is teater, en genade sonder waarheid is mishandeling. ’n Getrouwe pastor of berader sal altyd albei doen.",
+          "prayer": "Hereer, ek het gebreek wat ek nooit moes gebreek het nie, en ek dra die skuld so swaar dat ek dink ek is ontslaan. Was my hart skoon en gee my die krag om die regte ding te doen, al as dit vir almal ongemaklik is.",
+          "step": "Spreek hierdie week met ’n pastoor of kerkberaadslid en vertel die waarheid; en as jy drink of dwelms gebruik, bel 0800 12 13 14 of AA op 0861 435 722 — as jy alkohol drink, stop nooit plotseling sonder mediese raad nie."
+        },
+        "en": {
+          "reflect": "A moral failure has two sides: a guilt that requires confession and change, and a person who has to live with the consequences. Many tie these two together and the soul becomes overwhelmed. But confession without change is theatre, and grace without truth is abuse. A faithful pastor or counsellor will always do both.",
+          "prayer": "Lord, I broke what I should never have broken, and I carry the guilt so heavily that I think I am disqualified. Wash my heart clean and give me strength to do the right thing, even if it is uncomfortable for everyone.",
+          "step": "Speak with a pastor or church counsellor this week and tell the truth; and if you drink or use substances, call 0800 12 13 14 or AA on 0861 435 722 — if you drink alcohol, never stop suddenly without medical advice."
+        }
+      }
+    },
+    {
+      "slug": "kerk-verloor",
+      "group": "geloof",
+      "title": {
+        "af": "Wanneer die kerk jou seer maak",
+        "en": "When the church hurts you"
+      },
+      "intro": {
+        "af": "Die kerk is nie ’n gebou wat ’n mens met geduld kan verlaat sonder hartseer te laat nie. Baie is deur pastoor, leiers of medegelowe se woorde of stilte gekwes en voel God het hulle verlaat.",
+        "en": "The church is not a building a person can walk out of without heartache. Many have been wounded by a pastor, leaders or fellow members’ words or silence and feel that God has left them."
+      },
+      "passages": [
+        {
+          "book": "psa",
+          "ch": 147,
+          "vs": 3,
+          "field": {
+            "af": "Hy genees die gebreekte harte",
+            "en": "He heals the brokenhearted"
+          }
+        },
+        {
+          "book": "1co",
+          "ch": 1,
+          "vs": 10,
+          "field": {
+            "af": "Moenie julle geskei word nie",
+            "en": "Do not be divided"
+          }
+        },
+        {
+          "book": "jhn",
+          "ch": 10,
+          "vs": 11,
+          "field": {
+            "af": "Die goeie herder gee sy lewe vir die skape",
+            "en": "The good shepherd lays down his life for the sheep"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wanneer die kerk seer maak, is daar twee waarhede: die kerk is onvolmaak en menslik, en die Here is aan geen kerk gebonde nie. Jy hoef nie ’n dwapse besluit te neem om ’n ander kerk of niks te kies nie, maar jy mag ook nie jare in ’n plek bly waar jy elke diens siek opstaan nie.",
+          "prayer": "Hereer, ek is deur mense wat van jou naam gebruik gemaak het seer gemaak, en ek voel ek het jou verlaat. Ek weet U is aan hulle of aan geen kerk gebonde nie. Genees my hart en wys my waar U werk.",
+          "step": "Tel vandag hoeveel dae dit is sedert jy laaste in ’n kerk was en maak net een kontak — bel die pastoor, stuur ’n boodskap aan ’n jeugbediening of gaan na ’n ander kerk se midweekses; en as jy mishandeling ervaar, bel die GBV Command Centre op 0800 428 428."
+        },
+        "en": {
+          "reflect": "When the church hurts, there are two truths: the church is imperfect and human, and the Lord is not bound to any church. You do not need to make a rash decision to join another church or none, but neither do you need to stay for years in a place where every service leaves you sick.",
+          "prayer": "Lord, I have been hurt by people who used your name, and I feel you have left me. I know you are not bound to them or to any church. Heal my heart and show me where you work.",
+          "step": "Count today how many days it has been since you last attended a church and make just one contact — call the pastor, message a youth ministry, or attend another church’s midweek meeting; and if you are experiencing abuse, phone the GBV Command Centre on 0800 428 428."
+        }
+      }
+    },
+    {
+      "slug": "teologie-verkeer",
+      "group": "geloof",
+      "title": {
+        "af": "Wanneer jy met jou kerk verskil oor die leer",
+        "en": "When you disagree with your church on doctrine"
+      },
+      "intro": {
+        "af": "Diskwessies oor diepte, doop of die aard van God kan mense se huwelike en vriendskappe skaartrek sonder dat almal verlore gaan. Die vraag is nie wie reg is nie, maar hoe om te verskil sonder haat.",
+        "en": "Debates over depth, baptism or the nature of God can shred friendships and marriages without anyone being lost. The question is not who is right, but how to disagree without hate."
+      },
+      "passages": [
+        {
+          "book": "act",
+          "ch": 15,
+          "vs": 9,
+          "field": {
+            "af": "Moenie ’n juk oplê wat ons nie kan dra nie",
+            "en": "Do not put a yoke on us that we cannot bear"
+          }
+        },
+        {
+          "book": "rom",
+          "ch": 14,
+          "vs": 19,
+          "field": {
+            "af": "Die vrede van die geloof laat ons volbring",
+            "en": "The peace of faith allows us to be fully convinced"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 3,
+          "vs": 15,
+          "field": {
+            "af": "Laat die Here wat in julle harte woon, die oordeel wees",
+            "en": "Let the Lord who is in your hearts be the judge"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "In ’n land met baie denominasies en tribale spanninge is teologiese verskil nie net teologiese nie; dit raak gesag, kultuur en identiteit. Die Bybel waarskuu teen ’n juk van dwaling wat mense in lagering plaas. Die regte antwoord is altyd die waarheid in liefde, nie die waarheid wat triomfeer nie.",
+          "prayer": "Hereer, gee my die woorde om te verskil sonder om mense se harte te breek, en gee my die moed om die waarheid te beleef selfs as dit kos. Gee my wysheid om te weet wat om te behou en wat om te laat vaar.",
+          "step": "Skryf die een saak waarop jy nie kan saamstem vandag op en praat binne tien dae daaroor met een vertroude broer of suster in die kerk; en as jy binne ’n kerk gedwing voel om teen jou gewete te doen, bel die GBV Command Centre op 0800 428 428."
+        },
+        "en": {
+          "reflect": "In a country with many denominations and tribal tension, theological disagreement is not only theological; it touches authority, culture and identity. Scripture warns against a yoke of error that puts people under bondage. The answer is always truth in love, not truth that triumphs.",
+          "prayer": "Lord, give me words to disagree without breaking anyone’s heart, and give me courage to live the truth even at cost. Give me wisdom to know what to keep and what to lay down.",
+          "step": "Write down today the one issue on which you cannot agree and discuss it within ten days with a trusted brother or sister in the church; and if you feel pressured inside a church to act against your conscience, phone the GBV Command Centre on 0800 428 428."
+        }
+      }
+    },
+    {
+      "slug": "godsdiens-nood",
+      "group": "geloof",
+      "title": {
+        "af": "Godsdiens-nood: wanneer jy wil sien dat God beweeg",
+        "en": "Desperate to see God move"
+      },
+      "intro": {
+        "af": "Soms bid jy nie vir iets nie — jy bid dat God op sy eie tyd sal ingryp, en jy is moeg om te wag. Hierdie is een van die meeste desperate plekke waar ’n gelowige kan staan.",
+        "en": "Sometimes you pray not for something — you pray that God will act in his own time, and you are tired of waiting. This is one of the most desperate places a believer can stand."
+      },
+      "passages": [
+        {
+          "book": "mrk",
+          "ch": 11,
+          "vs": 2,
+          "field": {
+            "af": "Laat iets vir julle geskied wat jy nie voorsien het nie",
+            "en": "Let something happen that you could not foresee"
+          }
+        },
+        {
+          "book": "hab",
+          "ch": 2,
+          "vs": 3,
+          "field": {
+            "af": "In die wagtyd moet ons nie stil wees nie",
+            "en": "In the waiting we must not be silent"
+          }
+        },
+        {
+          "book": "act",
+          "ch": 1,
+          "vs": 8,
+          "field": {
+            "af": "Julle sal krag ontvang wanneer die Gees op julle neerdaal",
+            "en": "You will receive power when the Spirit comes on you"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "In ’n land waar beloftes dikwels bly hang sonder antwoord, is die anker van hoop nie dat jy dinge kry nie — dit is dat jy in die tyd self nie vergeet wie jy is nie. ’n Seisoen sonder gebed wat tot verandering lei kan ook ’n seisoen van diepe afhanklikheid word, maar ’n seisoen van skynreligie sonder diepte maak dinge net erger.",
+          "prayer": "Hereer, ek is moeg van wag. Kom asseblief na my tuis, my werk, my siekte. Ek weet nie hoe langer ek kan hou nie, maar ek weet U kan verander wat ek nie kan verander nie.",
+          "step": "Spreek vandag die vyftien-minute-gebed uit — al is dit net Hereer, ek is moeg — en hou dit elke dag vir ’n maand vol; en as jy met depressie of wanhoop te make het, bel SADAG op 0800 567 567 of Lifeline op 0861 322 322."
+        },
+        "en": {
+          "reflect": "In a country where promises often hang unanswered, the anchor of hope is not that you will get things — it is that in the waiting you do not forget who you are. A season of prayer that does not lead to change can also be a season of deep dependence, but a season of religious appearance without depth makes things worse.",
+          "prayer": "Lord, I am tired of waiting. Please come to my home, my work, my sickness. I do not know how much longer I can hold on, but I know you can change what I cannot change.",
+          "step": "Speak out the fifteen-minute prayer today — even if it is just Lord, I am tired — and keep it up daily for a month; and if you are dealing with depression or hopelessness, phone SADAG on 0800 567 567 or Lifeline on 0861 322 322."
+        }
+      }
+    },
+    {
+      "slug": "getuienis-vrees",
+      "group": "geloof",
+      "title": {
+        "af": "Vrees om van jou geloof te getuig",
+        "en": "Fear of speaking up for your faith"
+      },
+      "intro": {
+        "af": "In ’n land waar mense graag oor godsdiens praat maar bang is om onder oë te val, is getuienis vir baie gelowiges ’n stille stryd. Jy glo, maar jy praat net wanneer jy veilig voel.",
+        "en": "In a country where people readily talk about religion but fear being noticed, witnessing is a silent battle for many believers. You believe, but you only speak when you feel safe."
+      },
+      "passages": [
+        {
+          "book": "mat",
+          "ch": 5,
+          "vs": 14,
+          "field": {
+            "af": "Julle is die lig van die wêreld",
+            "en": "You are the light of the world"
+          }
+        },
+        {
+          "book": "heb",
+          "ch": 13,
+          "vs": 6,
+          "field": {
+            "af": "Ons is nie skaam om van Hom te getuig nie",
+            "en": "We are not ashamed to testify about him"
+          }
+        },
+        {
+          "book": "jhn",
+          "ch": 15,
+          "vs": 27,
+          "field": {
+            "af": "Ek het al die dinge as getuienis gesel",
+            "en": "I have said all these things as my testimony"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Vrees om te getuig is nie altyd lafheid nie — dit kan werklike beleefde pyn wees: mense wat gedreig of uitgesluit is, of ’n mens wat van hul godsdiens gehaat is. Maar ook ’n lewe wat nooit praat nie, laat die Here se lig onsigbaar. Getuienis beteken nie om te veg nie; dit beteken om nie stil te wees wanneer stilheid mense benadel nie.",
+          "prayer": "Hereer, ek is bang om te praat. Gee my die krag om getrou te wees sonder om te skrik, en gee my woorde wat kalm en duidelik is waar mense my om vra.",
+          "step": "Doen vandag een klein ding: as iemand jou oor jou geloof vra, antwoord eerlik in een sin — byvoorbeeld ek is ’n christen en ek vertrou op Jesus — en as jy te bang is om te praat, praat eers met iemand wat jy vertrou oor die vrees voordat jy in die wêreld praat."
+        },
+        "en": {
+          "reflect": "Fear of witnessing is not always cowardice — it can be real lived pain: people who have been threatened or excluded, or a person hated for their faith. But also a life that never speaks leaves the Lord’s light unseen. Witnessing does not mean fighting; it means refusing to be silent when silence harms people.",
+          "prayer": "Lord, I am afraid to speak. Give me strength to be faithful without being afraid, and give me words that are calm and clear when people ask me.",
+          "step": "Do one small thing today: when someone asks about your faith, answer honestly in one sentence — for example, I am a Christian and I trust in Jesus — and if you are too afraid to speak, first talk to someone you trust about the fear before speaking to the world."
+        }
+      }
+    },
+    {
+      "slug": "dagelikse-geloof",
+      "group": "geloof",
+      "title": {
+        "af": "Hoe om die geloof op ’n Dinsdag te leef",
+        "en": "How to actually live the faith on a Tuesday"
+      },
+      "intro": {
+        "af": "Die geloof word op sondae gepreek, maar die week is lank: die skoolbus wat nie opdaag nie, die kliënt wat beledig, die ma wat siek is, die rekening wat nie deurkom nie. Hoe leef jy die geloof op ’n gewone Dinsdag?",
+        "en": "The faith is preached on Sundays, but the week is long: the school bus that does not come, the client who insults you, the mother who is ill, the bill that will not fit. How do you live the faith on an ordinary Tuesday?"
+      },
+      "passages": [
+        {
+          "book": "mic",
+          "ch": 6,
+          "vs": 8,
+          "field": {
+            "af": "Doen geregtigheid, liefde betoon en wandel nederig",
+            "en": "Act justly, love mercy and walk humbly"
+          }
+        },
+        {
+          "book": "col",
+          "ch": 3,
+          "vs": 23,
+          "field": {
+            "af": "Werk uit jou hart, asof vir die Here werk",
+            "en": "Work heartily, as working for the Lord"
+          }
+        },
+        {
+          "book": "jhn",
+          "ch": 13,
+          "vs": 34,
+          "field": {
+            "af": "Julle moet mekaar liefhê",
+            "en": "Love one another"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Die meeste gelowiges in Suid-Afrika woon Dinsdae wat nie soos die kerk voel nie — ’n moege ma, ’n werkloose kind, werk wat nie betaal nie, ’n verhouding wat bars. Die geloof is nie ’n gevoel nie; dit is ’n keuse om geregtigheid, genade en geduld te oefen in gewone dinge, selfs wanneer jy nie voel nie.",
+          "prayer": "Hereer, vandag was gewone en ek was moeg, en ek wil net vir jou wees wat ek nie is nie. Gee my wysheid om vandag een mens se hart te raak, en gee my die moegheid van hierdie lewe aan jou oor.",
+          "step": "Kies vandag een mens — ’n werker by die hek, ’n ouer, ’n vreemdeling in die tou — en doen vir hul een onsigbare ding: betaal hul skoolgeld, dra hul tas, of bid hardop vir hul. Onthou, ’n Dinsdag is nie te klein vir God se hande nie."
+        },
+        "en": {
+          "reflect": "Most believers in South Africa live Tuesdays that do not feel like church — a tired mother, an unemployed child, work that does not pay, a relationship that is cracking. Faith is not a feeling; it is a decision to practise justice, mercy and patience in ordinary things, even when you do not feel like it.",
+          "prayer": "Lord, today was ordinary and I was tired, and I just want to be what I am not. Give me wisdom to touch one person’s heart today, and give me the weariness of this life over to you.",
+          "step": "Choose one person today — a worker at the gate, a parent, a stranger in the queue — and do one invisible thing for them: pay their school fees, carry their bag, or pray for them aloud. Remember, a Tuesday is not too small for God’s hands."
+        }
+      }
+    },
+    {
+      "slug": "huweliksgeskis",
+      "group": "verhoudings",
+      "title": {
+        "af": "Wanneer die vrede in die huwelik verdwyn",
+        "en": "When the peace in a marriage disappears"
+      },
+      "intro": {
+        "af": "Die meeste getroude kure is nie in die bedrag van die konfliek nie, maar in die moegheid daarom. Hierdie blad help jou om die verskil van geskis te beleef sonder om die huwelik te laat verloor.",
+        "en": "Most married couples are not destroyed by the amount of conflict, but by the exhaustion it creates. This page helps you to handle that difference without losing the marriage."
+      },
+      "passages": [
+        {
+          "book": "eph",
+          "ch": 4,
+          "vs": 2,
+          "field": {
+            "af": "Dra mekaar met geduld",
+            "en": "Bear one another with patience"
+          }
+        },
+        {
+          "book": "eph",
+          "ch": 4,
+          "vs": 26,
+          "field": {
+            "af": "Woede gee plek aan 'n regheid",
+            "en": "Anger gives way to righteousness"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 4,
+          "vs": 8,
+          "field": {
+            "af": "Liefde bedek alles",
+            "en": "Love covers all"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 19,
+          "vs": 11,
+          "field": {
+            "af": "Die verstandige weet hoe om te wag",
+            "en": "The wise know how to wait"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Hierdie is meestal ’n woordeprobleem wat ’n hartprobleem geword het: jy is nie kwaad op jou man of vrou nie, jy is moeg van jare se geskis oor dieselfde ding. Die Bybel gee vir ons ’n manier om te praat sonder om mekaar te vernietig, maar partyverhoudings los nie op nie — as daar vertrouen gebreek is, of as daar mishandeling is, moet daar hulp en waarheid voorafkom.",
+          "prayer": "Hereer, ons is moeg van ontspanne. Gee vir ons woorde wat genees eerder as woorde wat seermaak, en gee vir ons die krag om ons verskil by die Naam wat reg maak. Leer ons elke dag vir mekaar bly terwyl ons wag.",
+          "step": "Skryf vandag vir jou maat een ding op wat jy wil hê jy voel — slegs een, sonder beskuldiging — en lewer dit persoonlik af. As julle geskis baie kragtig is, bel vandag ’n marriage counsellor of Lifeline (0861 322 322) en maak die eerste afspraak."
+        },
+        "en": {
+          "reflect": "This is usually a word problem that has become a heart problem: you are not angry at your husband or wife, you are tired of years of arguing over the same thing. Scripture gives us a way to speak without destroying each other, but relationships are not repaired by willpower alone — if trust has been broken, or if there is abuse, truth and help must come first.",
+          "prayer": "Lord, we are tired of tension. Give us words that heal instead of words that wound, and give us strength to wait on you. Teach us to keep listening to each other while we wait.",
+          "step": "Write down today one thing you want your spouse to hear you feel — only one, without blame — and deliver it in person. If the conflict is intense, call a marriage counsellor or Lifeline (0861 322 322) today and make the first appointment."
+        }
+      }
+    },
+    {
+      "slug": "ontrou-in-die-huwelik",
+      "group": "verhoudings",
+      "title": {
+        "af": "Wanneer jou vertrouene gebreek word",
+        "en": "When your trust has been broken by betrayal"
+      },
+      "intro": {
+        "af": "Diepte beleef om agteruit te loop op jou eie verhouding. Hierdie is nie ’n dood nie, maar dit is wel ’n wond wat stadig genes moet word.",
+        "en": "It hurts to walk backwards inside your own relationship. This is not a death, but it is a wound that needs time to heal."
+      },
+      "passages": [
+        {
+          "book": "pro",
+          "ch": 4,
+          "vs": 23,
+          "field": {
+            "af": "Bewaar jou hart",
+            "en": "Guard your heart"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 6,
+          "vs": 19,
+          "field": {
+            "af": "’n Leier word afgesny",
+            "en": "A man given to lying is cut off"
+          }
+        },
+        {
+          "book": "jer",
+          "ch": 9,
+          "vs": 24,
+          "field": {
+            "af": "Wie vlug, word teleurgestel",
+            "en": "Those who flee are disappointed"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 1,
+          "vs": 4,
+          "field": {
+            "af": "Troos wat troos uitdeel",
+            "en": "Comfort that spreads comfort"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Die pyn van ontrou is nie net kwaadheid nie — dit is vernietiging van die huis waarin jy elke dag woon. ’n Gelowwe wat ontrou breek moet erken word, met berou, en ’n tyd van grense en waarheid volg; die wond van die vertroude party kan alleen stadig genees, en dis nie ’n ding wat gelyk geregtig word nie.",
+          "prayer": "Hereer, my hart is stuk. Genees die dele wat nie slegs vergeef nie, maar werklik regkom; hou my vas in die tyd van wag, en lei my in waarheid. Gee vir my die moed om hulp te vra waar ek dink ek kan nie.",
+          "step": "Praat vandag met iemand wat nie in die saak betrokke is nie — ’n kerkberaad, ’n pastoor of ’n professionele terapeut — en wang vir ’n plan om die verhouding of die huwelik eerlik aan te spreek."
+        },
+        "en": {
+          "reflect": "The pain of betrayal is not only anger — it is the destruction of the home you live in every day. A friendship that broke trust must be named, repented of, and followed by a season of boundaries and truth; the wounded partner heals slowly, and the betrayal is not something that can be simply repaid in equal measure.",
+          "prayer": "Lord, my heart is shattered. Heal the part that cannot just forgive but must truly be made right; hold me through the waiting and lead me into truth. Give me courage to ask for help where I think I cannot.",
+          "step": "Talk today to someone who is not part of the situation — a church leader, a pastor or a professional therapist — and ask for a plan to address the relationship or the marriage honestly."
+        }
+      }
+    },
+    {
+      "slug": "egbreek",
+      "group": "verhoudings",
+      "title": {
+        "af": "Wanneer die huwelik nie meer kan voortgaan nie",
+        "en": "When a marriage cannot go on"
+      },
+      "intro": {
+        "af": "Skeiding is ’n realiteit waarmee baie mense in Suid-Afrika leef. Hierdie blad is nie ’n vonnis oor jou nie, maar ’n pad van waarheid en genade vorentoe.",
+        "en": "Separation is a reality many people in South Africa live with. This page is not a verdict on you, but a road of truth and grace forward."
+      },
+      "passages": [
+        {
+          "book": "1co",
+          "ch": 7,
+          "vs": 10,
+          "field": {
+            "af": "Die Here sê ’n vrou moet nie van haar man skei nie",
+            "en": "The Lord says a wife must not part from her husband"
+          }
+        },
+        {
+          "book": "mrk",
+          "ch": 10,
+          "vs": 9,
+          "field": {
+            "af": "Laat niemand skei wat God saamgevoeg het",
+            "en": "Let not man separate what God has joined"
+          }
+        },
+        {
+          "book": "eph",
+          "ch": 4,
+          "vs": 32,
+          "field": {
+            "af": "Wees vriendelik en vol genade",
+            "en": "Be kind and compassionate"
+          }
+        },
+        {
+          "book": "luk",
+          "ch": 17,
+          "vs": 3,
+          "field": {
+            "af": "Bekering word vereis voor vergewing",
+            "en": "Repentance is required before forgiveness"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "As ’n huwelik se einde kom, is daar altyd pyn — selfs wanneer die besluit reg is. Die Bybel erken egter nie ’n lewe-met-’n-ander en sê dat ’n pa wedower besoek word om te rou; wanneer misdaad of mishandeling in die huwelik is, mag ’n mens met ’n skoon gewete weggan.",
+          "prayer": "Hereer, ek het reg gewerk en my huwelik gaan stuk. Hou my standhaftig in hierdie besluit en lei my na mense wat wys en veilig is. Gee vir my krag om my kinders en my eie hart te beskerm.",
+          "step": "Skakel vandag Family Legal Advice (tel 066 489 4479 of 066 489 8489) of Lifeline (0861 322 322) vir ’n onafhanklike berad oor jou regte, en reël nie net emmers saam nie — maak ’n konkrete plan vir jou finansies en waar jy gaan woon."
+        },
+        "en": {
+          "reflect": "When a marriage ends there is always pain, even when the decision is right. Scripture does not speak of life as unending defeat, and it says the bereaved is given comfort; and where there is violence or betrayal inside a marriage, a person may leave with a clear conscience.",
+          "prayer": "Lord, I have done right and my marriage has still broken. Keep me steady in this decision and lead me toward wise and safe people. Give me strength to protect my children and my own heart.",
+          "step": "Call Family Legal Advice today (066 489 4479 or 066 489 8489) or Lifeline (0861 322 322) for an independent conversation about your rights, and do more than talk it through — make a concrete plan for your finances and where you will live."
+        }
+      }
+    },
+    {
+      "slug": "mekaar-nie-verstaan",
+      "group": "verhoudings",
+      "title": {
+        "af": "Wanneer jy en jou gesin nie mekaar verstaan nie",
+        "en": "When you and your family do not understand each other"
+      },
+      "intro": {
+        "af": "Soms praat twee mense oor dieselfde huis en mekaar hoor niks nie. Hierdie blad is vir die wat moeg is van telkens vir dieselfde stryd te verduidelik.",
+        "en": "Sometimes two people speak about the same home and hear nothing. This page is for those tired of explaining the same conflict again and again."
+      },
+      "passages": [
+        {
+          "book": "jas",
+          "ch": 1,
+          "vs": 19,
+          "field": {
+            "af": "Luister vinnig, praat stadig",
+            "en": "Be quick to listen, slow to speak"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 3,
+          "vs": 7,
+          "field": {
+            "af": "Wees deegs na jou vrou",
+            "en": "Treat your wife with honour"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 12,
+          "vs": 18,
+          "field": {
+            "af": "Net die hart ken sy eie onrust",
+            "en": "A word spoken rashly pierces like a sword"
+          }
+        },
+        {
+          "book": "eph",
+          "ch": 4,
+          "vs": 29,
+          "field": {
+            "af": "Laat geen rotse woorde uitgaan nie",
+            "en": "Let no harmful words leave your mouth"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wanneer jy altyd die verkeerde ding sê, het die ander nie dalk reg nie — miskien luister hulle net nie soos jy dink nie, of is daar ’n ou pyn onder die woorde. Woorde is nie altyd die probleem nie; partykeer is dikwels ’n beskerming teen ou pyn.",
+          "prayer": "Hereer, ek verstaan nie altyd nie wat in my gesin aangaan. Gee vir ons oë wat waar sien en harte wat geduldig luister. Onthul aan ons wat onder ons geskis versteek.",
+          "step": "Vandag in plaas van ’n bespreking, luister net vir vyf minute sonder te onderbreek en herhaal net: “Ek luister na jou.” Skryf dan voor af hoe jy wou hê dit klink — en lees dit vir een mens wat jy vertrou."
+        },
+        "en": {
+          "reflect": "When you keep saying the wrong thing, the other person is not always wrong — maybe they are not listening as you assume, or an old hurt sits underneath the words. Words are not always the problem; argument is often a cover for an older wound.",
+          "prayer": "Lord, I do not always understand what is happening in my family. Give us eyes that see truly and hearts that listen patiently. Reveal to us what is hidden underneath our conflict.",
+          "step": "Instead of a conversation today, listen for five minutes without interrupting and only say, “I am listening to you.” Then write down how you wish you were speaking — and read it to one person you trust."
+        }
+      }
+    },
+    {
+      "slug": "ouers-en-volwasse-kinders",
+      "group": "verhoudings",
+      "title": {
+        "af": "Wanneer jou kinders volwasse word en jy staan voor ’n muur",
+        "en": "When your children grow up and you hit a wall"
+      },
+      "intro": {
+        "af": "Die tyd wanneer kinders volwasse word, is vir ouers net so moeilik as wat dit vir kinders was. Hierdie blad help jou om los te laat sonder om op te gee.",
+        "en": "The season when children become adults is as hard for parents as it was for them. This page helps you to let go without giving up."
+      },
+      "passages": [
+        {
+          "book": "eph",
+          "ch": 6,
+          "vs": 4,
+          "field": {
+            "af": "Kies teregt reg op die Here se wil nie",
+            "en": "Fathers, bring them up in the training of the Lord"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 22,
+          "vs": 6,
+          "field": {
+            "af": "Richt die kind se pad",
+            "en": "Start the child’s path"
+          }
+        },
+        {
+          "book": "heb",
+          "ch": 13,
+          "vs": 8,
+          "field": {
+            "af": "Jesus Christis gister en vandag is dieselfde",
+            "en": "Jesus Christ is the same yesterday and today"
+          }
+        },
+        {
+          "book": "luk",
+          "ch": 2,
+          "vs": 51,
+          "field": {
+            "af": "Hy was ondergeskik aan sy ouers",
+            "en": "He was subject to his parents"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "As jou kinders se besluite jou brein breek, is die smaak van onverdiende minagting moeilik om te slaan. Maar die opleiding wat jy gee is nie in ’n dag klaar nie, en Jesus self het sy ouers gehoorsaam — hy verstaan die seer van ’n pa wat wil regkom maar nie kan nie.",
+          "prayer": "Hereer, ek het met die beste van my hart gewerk en ek verstaan nie hulle keuse nie. Leg my hart stadig af en gee my vrede waar ek dit nie kan verander nie. Bid vir hulle, al moet ek stil wees.",
+          "step": "Bel een van jou volwasse kinders vandag net om te vra hoe dit gaan — geen waarskuwing, geen raad nie. En as die verhouding geskad is, oorweeg ’n ver mediatesie of berad saam met ’n kerkberaad."
+        },
+        "en": {
+          "reflect": "When your children’s choices break your heart, the taste of unearned disrespect is hard to swallow. But the parenting you gave does not finish in a day, and Jesus himself submitted to his parents — he understands the ache of a father who wants to do right and cannot.",
+          "prayer": "Lord, I have given my best and I still do not understand their choices. Lay my heart down slowly and give me peace where I cannot change things. Pray for them, even when I have to be silent.",
+          "step": "Call one of your adult children today just to ask how they are — no warning, no advice. If the relationship is damaged, consider mediation or a conversation with a church elder."
+        }
+      }
+    },
+    {
+      "slug": "kinders-wat-geloof-verloor",
+      "group": "verhoudings",
+      "title": {
+        "af": "Wanneer jou kind die geloof verlaat",
+        "en": "When your child loses their faith"
+      },
+      "intro": {
+        "af": "Ouers wat bid vir kinders wat nie meer bid nie, moet ’n lang pad van berou en geduld aanvaar. Hierdie blad is vir die wat nie wil opgee nie.",
+        "en": "For parents who pray for children who no longer pray, the road of grief and patience is long. This page is for those who refuse to give up."
+      },
+      "passages": [
+        {
+          "book": "pro",
+          "ch": 22,
+          "vs": 6,
+          "field": {
+            "af": "Richt die kind se pad sodat hy nie sal wyk nie",
+            "en": "Start the child’s path so he will not turn away"
+          }
+        },
+        {
+          "book": "2ti",
+          "ch": 3,
+          "vs": 15,
+          "field": {
+            "af": "Van kindsus af ken jy die Skrifte",
+            "en": "From infancy you have known the Scriptures"
+          }
+        },
+        {
+          "book": "isa",
+          "ch": 8,
+          "vs": 20,
+          "field": {
+            "af": "Na die wet en die getuienis",
+            "en": "To the law and to the testimony"
+          }
+        },
+        {
+          "book": "heb",
+          "ch": 13,
+          "vs": 8,
+          "field": {
+            "af": "Hy wat in julle is, sal bly",
+            "en": "He who is in you will remain"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wanneer ’n kind die kerk verlaat, is daar rou in jou wat nie net om die kerk gaan nie — dit gaan oor die kind vir wie jy gebid het. Die Bybel belowe nie ’n waarborg nie, maar dit belowe wel dat die Here wat in hulle was, in hulle bly.",
+          "prayer": "Hereer, ek dra my kind voor jou en ek verstaan nie nie. Hou jou Gees in hom/haar wanneer ek niks meer weet om te doen nie. Laat my geloof langer hou as my verstaan.",
+          "step": "Bel jou kind vandag sonder enige eis of waarskuwing — net om te vra hoe dit gaan — en as jy praat, sê net: “Ek is trots op jou en God hou jou.” As daar selfs beskadiging is, oorweeg ’n professionele gesinsberad eerder as druk."
+        },
+        "en": {
+          "reflect": "When a child leaves the church, your grief is not only about church attendance — it is about the child you prayed for. Scripture does not promise instant results, but it does promise that the Lord who was in them remains.",
+          "prayer": "Lord, I carry my child before you and I do not understand. Keep your Spirit in him or her when I no longer know what to do. Let my faith outlast my understanding.",
+          "step": "Call your child today with no demand and no lecture — just to ask how they are — and if you do speak, say only, “I am proud of you and God holds you.” If there is damage, consider professional family counselling rather than pressure."
+        }
+      }
+    },
+    {
+      "slug": "vriendskap-wat-verander",
+      "group": "verhoudings",
+      "title": {
+        "af": "Wanneer vriendskap verander of verbreek",
+        "en": "When friendships change or break"
+      },
+      "intro": {
+        "af": "Vriendskap verander wanneer lewe verander, maar partykeer breek nie stil nie. Hierdie blad handel oor die pyn van mense wat nie meer langs die pad loop nie.",
+        "en": "Friendships shift when life shifts, but some part of you breaks quietly. This page is about the pain of people who no longer walk the road with you."
+      },
+      "passages": [
+        {
+          "book": "pro",
+          "ch": 18,
+          "vs": 24,
+          "field": {
+            "af": "’n Vriend wys in die onheil",
+            "en": "A friend shows up in trouble"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 13,
+          "vs": 20,
+          "field": {
+            "af": "Die wyse sal die boosheid beleef",
+            "en": "Walk with wise men and you will be wise"
+          }
+        },
+        {
+          "book": "jas",
+          "ch": 4,
+          "vs": 4,
+          "field": {
+            "af": "Die hart het sy eie vooroordeel",
+            "en": "The heart has its own interests"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 14,
+          "vs": 29,
+          "field": {
+            "af": "Die opehartige sal wonderlik oordeel",
+            "en": "The simple believes the good"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Dit is ’n soorte verlies wat mense maklik erken: jy is nie getroude jy verloor nie in, maar ’n mens wat jy opgebou het, verander en jy kan hom/haar nie meer reg maak nie. Vriendskap kan nie sonder die Here volgehou word nie, maar nie alle verandering is afwyk nie.",
+          "prayer": "Hereer, ek het een mens verloor wat ek nie gesien het dat hy/ sy gaan wys word nie. Vervul my hart met jou genade sodat ek nie met jaloersy of wanhoop reageer nie. Gee vir my geskikte vriende in hierdie seisoen.",
+          "step": "Bel een ou vriend vandag net om te vra hoe dit gaan — sonder om oor die verandering te praat nie — en bid daarna vir drie nuwe mense wat jy kan groet, want die beste vriendskap word vanuit die kerk gebou."
+        },
+        "en": {
+          "reflect": "This is a kind of loss people struggle to name: you did not lose a spouse, but someone you built is changing and you cannot make them right. Friendship cannot be kept apart from the Lord, and not every change is a fall away from faith.",
+          "prayer": "Lord, I lost a person without seeing them go. Fill my heart with your grace so that I do not react with jealousy or despair. Give me suitable friends in this season.",
+          "step": "Call an old friend today just to ask how they are — without discussing the change — then pray for three new people you can greet, because the deepest friendships are built inside the church."
+        }
+      }
+    },
+    {
+      "slug": "gemeente-en-belong",
+      "group": "verhoudings",
+      "title": {
+        "af": "Wanneer jy nie meer ’n plek voel nie in die kerk",
+        "en": "When you no longer feel you belong in church"
+      },
+      "intro": {
+        "af": "Baie mense sit week na week in die kerk en voel steeds alleen. Hierdie blad handel oor die vraag of jy werklik aan die liggaam van Christus behoort.",
+        "en": "Many people sit week after week in church and still feel alone. This page addresses whether you truly belong to the body of Christ."
+      },
+      "passages": [
+        {
+          "book": "heb",
+          "ch": 10,
+          "vs": 25,
+          "field": {
+            "af": "Moenie ons saamkom verlaat nie",
+            "en": "Do not give up meeting together"
+          }
+        },
+        {
+          "book": "rom",
+          "ch": 12,
+          "vs": 6,
+          "field": {
+            "af": "Ons is een liggaam in Christus",
+            "en": "We are one body in Christ"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 5,
+          "vs": 8,
+          "field": {
+            "af": "Wees waaksam oor die duivel",
+            "en": "Be alert and sober"
+          }
+        },
+        {
+          "book": "eph",
+          "ch": 4,
+          "vs": 11,
+          "field": {
+            "af": "Hy het sommige gestel as slawe",
+            "en": "He gave some as servants"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "As jy jare elke Sondae sit en nooit by iemand bel nie, is iets in die manier hoe die kerk werk regtig stuk. Mense het onderskeid tussen ’n gebou en ’n familie — die vraag is nie net of jy aanwesig is nie, maar of iemand jou naam ken.",
+          "prayer": "Hereer, ek was daar maar ek was nie by nie. Wys my waar jy vir my plek gemaak het, en gee my die moed om te praat eerder as om stil te bly. Maak van my nie net ’n sitter nie.",
+          "step": "Skryf vandag een ouer of jeugdiens-leier aan en vra net of hulle ’n koppie kan drink saam; as jy lank gelede nie in ’n kerk was nie, bel diens en vra net waar die mens van rus afkom."
+        },
+        "en": {
+          "reflect": "If you have sat for years and never called anyone, something in the way church works is genuinely broken. People confuse a building with a family — the question is not only whether you attend, but whether anyone knows your name.",
+          "prayer": "Lord, I was present but I was not there. Show me where you made room for me and give me courage to speak instead of staying silent. Make me more than a seat-filler.",
+          "step": "Write to an elder or youth leader today and ask simply for coffee. If you have not been to church for a long time, call the church and ask only where the rest hour is."
+        }
+      }
+    },
+    {
+      "slug": "werkloosheid",
+      "group": "lewe",
+      "title": {
+        "af": "Wanneer daar nie werk is nie",
+        "en": "When there is no work"
+      },
+      "intro": {
+        "af": "Werkloosheid in Suid-Afrika is nie net ’n finansiële probleem nie — dit eet aan mense se waardigheid af. Hierdie blad handel oor geduld én praktiese pad vorentoe.",
+        "en": "Unemployment in South Africa is not only financial — it wears at a person’s dignity. This page is about patience and a practical way forward."
+      },
+      "passages": [
+        {
+          "book": "isa",
+          "ch": 40,
+          "vs": 31,
+          "field": {
+            "af": "Hulle wat op die Here wag, kry nuwe krag",
+            "en": "Those who wait on the Lord renew their strength"
+          }
+        },
+        {
+          "book": "mat",
+          "ch": 6,
+          "vs": 31,
+          "field": {
+            "af": "Sorg nie oor etes nie",
+            "en": "Do not worry about food"
+          }
+        },
+        {
+          "book": "php",
+          "ch": 4,
+          "vs": 6,
+          "field": {
+            "af": "Sorg in gebed en dankbaarheid",
+            "en": "In everything, prayer and thanksgiving"
+          }
+        },
+        {
+          "book": "pro",
+          "ch": 10,
+          "vs": 4,
+          "field": {
+            "af": "Die hand van die ywerige maak ryk",
+            "en": "The hand of the diligent makes rich"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wanneer jy wekkers om soggens met geen werk om te gaan nie, is die skaamte werklik en die moed kan baie laag val. Ons moet verskil maak tussen luiheid wat God aanspreek en die omstandighede wat niemand kies nie — en vir albei is daar hoop, maar nie almal hoop op dieselfde manier nie.",
+          "prayer": "Hereer, ek het vandag geskrik voor ’n dag wat ek nie weet hoe om te betaal nie. Gee vir my rus in my onsekerheid en werk my hande en hart. Hou my vrou en kinders in jou hande.",
+          "step": "Meld vandag by die regte plek aan: bel SASSA (0800 60 10 11) as jy jous afhanklikheid uitstaan, of gebruik Free Job Finder (0861 700 965) of die DOBE om werk te soek — en bel net een persoon vandag wat jou kan help met ’n mandaat of ’n CV."
+        },
+        "en": {
+          "reflect": "Waking up with no work to go to is genuinely shameful, and courage can drop very low. We should distinguish laziness, which God addresses, from circumstances nobody chose — and there is hope for both, but not the same kind of hope.",
+          "prayer": "Lord, today I was afraid of a day I do not know how I will pay for. Give me rest in my uncertainty and work my hands and heart. Hold my wife and children in your hands.",
+          "step": "Register today in the right place: call SASSA (0800 60 10 11) if you depend on grants, or use Free Job Finder (0861 700 965) or the DOBE to search — and today call just one person who can help with a mandate or a CV."
+        }
+      }
+    },
+    {
+      "slug": "siekte-en-chroniese-siekte",
+      "group": "lewe",
+      "title": {
+        "af": "Wanneer jou liggaam siek word of siek bly",
+        "en": "When your body becomes ill or stays ill"
+      },
+      "intro": {
+        "af": "’n Chroniese siekte leer jou ’n ander manier van lewe wat jy noot gekies het nie. Hierdie blad is vir jou wat moeg is om sterk te moet wees.",
+        "en": "Chronic illness teaches you a way of living you never chose. This page is for you who are tired of having to be strong."
+      },
+      "passages": [
+        {
+          "book": "isa",
+          "ch": 53,
+          "vs": 5,
+          "field": {
+            "af": "Hy het ons genees gekwes",
+            "en": "He was wounded for our healing"
+          }
+        },
+        {
+          "book": "jer",
+          "ch": 30,
+          "vs": 17,
+          "field": {
+            "af": "Genees ons en ons sal genees word",
+            "en": "Heal us and we shall be healed"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Die Here is naby die gebroke harte",
+            "en": "The Lord is close to the brokenhearted"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 12,
+          "vs": 9,
+          "field": {
+            "af": "My genade is vir jou genoeg",
+            "en": "My grace is enough for you"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Langdurige siekte kan ’n mens laat voel hy/ sy is onregte en God het hom/ haar vergeet, en daar is dae waar jy net wil dat die pyn hou — dis nie ontrou nie, dis menslik. God se genade is werklik, maar dit kom meestal deur mense wat bring kos, medikasie en geduld aan jou bed.",
+          "prayer": "Hereer, ek is moeg van my liggaam en ek is moeg om sterk te moet klink. Raak my aan, en as jy nie vandag genees nie, hou my standhaftig onder jou hand. Gee my krag vir net een dag op ’n slag.",
+          "step": "Bel vandag die National Health Line (0800 012 322) as jy nog nie jou medikasie of diagnose het nie, en vra een kerkmaat om hierdie week spesifiek vir jou te kook — nie vir almal nie, net vir jou."
+        },
+        "en": {
+          "reflect": "Long illness can leave a person feeling they are a mistake and that God has forgotten them, and there are days when you simply want the pain to stop — that is not unfaithfulness, it is being human. God’s grace is real, but it usually arrives through people who bring food, medication and patience to your bedside.",
+          "prayer": "Lord, I am tired of my body and tired of sounding strong. Touch me, and if you do not heal today, keep me steady under your hand. Give me strength for just one more day of fighting.",
+          "step": "Call the National Health Line (0800 012 322) today if you do not yet have your medication or a clear diagnosis, and ask one church member to cook specifically for you this week — not for everyone, just for you."
+        }
+      }
+    },
+    {
+      "slug": "droogte-en-boerderyverlies",
+      "group": "lewe",
+      "title": {
+        "af": "Wanneer die reën nie kom nie en die boerdery verloor gaan",
+        "en": "When the rain does not come and the farm is lost"
+      },
+      "intro": {
+        "af": "Droogte raak nie net boere nie — dit raak gesinne, werkers en die dorpie se hele ekonomie. Hierdie blad is vir die wat alles ingesit het en alles verloor het.",
+        "en": "Drought touches more than farmers — it hits families, workers and a whole village economy. This page is for those who put everything in and lost everything."
+      },
+      "passages": [
+        {
+          "book": "job",
+          "ch": 1,
+          "vs": 21,
+          "field": {
+            "af": "Die Here het gegee en die Here het geneem",
+            "en": "The Lord gave and the Lord has taken away"
+          }
+        },
+        {
+          "book": "jol",
+          "ch": 1,
+          "vs": 9,
+          "field": {
+            "af": "Die saaier is afgesny",
+            "en": "The sower is cut off"
+          }
+        },
+        {
+          "book": "jas",
+          "ch": 1,
+          "vs": 2,
+          "field": {
+            "af": "Tel seën — daar sal verdriet kom",
+            "en": "Count it all joy — trials come"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 4,
+          "vs": 18,
+          "field": {
+            "af": "Ons kyk na dinge wat nie gesien word nie",
+            "en": "We look not at things which are seen"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wanneer ’n plaas sonder water staan bly, is die praktiese pyn so swaar soos die geestelike — lenings, geskikte mense wat vertrek, en ’n gevoel van volkome magteloosheid. Job se boek wys vir ons nie dat alles wat gebeur die Here se wil is nie, maar wel dat ’n gelowige se standpunt nie net op die oes nie rus nie.",
+          "prayer": "Hereer, my grond is droog en my hart ook. Gee vir ons reën op tyd en sterkte om aan te hou; waar die oes uitval, laat iets anders groei — moedigheid, nederigheid en onderhoud.",
+          "step": "Kontakteer vandag die Landbou department se gewone diens of ’n Landbou Advice SA-geskiedenis-konsulent vir ’n droogte-plan vir jou grond, en meld by die DSI (088 100 9999) as jy of iemand wat jy ken deur die ramp geraak is."
+        },
+        "en": {
+          "reflect": "When a farm stands without water, the practical pain is as heavy as the spiritual — loans, skilled people leaving, and a sense of total powerlessness. Job shows us that not everything that happens is God’s will, but that a believer’s footing does not rest on the harvest alone.",
+          "prayer": "Lord, my ground is dry and so is my heart. Give us rain in time and strength to keep going; where the harvest fails, let something else grow — courage, humility and provision.",
+          "step": "Contact the Department of Agriculture hotline or a Landbou Advice SA agricultural advisor today for a drought plan for your land, and report to the DSI (088 100 9999) if you or someone you know has been affected."
+        }
+      }
+    },
+    {
+      "slug": "matric-druk",
+      "group": "lewe",
+      "title": {
+        "af": "Wanneer matricjare voel hulle gaan oorlaai",
+        "en": "When a matric learner feels overwhelmed"
+      },
+      "intro": {
+        "af": "Matricjare in Suid-Afrika dra nie net boeke nie, maar ook ’n ouers se drome en ’n gemeenskap se hoop. Hierdie blad is vir die leerder wat nie kan asemhaal nie.",
+        "en": "Matric learners in South Africa carry not just books but a parent’s dreams and a community’s hope. This page is for the learner who cannot breathe."
+      },
+      "passages": [
+        {
+          "book": "pro",
+          "ch": 24,
+          "vs": 3,
+          "field": {
+            "af": "In wysheid is sterkte",
+            "en": "By wisdom is strength"
+          }
+        },
+        {
+          "book": "jas",
+          "ch": 1,
+          "vs": 5,
+          "field": {
+            "af": "As enige van julle wysheid mis",
+            "en": "If any of you lacks wisdom"
+          }
+        },
+        {
+          "book": "php",
+          "ch": 4,
+          "vs": 13,
+          "field": {
+            "af": "Ek kan alles deur Christus wat my versterk het",
+            "en": "I can do all things through Christ who strengthens me"
+          }
+        },
+        {
+          "book": "mat",
+          "ch": 11,
+          "vs": 28,
+          "field": {
+            "af": "Kom na my toe, al wat swaar werk",
+            "en": "Come to me, all who labour"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Die maand voor eksamen voel baie leerders soosof hul lewe daarvan hang, en ’n mens kan terselfdertyd getrou wees en ’n mens net regtig doodstil maak nie. God vra nie prestasie nie — Hy vra ’n rusige, nederige kind wat op Hom vertrou; onregte matrieks beteken nie dat ’n lewe verloor is nie.",
+          "prayer": "Hereer, my kop is vol en my hart is klein. Gee vir my die rus van ’n kind wat weet jy is by hom, selfs wanneer die uitslae nog nie kom nie. Hou my aan Tafel en laat my toets afskryf sonder om my siel daar te laat.",
+          "step": "Vandag, sit net een uur vir die vak waarin jy die swakste is en werk net daaraan, sonder foon — en as die druk te swaar is, bel Higher Health (0800 36 36 36) vir ’n gratis berad, of praat met ’n vertroude onderwyser in privaat."
+        },
+        "en": {
+          "reflect": "In the month before exams many learners feel as if their whole life depends on it, and a person can be faithful and still be quietly overwhelmed. God does not demand performance — he asks for a restful, humble child who trusts him; a bad matric does not mean a lost life.",
+          "prayer": "Lord, my head is full and my heart is small. Give me the rest of a child who knows you are near, even before the results come. Keep me at your table and let me write the exam without leaving my soul there.",
+          "step": "Today, give just one hour to the subject you find hardest and work only on that, with no phone — and if the pressure is too much, call Higher Health (0800 36 36 36) for free counselling, or speak to a trusted teacher privately."
+        }
+      }
+    },
+    {
+      "slug": "geen-uitsig-vir-die-toekoms",
+      "group": "lewe",
+      "title": {
+        "af": "Wanneer die toekoms swart lyk",
+        "en": "When the future looks black"
+      },
+      "intro": {
+        "af": "Soms is die swaarste pyn nie iets wat nou gebeur nie, maar die gedagte aan wat kom. Hierdie blad is vir die wat nie meer kan sien nie.",
+        "en": "Sometimes the heaviest pain is not what is happening now, but the thought of what is coming. This page is for those who cannot see ahead."
+      },
+      "passages": [
+        {
+          "book": "jer",
+          "ch": 29,
+          "vs": 11,
+          "field": {
+            "af": "Ek weet die plan wat Ek vir julle maak",
+            "en": "I know the plans I have for you"
+          }
+        },
+        {
+          "book": "isa",
+          "ch": 40,
+          "vs": 31,
+          "field": {
+            "af": "Maak nie moed op nie, want die Here is my God",
+            "en": "Do not grow weary, the Lord is my God"
+          }
+        },
+        {
+          "book": "rom",
+          "ch": 15,
+          "vs": 13,
+          "field": {
+            "af": "Vul julle met alle blydskap",
+            "en": "Fill you with all joy and peace"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 42,
+          "vs": 11,
+          "field": {
+            "af": "Waarom vir my, Here?",
+            "en": "Why me, Lord?"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wanneer al jou planne stuk is, kan ’n mens voel die Here het jou in die donker vergeet — en hierdie is eerlik, maar die Bybel belowe ook nie dat hy jou in die donker verlaat nie. God se planne is nie altyd maklik nie, maar hulle is altyd vir jou goed.",
+          "prayer": "Hereer, ek kan die pad voor my sien net aan my agterkant. Gee vir my lig vir môre, net vir môre. Wanneer my planne stuk is, hou my plan bly.",
+          "step": "Skryf vandag een ding wat jy in die volgende drie maande konkreet gaan doen, en bel net een mens wat dit kan moeilik maak of maklik — en as die moedeloosheid swaar is, praat met Lifeline (0861 322 322)."
+        },
+        "en": {
+          "reflect": "When all your plans collapse you can feel that God has forgotten you in the dark — that is honest, but Scripture also promises he will not leave you there. God’s plans are not always easy, but they are always for your good.",
+          "prayer": "Lord, I can only see the road behind me. Give me light for tomorrow, just for tomorrow. When my plans break, let your plans stand.",
+          "step": "Write down today one thing you will concretely do in the next three months, and call one person who will make it harder or easier — and if the despair is heavy, talk to Lifeline (0861 322 322)."
+        }
+      }
+    },
+    {
+      "slug": "tegelikheid",
+      "group": "lewe",
+      "title": {
+        "af": "Wanneer altyd druk is en jy nooit rus uitkom",
+        "en": "When pressure is constant and rest never comes"
+      },
+      "intro": {
+        "af": "Suid-Afrika se mense leef met beplanning, begroting en oorlewing; die druk word selaam erken. Hierdie blad is vir die wat altyd reg het, altyd besig is en altyd moeg is.",
+        "en": "People in South Africa live with schedules, budgets and survival; the pressure goes unnamed. This page is for those who are always right, always busy and always tired."
+      },
+      "passages": [
+        {
+          "book": "mat",
+          "ch": 11,
+          "vs": 28,
+          "field": {
+            "af": "Myrus is vir die moeges",
+            "en": "My rest is for the weary"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 5,
+          "vs": 7,
+          "field": {
+            "af": "Goie al jou sorg op Hom",
+            "en": "Cast all your anxiety on him"
+          }
+        },
+        {
+          "book": "php",
+          "ch": 4,
+          "vs": 6,
+          "field": {
+            "af": "Die vrede van God bewaak",
+            "en": "The peace of God guards"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 4,
+          "vs": 8,
+          "field": {
+            "af": "Bedrukheid, maar nie moedeloos nie",
+            "en": "Hard pressed on every side, not in despair"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Druk wat nooit aflaat nie is nie net moegheid nie — dit maak prikkelbaar, siek en bang, en mense kan tegelyk vir God lief en vir Hom versoek. Dit is ’n geestelike en liggaamlike saak: jy het reg om rus te vraak, en rus is nie luiheid nie.",
+          "prayer": "Hereer, ek dra te veel. Leg vir my vanmiddag iets neer waarvan ek nie weet nie, en gee my toestemming om stil te wees sonder om skuldig te voel. Maak my hart weer stil.",
+          "step": "Maak vandag een uur met geen foon, geen TV en geen werk nie, en sê dit hardop vir iemand sodat jy nie kan skuifel nie; as jy ’n gesprek nodig het, bel SADAG (0800 567 567) vir ’n gratis sielkundige berader."
+        },
+        "en": {
+          "reflect": "Pressure that never lets off is not only tiredness — it makes a person irritable, ill and anxious, and you can love God and still be angry with him at the same time. This is a spiritual and a bodily matter: you have a right to rest, and rest is not laziness.",
+          "prayer": "Lord, I am carrying too much. Lay down something today that I am not aware of, and give me permission to be still without guilt. Make my heart quiet again.",
+          "step": "Take one hour today with no phone, no TV and no work, and say it out loud to someone so you cannot quietly skip it; if you need to talk, call SADAG (0800 567 567) for a free counsellor."
+        }
+      }
+    },
+    {
+      "slug": "vry-tyd-en-uitgeputheid",
+      "group": "lewe",
+      "title": {
+        "af": "Wanneer jy nie eintlik rus kan kry nie",
+        "en": "When you cannot actually rest"
+      },
+      "intro": {
+        "af": "Vrye tyd wat op die foon deurbring word, is geen rus nie. Hierdie blad handel oor mense wat siek is van werk en steeds aanhou asof hul rus kan neem.",
+        "en": "Free time spent scrolling is not rest. This page is for people exhausted by work who keep going as though rest were possible."
+      },
+      "passages": [
+        {
+          "book": "psa",
+          "ch": 127,
+          "vs": 2,
+          "field": {
+            "af": "Hy gee sy geliefdes slaap",
+            "en": "He gives his beloved sleep"
+          }
+        },
+        {
+          "book": "mrk",
+          "ch": 6,
+          "vs": 31,
+          "field": {
+            "af": "Kom saam en rus",
+            "en": "Come apart and rest"
+          }
+        },
+        {
+          "book": "isa",
+          "ch": 40,
+          "vs": 31,
+          "field": {
+            "af": "Krag vir die wat moeg is",
+            "en": "Strength for the weary"
+          }
+        },
+        {
+          "book": "exo",
+          "ch": 33,
+          "vs": 14,
+          "field": {
+            "af": "My teenwoordigheid gaan met jou",
+            "en": "My presence will go with you"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Uitgeputheid is nie net luiheid of ’n gebrek aan wilskrag nie — dit is ’n liggaam wat gesê het dit het genoeg gehad. Maar rus wat elke aand dieselfde foon oopmaak, is rus wat nooit arriveer nie, en die Bybel noem rus ’n gawe van God en nie ’n beloning nie.",
+          "prayer": "Hereer, ek het nie eintlik gerus nie. Gee vir my rus wat my siel en liggaam kan genees, weg van my foon se geraas. Wanneer ek rus, laat dit regte rus wees.",
+          "step": "Plaas jou foon buite die slaapkamer vir drie nagte en lees voor slapen Openbaring 21:1-5 hardop; as jy ’n maand of langer sonder rus slaap, praat vandag met Lifeline (0861 322 322)."
+        },
+        "en": {
+          "reflect": "Burnout is not laziness or weak character — it is a body that has said it has had enough. But rest that ends with the same phone every evening is rest that never arrives, and Scripture treats rest as a gift of God rather than a reward.",
+          "prayer": "Lord, I have not truly rested. Give me rest that heals body and soul, away from the noise of my phone. When I rest, let it be true rest.",
+          "step": "Put your phone outside the bedroom for three nights and read Revelation 21:1-5 aloud before sleeping; if you have gone a month or more without restorative sleep, talk to Lifeline (0861 322 322) today."
+        }
+      }
+    },
+    {
+      "slug": "geregtigheid-en-ongelykheid",
+      "group": "lewe",
+      "title": {
+        "af": "Wanneer die onreg van die land jou rusie verstuur",
+        "en": "When the injustice of the land disturbs your peace"
+      },
+      "intro": {
+        "af": "Om agter een inkospak, ’n verkeer of ’n skool wat nie reg werk nie te bly sit, is ’n gewetenskwessie vir baie Christene. Hierdie blad handel oor hoe om nie kwaad te word nie sonder om onreg te sien nie.",
+        "en": "Not being able to sit calmly while a queue stretches, traffic rules fail and a school does not work, is a matter of conscience for many Christians. This page is about staying angry-free without going blind to injustice."
+      },
+      "passages": [
+        {
+          "book": "amo",
+          "ch": 5,
+          "vs": 24,
+          "field": {
+            "af": "Laat geregtigheid rol soos ’n stroom",
+            "en": "Let justice roll like a river"
+          }
+        },
+        {
+          "book": "isa",
+          "ch": 1,
+          "vs": 17,
+          "field": {
+            "af": "Reg doen aan die verdruktes",
+            "en": "Do justice to the oppressed"
+          }
+        },
+        {
+          "book": "jas",
+          "ch": 2,
+          "vs": 15,
+          "field": {
+            "af": "As jy sien wat die broeder het nie",
+            "en": "If you see the brother in need"
+          }
+        },
+        {
+          "book": "luk",
+          "ch": 4,
+          "vs": 18,
+          "field": {
+            "af": "Die goeie nuus aan die armes",
+            "en": "Good news to the poor"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Bybelse geregtigheid is nie net iets wat reg gesê word nie — dit is ’n daad wat ’n mens se hande en tyd kos. ’n Geloof wat sien hoe ’n kind hong, ’n vrou belag of ’n gemeenskap se water afgesny word en steeds bly stil sit, het iets met die hart verloor.",
+          "prayer": "Hereer, ek sien die onreg en ek kan nie aanhou stilsit nie. Gee my krag om te praat waar dit reg is, en wapen my hart teen die haat wat die stryd metbring. Maak van my ’n geregtigheidswerker.",
+          "step": "Kies een onreg wat jy sien — die rant afmeting van jou dorpie, ’n skool of ’n gemeenskapsluk — en doen vandag een praktiese ding: teken aan vir ’n buurtaksie, bel die munisipaliteit oor ’n diens, of werk twee ure by ’n voedselbank."
+        },
+        "en": {
+          "reflect": "Biblical justice is not only a thing that is said — it is an action that costs a person’s hands and time. A faith that watches a child go hungry, a woman be assaulted, or a community lose its water while staying silent has lost something in the heart.",
+          "prayer": "Lord, I see the injustice and I cannot keep sitting still. Give me strength to speak where it is right, and guard my heart against the hatred this fight can bring. Make me an agent of justice.",
+          "step": "Choose one injustice you can see — your township’s running water, a school, a communal tap — and do one practical thing today: sign up for a community meeting, call the municipality about a service, or give two hours at a food bank."
+        }
+      }
+    },
+    {
+      "slug": "mishandeling-en-gbv",
+      "group": "pyn",
+      "title": {
+        "af": "Wanneer jy mishandel word of bedreig word",
+        "en": "When you are abused or threatened"
+      },
+      "intro": {
+        "af": "As jy mishandel of bedreig word, het jy niks verdien nie, en jy hoef nie stil te bly om ander te spaar nie. Hierdie blad handel oor veiligheid en die Here wat by jou staan.",
+        "en": "No one abused has deserved it, and you do not have to stay silent to spare others. This page is about safety and the God who stands with you."
+      },
+      "passages": [
+        {
+          "book": "psa",
+          "ch": 11,
+          "vs": 2,
+          "field": {
+            "af": "Die regverdige Here lief geregtigheid",
+            "en": "Because the righteous Lord loves righteousness"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 82,
+          "vs": 3,
+          "field": {
+            "af": "Beskerm die regverdige en die verdringde",
+            "en": "Defend the weak and the fatherless"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 5,
+          "vs": 8,
+          "field": {
+            "af": "Wees nagswakel",
+            "en": "Be alert"
+          }
+        },
+        {
+          "book": "isa",
+          "ch": 1,
+          "vs": 17,
+          "field": {
+            "af": "Leer om reg te doen en red die verdruktes",
+            "en": "Learn to do right and rescue the oppressed"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "As jy in ’n gevaarlike situasie is, is die eerste werk nie geeslike ontleding nie, maar veiligheid — en jy is nie skuldig daarvoor om stil te bly nie. ’n Vrou wat bly waar sy bly is die moeie nie om haar man; ’n mens wat bly om sy kinders wil beskerm, het reg om te plan en te vlug.",
+          "prayer": "Hereer, ek is bang. Beskerm my vandag en in elke nag; maak vir my ’n pad uit, al moet ek vandag net een tree neem. Hou my standhaftig en gee my krag om nie stil te bly wanneer veiligheid in die spel is nie.",
+          "step": "Bel die GBV Command Centre nou op 0800 428 428 of *120*7867# (werk op enige foon, geen luggafoon nodig nie), en as jy onmiddellike gevaar sien, bel 10111 of 112. Beplan vandag ’n plek waar jy met jou kinders heen kan."
+        },
+        "en": {
+          "reflect": "If you are in a dangerous situation the first task is not spiritual analysis but safety, and you are not wrong to refuse to stay silent. A woman who leaves is not disrespecting her husband; a person who stays to protect their children still has the right to plan and to go.",
+          "prayer": "Lord, I am afraid. Protect me today and through every night; make a way out for me even if tonight I take only one step. Keep me steady and give me courage not to stay silent when safety is at stake.",
+          "step": "Call the GBV Command Centre now on 0800 428 428 or *120*7867# (works on any phone, no airtime needed), and if you see immediate danger call 10111 or 112. Plan today one place you can go with your children."
+        }
+      }
+    },
+    {
+      "slug": "kindertyd-trauma",
+      "group": "pyn",
+      "title": {
+        "af": "Wanneer wat in jou kindertyd gebeur het, nooit weggegaan het nie",
+        "en": "When what happened in your childhood never left"
+      },
+      "intro": {
+        "af": "’n Mens kan 40 wees en steeds binne ’n tienjarige seunskrik sit. Hierdie blad handel oor ou wonde wat die Here wil genees.",
+        "en": "A person can be 40 years old and still living inside the terror of a ten-year-old. This page is about old wounds that God wants to heal."
+      },
+      "passages": [
+        {
+          "book": "isa",
+          "ch": 61,
+          "vs": 3,
+          "field": {
+            "af": "Schoonheid vir as",
+            "en": "Beauty for ashes"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 147,
+          "vs": 3,
+          "field": {
+            "af": "Hy genees die gebroke harte",
+            "en": "He heals the brokenhearted"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 12,
+          "vs": 9,
+          "field": {
+            "af": "My genade is genoeg",
+            "en": "My grace is sufficient for you"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Naby die gebroke harte",
+            "en": "Close to the brokenhearted"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Baie volwassen mense leef met ’n sewejarige seer wat hulle nooit as volwasse insien erken nie — en hulle is nie deursigtig as hulle dink hulle is sterk nie, hulle het net geleer om sterk te lyk. God genees wonde wat niemand anders gesien het, en ’n kind wat mishandel is, het reg om te rou en reg om hulp te soek.",
+          "prayer": "Hereer, jy ken die plek waar dit gebeur het al voor ek dit kon benoem. Sit jou hand op daardie wond en maak dit vir my reg; ek gee jou toestemming om nou rou.",
+          "step": "Bel vandag Lifeline (0861 322 322) of vra jou kerk vir ’n trauma-berad; as jou kindertyd-trauma met mishandeling te doen het, kan jy anoniem by die GBV Command Centre (0800 428 428 of *120*7867#) bel en praat. Jy hoef nie eers jou verhaal te vertel om hulp te kry nie."
+        },
+        "en": {
+          "reflect": "Many adults carry a seven-year-old’s wound they never acknowledged as an adult — and they are not hypocritical when they think they are strong, they have only learned to look strong. God heals wounds nobody else saw, and a child who was abused has the right to grieve and the right to ask for help.",
+          "prayer": "Lord, you know the place where it happened before I could even name it. Put your hand on that wound and make it right for me; I give you permission to grieve now.",
+          "step": "Call Lifeline (0861 322 322) today or ask your church for trauma-aware counselling; if your childhood trauma involved abuse, you can call the GBV Command Centre anonymously (0800 428 428 or *120*7867#). You do not have to tell your story before you get help."
+        }
+      }
+    },
+    {
+      "slug": "siek-kind",
+      "group": "pyn",
+      "title": {
+        "af": "Wanneer jou kind siek is en jy nie weet wat om te doen nie",
+        "en": "When your child is ill and you do not know what to do"
+      },
+      "intro": {
+        "af": "Om jou eie kind se siekte te aanskou, is ’n besonder lastige werk; baie ouers voel skuldig en magteloos gelyk. Hierdie blad is vir daardie ouers.",
+        "en": "Watching your own child be ill is a particular kind of suffering; many parents feel guilty and helpless at once. This page is for those parents."
+      },
+      "passages": [
+        {
+          "book": "jas",
+          "ch": 5,
+          "vs": 14,
+          "field": {
+            "af": "Is iemand siek onder julle?",
+            "en": "Is anyone sick among you?"
+          }
+        },
+        {
+          "book": "luk",
+          "ch": 18,
+          "vs": 16,
+          "field": {
+            "af": "Laat die kindertjies na My toe kom",
+            "en": "Let the little children come to me"
+          }
+        },
+        {
+          "book": "isa",
+          "ch": 53,
+          "vs": 4,
+          "field": {
+            "af": "Hy het ons siektes op hom geneem",
+            "en": "He took our illnesses upon himself"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Die Here is naby die gebroke harte",
+            "en": "The Lord is close to the brokenhearted"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wanneer ’n kind siek is, wonder elke ouer: is dit my skuld? — en dié vraag maak die pyn baie swaarder, want die meeste siektes het niks met jou skuld nie. God vra nie dat jy die siekte verdien nie, Hy vra net dat jy Hom bring; Hy het gesê kindertjies kom na Hom toe.",
+          "prayer": "Hereer, my kind is siek en ek is kragteloos. Ek vra nie wa om jy genees nie, net dat jy nou hier is. Hou my kind in jou hande en maak my hart sterk genoeg vir vandag.",
+          "step": "Vandag, as jou kind siek is, bel die National Health Line (0800 012 322) vir mediese advies en bel 112 as daar ’n noodgeval is; en as jy in ’n hospitaal is, vra die verpleegster om met jou te bid — jou kind het reg op God se troos."
+        },
+        "en": {
+          "reflect": "When a child is ill every parent wonders, is this my fault? — and that question makes the suffering heavier, because most illnesses have nothing to do with your guilt. God does not ask you to deserve the sickness, he asks you to bring it to him; he said let the little children come to me.",
+          "prayer": "Lord, my child is sick and I am powerless. I do not ask why you will not heal, only that you are here now. Hold my child in your hands and make my heart strong enough for today.",
+          "step": "Today, if your child is ill, call the National Health Line (0800 012 322) for medical advice and 112 for an emergency; and if you are in hospital, ask the nurse to pray with you — your child has a right to God’s comfort."
+        }
+      }
+    },
+    {
+      "slug": "kroniese-liggaamlike-pyn",
+      "group": "pyn",
+      "title": {
+        "af": "Wanneer die pyn elke dag bly kom",
+        "en": "When the pain comes back every day"
+      },
+      "intro": {
+        "af": "Chroniese pyn maak ’n mens moeg om elke dag te verduidelik hoe sleg dit is. Hierdie blad is vir die wat reeds soveel dra en nog net wil rus.",
+        "en": "Chronic pain makes a person tired of explaining how bad it is every day. This page is for those who have already carried so much and simply want rest."
+      },
+      "passages": [
+        {
+          "book": "2co",
+          "ch": 4,
+          "vs": 16,
+          "field": {
+            "af": "Die uurlike verandering",
+            "en": "Though our outer man decays"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 12,
+          "vs": 9,
+          "field": {
+            "af": "My genade is vir jou genoeg",
+            "en": "My grace is enough for you"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 1,
+          "vs": 7,
+          "field": {
+            "af": "Die beproefde opregtheid van jou geloof",
+            "en": "The tested genuineness of your faith"
+          }
+        },
+        {
+          "book": "rom",
+          "ch": 8,
+          "vs": 18,
+          "field": {
+            "af": "Ons wag vir die kinders van God",
+            "en": "We wait for the revealing of the children of God"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "As pyn jou elke dag beperk, kan geeslike woorde maklik klink net soos woorde — en tog kan hulle diep werk. Paulus het nie gesê dat die steke nooit pyn nie, hy het gesê die genade is genoeg; beteken dit nie dat jy nie medikasie of mediese hulp moet soek nie.",
+          "prayer": "Hereer, ek het genoeg gepraat oor die pyn. Kom jy na my sonder woorde; as jy nie vandag genees nie, laat my pyn nie my geloof oorwin nie. Hou my bymekaar.",
+          "step": "Maak vandag ’n afspraak dat jou pyn behandel word — bel jou huisdokter of bel SADAG (0800 567 567) en vra vir ’n gratis kliniek of pynbehandeling naby jou; as die pyn jou lewe bedreig, bel Lifeline (0861 322 322)."
+        },
+        "en": {
+          "reflect": "When pain limits you daily, spiritual words can sound like just words — and yet they can work deeply. Paul did not say the thorn never hurts, he said the grace is enough; that does not mean you should stop seeking medication or medical care.",
+          "prayer": "Lord, I have said enough about the pain. Come to me without words; if you do not heal today, let my pain not win over my faith. Keep me together.",
+          "step": "Make an appointment today so your pain gets treated — call your GP, or call SADAG (0800 567 567) and ask for a free clinic or pain treatment near you; if the pain threatens your life, call Lifeline (0861 322 322)."
+        }
+      }
+    },
+    {
+      "slug": "sterftyd-die-jy-nie-kan-verwerk",
+      "group": "pyn",
+      "title": {
+        "af": "Wanneer ’n sterfte by jou bly hang sonder om weg te gaan",
+        "en": "When a death stays with you and will not move"
+      },
+      "intro": {
+        "af": "Soms kan ’n mens by die graf staan en steeds nie voel die dood regtig was nie. Hierdie blad is vir rou wat nie kry plek in die gewone woorde nie.",
+        "en": "Sometimes a person stands at the grave and still does not feel the death was real. This page is for grief that does not fit ordinary words."
+      },
+      "passages": [
+        {
+          "book": "1th",
+          "ch": 4,
+          "vs": 13,
+          "field": {
+            "af": "Ons sal nie rou soos mense sonder hoop nie",
+            "en": "We will not grieve like those without hope"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 1,
+          "vs": 3,
+          "field": {
+            "af": "Die God van alle troos",
+            "en": "The God of all comfort"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Naby die gebroke harte",
+            "en": "Close to the brokenhearted"
+          }
+        },
+        {
+          "book": "jhn",
+          "ch": 11,
+          "vs": 35,
+          "field": {
+            "af": "Jesus het gehuil",
+            "en": "Jesus wept"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Rou het sy eie taal: partykeer gryp, partykeer skud, partykeer lag hard om se niemand van die pyn mag weet nie. Ons moet nie dwing dat iemand vandag altyd “reg” rou nie; Jesus self het by Lazarus se graf gehuil, al het Hy die opstanding reeds bekend.",
+          "prayer": "Hereer, ek rou vir iemand wat ek mis. Houd my in hierdie donker tyd en bring my later by die Here wat altyd troos. Laat my nou rou soos ek kan.",
+          "step": "Bel vandag Lifeline (0861 322 322) of praat met iemand wat kan luister; as jy aan selfmoord dink of nie meer wil leef nie, bel die SADAG helpline (0800 567 567) of Lifeline (0861 322 322) en sê net: “Ek het hulp nodig.”"
+        },
+        "en": {
+          "reflect": "Grief has its own language: sometimes numbness, sometimes shaking, sometimes laughing loudly so nobody knows the pain. We should not force anyone to grieve “right” today; Jesus himself wept at Lazarus’ grave, even knowing the resurrection.",
+          "prayer": "Lord, I grieve for someone I have lost. Hold me through this dark time and bring me one day to the God who comforts always. Let me grieve now as I can.",
+          "step": "Call Lifeline (0861 322 322) today or speak to someone who can listen; if you are thinking about suicide or do not want to live, call SADAG (0800 567 567) or Lifeline (0861 322 322) and say only, “I need help.”"
+        }
+      }
+    },
+    {
+      "slug": "ouers-verloor",
+      "group": "pyn",
+      "title": {
+        "af": "Wanneer jou ouer sterf",
+        "en": "When your parent dies"
+      },
+      "intro": {
+        "af": "Hoe ouer jy was, bepaal hoe swaar die verlies is; diegene wat ’n goeie pa of ma gehad het, het baie om te mis. Hierdie blad is vir almal wat ’n ouer verloor het.",
+        "en": "How good a parent you had decides how heavy the loss is; those who had a good father or mother have much to miss. This page is for everyone who has lost a parent."
+      },
+      "passages": [
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Die Here is naby die gebroke harte",
+            "en": "The Lord is close to the brokenhearted"
+          }
+        },
+        {
+          "book": "2co",
+          "ch": 1,
+          "vs": 3,
+          "field": {
+            "af": "Die God van alle troos",
+            "en": "The God of all comfort"
+          }
+        },
+        {
+          "book": "rev",
+          "ch": 21,
+          "vs": 4,
+          "field": {
+            "af": "Hy sal alle trane afvee",
+            "en": "He will wipe away every tear"
+          }
+        },
+        {
+          "book": "job",
+          "ch": 19,
+          "vs": 25,
+          "field": {
+            "af": "My Verloser leef tot na die laaste dag",
+            "en": "My Redeemer lives to the last day"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wanneer ’n ouer sterf, verloor jy nie net ’n mens nie, maar die stem wat jou as kind geleer het, jou eie geskiedenis en die persoon wat jy vandag dink jy is. Dit is ’n rou wat mense maklik met godsdiens oordek en nooit werklik verwerk nie — en jy het reg om jou tyd te neem.",
+          "prayer": "Hereer, my ouer is weg. Sit jou arm om my hart en hou my wat ek van hulle onthou. Maak ’n plek vir hierdie verlies in my lewe sonder om my te breek.",
+          "step": "Vandag, bel net een mens wat jou ouer geken het en vra hulle om hul van daardie persoon te vertel — en as jy so vêel rou voel dat jy nie kan aanhou nie, bel Lifeline (0861 322 322)."
+        },
+        "en": {
+          "reflect": "When a parent dies you lose not only a person but the voice that taught you as a child, your own history, and the person you think you are today. It is a grief people often cover with religion and never actually process — and you have the right to take your time.",
+          "prayer": "Lord, my parent is gone. Put your arm around my heart and keep what I remember of them. Make a place for this loss in my life without breaking me.",
+          "step": "Today, call just one person who knew your parent and ask them to tell you about them — and if the grief is so heavy you cannot carry it, call Lifeline (0861 322 322)."
+        }
+      }
+    },
+    {
+      "slug": "miskraam-en-onvrugbaarheid",
+      "group": "pyn",
+      "title": {
+        "af": "Wanneer ’n babatjie verloor gaan of jy nie kan kraam nie",
+        "en": "When a baby is lost or you cannot conceive"
+      },
+      "intro": {
+        "af": "Hierdie is rou wat mense selde hardop oor praat; net diegene wat dit weet, verstaan hoe stil daardie verlies kan wees. Hierdie blad is vir jou.",
+        "en": "This is a grief people rarely speak about; only those who have known it understand how silent the loss can be. This page is for you."
+      },
+      "passages": [
+        {
+          "book": "psa",
+          "ch": 139,
+          "vs": 13,
+          "field": {
+            "af": "Uit my baarmoeder het U my geweef",
+            "en": "You knitted me together in my mother’s womb"
+          }
+        },
+        {
+          "book": "jer",
+          "ch": 1,
+          "vs": 5,
+          "field": {
+            "af": "Voordat Ek jou gevorm het, het Ek jou geken",
+            "en": "Before I formed you I knew you"
+          }
+        },
+        {
+          "book": "isa",
+          "ch": 49,
+          "vs": 15,
+          "field": {
+            "af": "Kan ’n vrou vergeet haar kind?",
+            "en": "Can a woman forget her child?"
+          }
+        },
+        {
+          "book": "psa",
+          "ch": 34,
+          "vs": 18,
+          "field": {
+            "af": "Naby die gebroke harte",
+            "en": "Close to the brokenhearted"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Miskraam of ’n reis na ’n baba wat nie kom nie, is pyn wat baie mense dra sonder om ’n woord daarvoor te hê. Dit is nie minder rou omdat die kind nooit gesien is nie, en dit is ook nie ’n straf nie; soms is daar net geen rede wat ’n mens kan vind nie.",
+          "prayer": "Hereer, ek het my kind verloor voordat ek hom of haar geken het. Hou my hierdie rou en moenie laat skuld op my rus nie. Jy ken my dieper as ek myself — en jy wat nou weet, wat was ek bedoel vir.",
+          "step": "Vandag, praat met een mens wat dit verstaan — terwyl jy veilig en kalm is — en as jy onvrugbaarheid ervaar, bel jou huisdoktor of die Menslike Reproduksie Sentrum (011 784 5777) om die mediese moontlikhede te bespreek sonder skaamte."
+        },
+        "en": {
+          "reflect": "A miscarriage or a journey towards a baby who does not come is a grief many carry without a word for it. It is no less real because the child was never seen, and it is not a punishment; sometimes there simply is no reason a person can find.",
+          "prayer": "Lord, I lost my child before I ever held them. Hold this grief for me and do not let blame rest on me. You know me deeper than I know myself — and you know what I was meant for.",
+          "step": "Today, speak to one person who understands — while you are safe and calm — and if you face infertility, call your GP or the Menslike Reproduksie Sentrum (011 784 5777) to discuss the medical options without shame."
+        }
+      }
+    },
+    {
+      "slug": "gebroke-vertroue",
+      "group": "pyn",
+      "title": {
+        "af": "Wanneer niemand meer werklik op jou reken nie",
+        "en": "When no one can really be trusted any more"
+      },
+      "intro": {
+        "af": "Ná ’n leuwe, ’n bedrog of mishandeling kan ’n mens vir elkeen wantrou — selfs vir mense wat verdien om naby te wees. Hierdie blad handel oor herstel.",
+        "en": "After a lie, a betrayal or abuse, a person can distrust everyone, even the people who deserve closeness. This page is about the road back."
+      },
+      "passages": [
+        {
+          "book": "pro",
+          "ch": 14,
+          "vs": 15,
+          "field": {
+            "af": "Die verstandige sien die gevaar van vooraf",
+            "en": "The prudent see danger ahead"
+          }
+        },
+        {
+          "book": "jas",
+          "ch": 1,
+          "vs": 21,
+          "field": {
+            "af": "Neem God se woord met nederigheid aan",
+            "en": "Receive the word planted in you with humility"
+          }
+        },
+        {
+          "book": "1pe",
+          "ch": 5,
+          "vs": 8,
+          "field": {
+            "af": "Die duivel soos ’n leeu brul",
+            "en": "Your enemy prowls like a lion"
+          }
+        },
+        {
+          "book": "zec",
+          "ch": 4,
+          "vs": 6,
+          "field": {
+            "af": "Nie deur krag nie, maar deur my Gees",
+            "en": "Not by might nor by power, but by my Spirit"
+          }
+        }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Wantrou is nie altyd ’n gebrek aan geloof nie — dit is dikwels ’n beskerming wat jy met rede geleer het, en God belowe nie dat jy dit mete verloor nie. Die vraag is nie of jy voor die eerste keer moet vertrou nie, maar of jy stap vir stap weer ’n bietjie kan gloei nie.",
+          "prayer": "Hereer, ek is moeg om te wag vir die klap. Ek wil nie in my eie krag besluit nie; leer my om iemand te vertrou wat hyself nie kan breek nie, en maak my hart stadig weer toe.",
+          "step": "Kies vandag een persoon — ’n kerkmaat, ’n sus of ’n mentor — en gee hom of haar net een klein ding om te doen; as jou verhouding was breek deur mishandeling, bel GBV Command Centre (0800 428 428 of *120*7867#) vir anonieme hulp."
+        },
+        "en": {
+          "reflect": "Distrust is not always a lack of faith — often it is a protection you learned with good reason, and God does not require you to lose it overnight. The question is not whether you must trust again immediately, but whether you can take one small step back.",
+          "prayer": "Lord, I am tired of waiting for the blow. I do not want to rely on my own strength; teach me to trust someone who cannot be broken, and open my heart again, slowly.",
+          "step": "Choose one person today — a church friend, a sister, a mentor — and give them one small thing to do; if your relationship was broken by abuse, call the GBV Command Centre (0800 428 428 or *120*7867#) for anonymous help."
         }
       }
     }

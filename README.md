@@ -33,7 +33,7 @@ As jy dink aan selfbeskadiging, bel **0800 567 567** (24 uur) of praat met ieman
 | ** PWA | Installeerbaar, werk aflyn |
 | ** Data | Nul bedieners. Alles in `localStorage` op die toestel |
 | ** Inhoud | 54+ onderwerpe in 6 groepe, 365 dae se daaglikse verse |
-| ** Hulp | 14 geverifieerde SA-lyne |
+| ** Hulp | 15 geverifieerde SA-dienste |
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "_readme": "Help directory. Every number below was verified against the operator's or government's own site on 2026-10-14. Numbers that could not be confirmed on a first-party source are deliberately absent. `verified` records when the operator's own page confirmed it. `mode` controls which help-mode tab a card appears under: me | other | both.",
-  "_notes": "Help directory. Every number was checked against the operator's or government's own site on 2026-10-14; nothing here was taken from a forum or a directory. 'operator' names who actually answers the phone, because a coarse official/not-official flag would mislead: SADAG, Lifeline, AA and NA are all non-profits. SADAG reported its SMS shortcodes down for maintenance in Sept 2026, so SMS is always secondary to a voice line, never the only route. There is no 24hr Christian pastoral crisis line in South Africa - do not invent one. Numbers not confirmed on a first-party source are deliberately absent.",
+  "_notes": "Help directory. Every number was checked against the operator's or government's own site on 2026-10-14; nothing here was taken from a forum or a directory. 'operator' names who actually answers the phone, because a coarse official/not-official flag would mislead: SADAG, Lifeline, AA and NA are all non-profits. SADAG reported its SMS shortcodes down for maintenance in Sept 2026, so SMS is always secondary to a voice line, never the only route. There is no 24hr Christian pastoral crisis line in South Africa - do not invent one. Numbers not confirmed on a first-party source are deliberately absent. Legal Aid SA was confirmed on legal-aid.co.za, NOT legalaid.co.za, which is a parked domain for sale and was carrying a wrong number.",
   "emergency": [
     {
       "name": {
@@ -428,6 +428,37 @@
         "af": "GBV Bevelsentrum, Dept. van Sosiale Ontwikkeling",
         "en": "GBV Command Centre, Dept of Social Development"
       }
+    },
+    {
+      "id": "legal-aid",
+      "mode": "both",
+      "name": {
+        "af": "Legal Aid Suid-Afrika",
+        "en": "Legal Aid South Africa"
+      },
+      "desc": {
+        "af": "Gratis regsberading en verteenwoordiging vir mense wat dit nie kan bekostig nie — insluitend vroue, kinders, bejaardes en mense in die landelike gebiede. Bel ook as jy in die polisie se hande is.",
+        "en": "Free legal advice and representation for people who cannot afford it — including women, children, the elderly and rural communities. Also call if you are in police custody."
+      },
+      "numbers": [
+        {
+          "tel": "0800 110 110"
+        }
+      ],
+      "sms": [
+        "079 835 7179 (Please Call Me)"
+      ],
+      "hours": [
+        {
+          "af": "Ma–Vr 07:00–19:00 (nie 24-uur nie)",
+          "en": "Mon–Fri 07:00–19:00 (not 24 hours)"
+        }
+      ],
+      "operator": {
+        "af": "Legal Aid Suid-Afrika (NRO)",
+        "en": "Legal Aid South Africa (NPO)"
+      },
+      "verified": "2026-10-14"
     }
   ]
 }

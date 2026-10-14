@@ -1,5 +1,7 @@
 # Pad van Genade
 
+**Created by [jaxtech](https://nageljakes.github.io/jaxtechweb)**
+
 **'n Christelike hulpmiddel vir mense wat deur stryd gaan.**
 *A Christian resource for people who are having a hard time.*
 
@@ -12,6 +14,12 @@ step for today, and real South African helplines. Everything runs in the browser
 account, no server, no analytics.
 
 ---
+
+## Creator / Skepper
+
+Built by **jaxtech** — <https://nageljakes.github.io/jaxtechweb>.
+The credit is rendered from a single `CREATOR` constant in `app/js/i18n.js`, used by
+both the footer and the About page, so the name and link cannot drift apart.
 
 ## Wat dit is nie
 

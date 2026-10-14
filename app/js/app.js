@@ -4,7 +4,7 @@
    which reads the active language, so a language switch never leaves mixed UI.
 */
 
-import { STRINGS, ABOUT } from "./i18n.js";
+import { STRINGS, ABOUT, CREATOR } from "./i18n.js";
 import * as store from "./store.js";
 
 const DATA_URL = "data/content.json";
@@ -678,6 +678,10 @@ function renderAbout() {
 
       <h3>${esc(t("aboutImages"))}</h3>
       ${renderImageCredits()}
+
+      <h3>${esc(t("aboutWho"))}</h3>
+      <p>${esc(L(CREATOR.blurb))}</p>
+      <p><a href="${esc(CREATOR.url)}" rel="noopener">${esc(CREATOR.name)}</a></p>
     </div>
   `;
 }
@@ -705,6 +709,8 @@ function renderImageCredits() {
 function renderFooter() {
   $("#footer-note").textContent = t("footerNote");
   $("#footer-rights").textContent = t("rights");
+  const credit = $("#footer-credit-label");
+  if (credit) credit.textContent = L(CREATOR.label) + " ";
 }
 
 /* ------------------------------------------------------------ interaction */
@@ -973,6 +979,10 @@ function renderShell() {
             <a href="#/about" data-page="about">${esc(STRINGS[state.lang].navAbout)}</a>
           </div>
           <p class="muted" style="margin:.5rem 0 0" id="footer-rights"></p>
+          <p class="footer__credit">
+            <span id="footer-credit-label"></span>
+            <a href="${esc(CREATOR.url)}" rel="noopener" id="footer-credit-name">${esc(CREATOR.name)}</a>
+          </p>
         </div>
       </div>
     </footer>

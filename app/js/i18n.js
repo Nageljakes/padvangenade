@@ -5,6 +5,21 @@
 
 export const LANGS = ["af", "en"];
 
+/* Creator credit. One definition, used by both the footer and the About page,
+   so the name and the link can never drift apart. */
+export const CREATOR = {
+  name: "jaxtech",
+  url: "https://nageljakes.github.io/jaxtechweb",
+  label: {
+    af: "Gemaak deur",
+    en: "Created by",
+  },
+  blurb: {
+    af: "Pad van Genade is gebou deur jaxtech vir Suid-Afrikaanse Christene wat 'n regte plek soek om te bid, te lees en hulp te vind.",
+    en: "Path of Grace was built by jaxtech for South African Christians looking for a real place to read, to pray, and to find help.",
+  },
+};
+
 export const STRINGS = {
   af: {
     dir: "ltr",
@@ -106,6 +121,7 @@ export const STRINGS = {
     aboutPrivacy: "Jou privaatheid",
     aboutLimits: "Wat dit nie is nie",
     aboutImages: "Beelde",
+    aboutWho: "Wie het dit gemaak",
     imageBy: "Foto:",
 
     footerNote:
@@ -215,6 +231,7 @@ export const STRINGS = {
     aboutPrivacy: "Your privacy",
     aboutLimits: "What this is not",
     aboutImages: "Images",
+    aboutWho: "Who made this",
     imageBy: "Photo:",
 
     footerNote:

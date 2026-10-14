@@ -499,6 +499,7 @@ function renderHelp() {
             <a class="help-item__num" href="tel:${esc(n.tel.replace(/\s/g, ""))}">${esc(n.tel)}</a>`).join("")}
           ${(card.sms || []).map((n) => `<div class="help-item__meta">SMS ${esc(n)}</div>`).join("")}
           ${(card.hours || []).map((h) => `<div class="help-item__meta">${esc(L(h))}</div>`).join("")}
+          ${card.operator ? `<div class="help-item__operator">${esc(L(card.operator))}</div>` : ""}
           ${card.verified ? `<div class="help-item__meta">${esc(t("verified"))} ${esc(card.verified)}</div>` : ""}
         </div>`).join("")}
     </div>

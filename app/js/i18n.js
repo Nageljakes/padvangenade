@@ -66,6 +66,8 @@ export const STRINGS = {
     helpSomeone: "Ek maak oor iemand wat ek ken",
     helpNote: "Noodnommers is vir Suid-Afrika. Bel 112 vanaf enige foon.",
     verified: "Geverifieer",
+    kindOfficial: "Amptelik",
+    kindNgo: "Vrywilligersorganisasie",
 
     journalHeading: "My joernaal",
     journalIntro:
@@ -171,6 +173,8 @@ export const STRINGS = {
     helpSomeone: "I am worried about someone I know",
     helpNote: "Numbers are for South Africa. Dial 112 from any phone.",
     verified: "Verified",
+    kindOfficial: "Official",
+    kindNgo: "Voluntary organisation",
 
     journalHeading: "My journal",
     journalIntro:

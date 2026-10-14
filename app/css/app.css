@@ -423,3 +423,9 @@ main { padding-block: clamp(1.75rem, 5vw, 3rem) 4rem; min-height: 60vh; }
   .page[hidden] { display: block !important; }
   .verse { page-break-inside: avoid; }
 }
+/* Who actually answers the phone. Named because a coarse official/not-official
+   flag would mislead: SADAG, Lifeline, AA and NA are all non-profits. */
+.help-item__operator {
+  margin-top: .6rem; padding-top: .5rem; border-top: 1px solid var(--line-soft);
+  font-size: .78rem; color: var(--muted);
+}

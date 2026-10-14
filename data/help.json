@@ -1,193 +1,433 @@
 {
   "_readme": "Help directory. Every number below was verified against the operator's or government's own site on 2026-10-14. Numbers that could not be confirmed on a first-party source are deliberately absent. `verified` records when the operator's own page confirmed it. `mode` controls which help-mode tab a card appears under: me | other | both.",
-  "_notes": "SADAG reported its SMS shortcodes were down for maintenance in Sept 2026, so SMS is always listed as secondary to a voice line, never on its own. There is no 24hr Christian pastoral crisis line in South Africa - do not invent one.",
-
+  "_notes": "Help directory. Every number was checked against the operator's or government's own site on 2026-10-14; nothing here was taken from a forum or a directory. 'operator' names who actually answers the phone, because a coarse official/not-official flag would mislead: SADAG, Lifeline, AA and NA are all non-profits. SADAG reported its SMS shortcodes down for maintenance in Sept 2026, so SMS is always secondary to a voice line, never the only route. There is no 24hr Christian pastoral crisis line in South Africa - do not invent one. Numbers not confirmed on a first-party source are deliberately absent.",
   "emergency": [
     {
-      "name": { "af": "Onmiddellike gevaar — polisie", "en": "Immediate danger — police" },
+      "name": {
+        "af": "Onmiddellike gevaar — polisie",
+        "en": "Immediate danger — police"
+      },
       "tel": "10111"
     },
     {
-      "name": { "af": "Nooddiens vanaf enige foon", "en": "Emergency from any phone" },
+      "name": {
+        "af": "Nooddiens vanaf enige foon",
+        "en": "Emergency from any phone"
+      },
       "tel": "112"
     }
   ],
-
   "cards": [
     {
       "id": "sadag-suicide",
       "mode": "me",
-      "name": { "af": "SADAG Selfmoordkrisislyn", "en": "SADAG Suicide Crisis Helpline" },
+      "name": {
+        "af": "SADAG Selfmoordkrisislyn",
+        "en": "SADAG Suicide Crisis Helpline"
+      },
       "desc": {
         "af": "24-uur. Vir selfmoordgedagtes, depressie en angs. Bel en praat met iemand.",
         "en": "24 hours. For thoughts of suicide, depression and anxiety. Call and speak to someone."
       },
-      "numbers": [{ "tel": "0800 567 567" }],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 567 567"
+        }
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "SADAG, met die Departement van Sosiale Ontwikkeling",
+        "en": "SADAG, with the Department of Social Development"
+      }
     },
     {
       "id": "lifeline",
       "mode": "both",
-      "name": { "af": "Lifeline Suid-Afrika", "en": "Lifeline South Africa" },
+      "name": {
+        "af": "Lifeline Suid-Afrika",
+        "en": "Lifeline South Africa"
+      },
       "desc": {
         "af": "24-uur. Trauma, mishandeling, verlies, verhoudingsprobleme en eetstoornisse.",
         "en": "24 hours. Trauma, abuse, bereavement, relationship distress and eating disorders."
       },
-      "numbers": [{ "tel": "0861 322 322" }],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0861 322 322"
+        }
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Lifeline Suid-Afrika (NRO)",
+        "en": "Lifeline South Africa (NPO)"
+      }
     },
     {
       "id": "cipla",
       "mode": "me",
-      "name": { "af": "Cipla Sielgesondheidslyn", "en": "Cipla Mental Health Helpline" },
+      "name": {
+        "af": "Cipla Sielgesondheidslyn",
+        "en": "Cipla Mental Health Helpline"
+      },
       "desc": {
         "af": "24-uur. Tweede 24-uur-lyn vir angs, paniek en depressie.",
         "en": "24 hours. A second 24-hour line for anxiety, panic and depression."
       },
-      "numbers": [{ "tel": "0800 456 789" }],
-      "sms": ["31393"],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 456 789"
+        }
+      ],
+      "sms": [
+        "31393"
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Cipla",
+        "en": "Cipla"
+      }
     },
     {
       "id": "gbv",
       "mode": "both",
-      "name": { "af": "GBV Bevelsentrum", "en": "GBV Command Centre" },
+      "name": {
+        "af": "GBV Bevelsentrum",
+        "en": "GBV Command Centre"
+      },
       "desc": {
         "af": "24-uur. Huiselike geweld, mishandeling en dwang. Die USSD-nommer werk op enige foon, sonder krediete nie.",
         "en": "24 hours. Domestic violence, abuse and coercion. The USSD number works on any phone, no credit needed."
       },
-      "numbers": [{ "tel": "0800 428 428" }, { "tel": "*120*7867#" }],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 428 428"
+        },
+        {
+          "tel": "*120*7867#"
+        }
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Departement van Sosiale Ontwikkeling",
+        "en": "Department of Social Development"
+      }
     },
     {
       "id": "substance",
       "mode": "both",
-      "name": { "af": "Verslawingshulplyn (Departement van Sosiale Ontwikkeling)", "en": "Substance Abuse Helpline (Dept of Social Development)" },
+      "name": {
+        "af": "Verslawingshulplyn (Departement van Sosiale Ontwikkeling)",
+        "en": "Substance Abuse Helpline (Dept of Social Development)"
+      },
       "desc": {
         "af": "24-uur. Vir alkohol- en dwelmverslawing, behandeling, en ondersteuning vir gesin.",
         "en": "24 hours. For alcohol and drug dependence, treatment, and support for family."
       },
-      "numbers": [{ "tel": "0800 12 13 14" }],
-      "sms": ["32312"],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 12 13 14"
+        }
+      ],
+      "sms": [
+        "32312"
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Departement van Sosiale Ontwikkeling",
+        "en": "Department of Social Development"
+      }
     },
     {
       "id": "childline",
       "mode": "other",
-      "name": { "af": "Childline", "en": "Childline" },
+      "name": {
+        "af": "Childline",
+        "en": "Childline"
+      },
       "desc": {
         "af": "24/7, gratis vanaf alle netwerke. Vir kinders en jongmense wat in gevaar of nood is.",
         "en": "24/7, free from all networks. For children and young people in danger or distress."
       },
-      "numbers": [{ "tel": "116" }],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "116"
+        }
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Childline Suid-Afrika",
+        "en": "Childline South Africa"
+      }
     },
     {
       "id": "gender-violence",
       "mode": "both",
-      "name": { "af": "Lifeline Geslagsgeweldlyn", "en": "Lifeline Gender Violence Helpline" },
+      "name": {
+        "af": "Lifeline Geslagsgeweldlyn",
+        "en": "Lifeline Gender Violence Helpline"
+      },
       "desc": {
         "af": "24-uur. Ondersteuning en berading vir vroue en mense wat geslagsgeweld ervaar.",
         "en": "24 hours. Support and counselling for women and those experiencing gender-based violence."
       },
-      "numbers": [{ "tel": "0800 150 150" }],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 150 150"
+        }
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Lifeline Suid-Afrika",
+        "en": "Lifeline South Africa"
+      }
     },
     {
       "id": "rape-crisis",
       "mode": "both",
-      "name": { "af": "Rape Crisis (Kaapstad)", "en": "Rape Crisis (Cape Town)" },
+      "name": {
+        "af": "Rape Crisis (Kaapstad)",
+        "en": "Rape Crisis (Cape Town)"
+      },
       "desc": {
         "af": "Bel-terugberading in kantoorure. Ondersteuning en begeleiding vir oorlewendes van verkragting en seksuele geweld.",
         "en": "Call-back counselling, office hours. Support and guidance for survivors of rape and sexual violence."
       },
-      "numbers": [{ "tel": "021 447 9762" }],
-      "hours": [
-        { "af": "Ma–Do 09:00–16:30 · Vr 09:00–15:30 (Kaapstad)", "en": "Mon–Thu 09:00–16:30 · Fri 09:00–15:30 (Cape Town)" },
-        { "af": "WhatsApp 083 222 5164", "en": "WhatsApp 083 222 5164" }
+      "numbers": [
+        {
+          "tel": "021 447 9762"
+        }
       ],
-      "verified": "2026-10-14"
+      "hours": [
+        {
+          "af": "Ma–Do 09:00–16:30 · Vr 09:00–15:30 (Kaapstad)",
+          "en": "Mon–Thu 09:00–16:30 · Fri 09:00–15:30 (Cape Town)"
+        },
+        {
+          "af": "WhatsApp 083 222 5164",
+          "en": "WhatsApp 083 222 5164"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Rape Crisis, Kaapstad",
+        "en": "Rape Crisis, Cape Town"
+      }
     },
     {
       "id": "aa",
       "mode": "me",
-      "name": { "af": "Alcoholics Anonymous", "en": "Alcoholics Anonymous" },
+      "name": {
+        "af": "Alcoholics Anonymous",
+        "en": "Alcoholics Anonymous"
+      },
       "desc": {
         "af": "24-uur. Bel om ’n plaaslike ontmoetingsgroep naby jou te vind.",
         "en": "24 hours. Call to find a local meeting group near you."
       },
-      "numbers": [{ "tel": "0861 435 722" }],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0861 435 722"
+        }
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Alcoholics Anonymous",
+        "en": "Alcoholics Anonymous"
+      }
     },
     {
       "id": "na",
       "mode": "me",
-      "name": { "af": "Narcotics Anonymous", "en": "Narcotics Anonymous" },
+      "name": {
+        "af": "Narcotics Anonymous",
+        "en": "Narcotics Anonymous"
+      },
       "desc": {
         "af": "24-uur. Ondersteuning vir mense wat van dwelms afhanklik is. Ontmoetings landwyd.",
         "en": "Support for people dependent on drugs. Meetings countrywide."
       },
-      "numbers": [{ "tel": "0861 00 6962" }],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0861 00 6962"
+        }
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Narcotics Anonymous",
+        "en": "Narcotics Anonymous"
+      }
     },
     {
       "id": "higher-health",
       "mode": "other",
-      "name": { "af": "Higher Health", "en": "Higher Health" },
+      "name": {
+        "af": "Higher Health",
+        "en": "Higher Health"
+      },
       "desc": {
         "af": "24/7, gratis en vertroulik. Vir studente by universiteite en kolleges.",
         "en": "24/7, free and confidential. For students at universities and colleges."
       },
-      "numbers": [{ "tel": "0800 36 36 36" }],
-      "sms": ["43336"],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 36 36 36"
+        }
+      ],
+      "sms": [
+        "43336"
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Higher Health",
+        "en": "Higher Health"
+      }
     },
     {
       "id": "health-line",
       "mode": "both",
-      "name": { "af": "Nasionale Gesondheidslyn", "en": "National Health Helpline" },
+      "name": {
+        "af": "Nasionale Gesondheidslyn",
+        "en": "National Health Helpline"
+      },
       "desc": {
         "af": "24-uur. Gesondheidsvrae, medikasie en waar om hulp te kry.",
         "en": "24 hours. Health questions, medication, and where to get care."
       },
-      "numbers": [{ "tel": "0800 012 322" }],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 012 322"
+        }
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "Departement van Gesondheid",
+        "en": "Department of Health"
+      }
     },
     {
       "id": "sassa",
       "mode": "other",
-      "name": { "af": "SASSA", "en": "SASSA" },
+      "name": {
+        "af": "SASSA",
+        "en": "SASSA"
+      },
       "desc": {
         "af": "Kantoorure. Aansoeke en navrae oor maandelikse toelae, kindersorg en sosiale voordele.",
         "en": "Office hours. Applications and queries on monthly grants, child support and social benefits."
       },
-      "numbers": [{ "tel": "0800 60 10 11" }],
-      "hours": [{ "af": "Kantoorure, nie 24-uur nie", "en": "Office hours, not 24 hours" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 60 10 11"
+        }
+      ],
+      "hours": [
+        {
+          "af": "Kantoorure, nie 24-uur nie",
+          "en": "Office hours, not 24 hours"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "SASSA, Departement van Sosiale Ontwikkeling",
+        "en": "SASSA, Department of Social Development"
+      }
     },
     {
       "id": "gbv-disability",
       "mode": "other",
-      "name": { "af": "GBV Bevelsentrum vir mense met gestremdhede", "en": "GBV Command Centre for persons with disabilities" },
+      "name": {
+        "af": "GBV Bevelsentrum vir mense met gestremdhede",
+        "en": "GBV Command Centre for persons with disabilities"
+      },
       "desc": {
         "af": "24-uur, in al 11 amptelike tale. Video-belsel in Suid-Afrikaanse Gebaretaal.",
         "en": "24 hours, in all 11 official languages. Video calling in South African Sign Language."
       },
-      "numbers": [{ "tel": "0800 428 428" }],
-      "sms": ["help na 31531"],
-      "hours": [{ "af": "24-uur, elke dag", "en": "24 hours, every day" }],
-      "verified": "2026-10-14"
+      "numbers": [
+        {
+          "tel": "0800 428 428"
+        }
+      ],
+      "sms": [
+        "help na 31531"
+      ],
+      "hours": [
+        {
+          "af": "24-uur, elke dag",
+          "en": "24 hours, every day"
+        }
+      ],
+      "verified": "2026-10-14",
+      "operator": {
+        "af": "GBV Bevelsentrum, Dept. van Sosiale Ontwikkeling",
+        "en": "GBV Command Centre, Dept of Social Development"
+      }
     }
   ]
 }

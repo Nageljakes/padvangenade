@@ -30,10 +30,43 @@ const state = {
   streak: { count: 0, last: "" },
   dailyIndex: null,        // null = today's verse
   online: navigator.onLine,
+  hero: true,
 };
 
 const t = (key) => STRINGS[state.lang][key];
 const L = (obj) => obj[state.lang];
+
+/* Hero imagery.
+   One photograph per day, chosen deterministically from the date so the page
+   does not flicker between visits but still changes over the year. Only the
+   chosen image is ever requested. */
+const HEROES = ["drakensberg", "tablemount", "sunflowers", "springbok"];
+
+function heroForToday() {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  const day = Math.floor((now - start) / 86400000);
+  return HEROES[day % HEROES.length];
+}
+
+function applyHero() {
+  const id = heroForToday();
+  const el = $(".masthead");
+  if (!el) return;
+  // Set on the masthead itself, not <html>: the CSS fallback rule keys off
+  // this element's own style attribute.
+  // Set backgroundImage directly rather than through a CSS custom property:
+  // a relative url() inside a custom property resolves against the stylesheet,
+  // not the document, which breaks the moment the CSS lives in a subfolder.
+  // Resolving against document.baseURI also keeps the GitHub Pages subpath working.
+  const webp = new URL(`assets/img/${id}.webp`, document.baseURI).href;
+  el.style.backgroundImage = `url("${webp}")`;
+  document.documentElement.dataset.hero = id;
+  // Warm the JPEG fallback so a browser without WebP support is not left
+  // waiting on a second round trip after first paint.
+  const img = new Image();
+  img.src = new URL(`assets/img/${id}.jpg`, document.baseURI).href;
+}
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
@@ -56,14 +89,16 @@ async function boot() {
   renderShell();
   bindGlobal();
   try {
-    const [content, daily, help] = await Promise.all([
+    const [content, daily, help, credits] = await Promise.all([
       loadJSON(DATA_URL),
       loadJSON(DAILY_URL).catch(() => ({ entries: [] })),
       loadJSON(HELP_URL).catch(() => ({ cards: [] })),
+        loadJSON("assets/img/credits.json").catch(() => ({ images: [] })),
     ]);
     state.content = content;
     state.daily = daily;
     state.help = help;
+    state.credits = credits;
     Object.assign(state, store.loadSaved(content.topics.map((t) => t.slug)));
     state.dailyIndex = dailyIndexForToday();
     markVisit();
@@ -125,6 +160,7 @@ function render() {
   renderShare();
   renderAbout();
   renderFooter();
+  applyHero();
 }
 
 function renderPage(page) {
@@ -596,8 +632,29 @@ function renderAbout() {
 
       <h3>${esc(t("aboutLimits"))}</h3>
       ${copy.limits.map((p) => `<p>${esc(p)}</p>`).join("")}
+
+      <h3>${esc(t("aboutImages"))}</h3>
+      ${renderImageCredits()}
     </div>
   `;
+}
+
+/* Image credits.
+   Two of the four photographs are CC BY-SA, which legally requires attribution
+   and that modified copies keep the same licence, so the credit is rendered
+   from data/credits.json on the page rather than only living in the repo. */
+function renderImageCredits() {
+  const images = state.credits?.images || [];
+  if (!images.length) return "";
+  const licences = state.credits.licences || {};
+  return `
+    <ul class="credits">
+      ${images.map((img) => `
+        <li>
+          <span class="credits__subject">${esc(L(img.subject))}</span><br>
+          <span class="muted">${esc(t("imageBy"))} ${esc(img.artist)} · ${esc(L(licences[img.licence] || { [state.lang]: img.licence }))} · <a href="${esc(img.page)}" rel="noopener">${esc(img.licence)}</a></span>
+        </li>`).join("")}
+    </ul>`;
 }
 
 /* ----------------------------------------------------------------- footer */

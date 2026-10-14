@@ -1,0 +1,63 @@
+{
+  "_readme": "Background photographs. Cropped/recompressed for web; content unaltered. Attribution is generated from this record.",
+  "licences": {
+    "Public domain": {
+      "af": "Publieke domein",
+      "en": "Public domain"
+    },
+    "CC0": {
+      "af": "CC0 — vry vir enige gebruik",
+      "en": "CC0 — free for any use"
+    },
+    "CC BY-SA 4.0": {
+      "af": "CC BY-SA 4.0 — naam moet genoem word",
+      "en": "CC BY-SA 4.0 — credit required"
+    },
+    "CC BY-SA 2.0": {
+      "af": "CC BY-SA 2.0 — naam moet genoem word",
+      "en": "CC BY-SA 2.0 — credit required"
+    }
+  },
+  "images": [
+    {
+      "id": "drakensberg",
+      "subject": {
+        "af": "Die Amphitheater van die Drakensberg, gesien vanaf die boonste Tugela-rivier, KwaZulu-Natal",
+        "en": "The Amphitheatre of the Drakensberg, seen from the upper Tugela River, KwaZulu-Natal"
+      },
+      "artist": "Bothar",
+      "licence": "Public domain",
+      "page": "https://commons.wikimedia.org/wiki/File:Amphitheatre_Drakensberg.jpg"
+    },
+    {
+      "id": "tablemount",
+      "subject": {
+        "af": "Tafelberg bo die wolke by sonop, Kaapstad",
+        "en": "Table Mountain above a sea of cloud at sunrise, Cape Town"
+      },
+      "artist": "David East (Unsplash)",
+      "licence": "CC0",
+      "page": "https://commons.wikimedia.org/wiki/File:Cape_Town_foggy_sunset_(Unsplash).jpg"
+    },
+    {
+      "id": "sunflowers",
+      "subject": {
+        "af": "'n Sonblomveld",
+        "en": "A sunflower field"
+      },
+      "artist": "Wikimedia Commons contributor",
+      "licence": "CC BY-SA 4.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Sunflower_Everywhere.jpg"
+    },
+    {
+      "id": "springbok",
+      "subject": {
+        "af": "'n Springbokkudde in die Auob-rivierbed, Kgalagadi-Transfrontiere Park, Noord-Kaap",
+        "en": "A springbok herd on the Auob Riverbed, Kgalagadi Transfrontier Park, Northern Cape"
+      },
+      "artist": "Wikimedia Commons contributor",
+      "licence": "CC BY-SA 2.0",
+      "page": "https://commons.wikimedia.org/wiki/File:Springboks_(Antidorcas_marsupialis)_herd_..._(51091760598).jpg"
+    }
+  ]
+}

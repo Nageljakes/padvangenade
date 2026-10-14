@@ -137,6 +137,28 @@ tools/topics/              # draft topic fragments (merged into content.src.json
 
 ---
 
+## Beelde / Images
+
+The masthead carries one photograph, chosen from four per day by the date so the
+page changes over the year without flickering between visits. Only the chosen
+image is requested; the set totals ~270 KB as WebP.
+
+| Subject | Licence |
+|---|---|
+| Amphitheatre, Drakensberg (KwaZulu-Natal) | Public domain |
+| Table Mountain above cloud at sunrise (Cape Town) | CC0 |
+| Sunflower field | CC BY-SA 4.0 |
+| Springbok herd, Kgalagadi (Northern Cape) | CC BY-SA 2.0 |
+
+All are reused from Wikimedia Commons, cropped and recompressed for the web with
+no content change. The CC BY-SA images require attribution and that modified
+copies keep the same licence, so the credit is rendered on the site under
+**Oor → Beelde** / **About → Images**, generated from `assets/img/credits.json`.
+Full provenance is in `assets/img/CREDITS.md`.
+
+If scripting is unavailable or an image fails, the masthead falls back to the
+brand gradient rather than appearing empty.
+
 ## Privaatheid / Privacy
 
 Geen bediener. Geen rekening. Geen analities. Jou joernaal, gestoorde onderwerpe en

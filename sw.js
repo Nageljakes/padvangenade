@@ -3,7 +3,9 @@
    served cache-first with a background refresh. This is what makes the site
    usable on a phone with no data — the situation it is most needed in. */
 
-const VERSION = "pvg-v1";
+// Bump when the precache list changes, or returning visitors keep the old
+// shell and never fetch the new assets.
+const VERSION = "pvg-v2";
 const SHELL = [
   "./",
   "./index.html",
@@ -17,6 +19,15 @@ const SHELL = [
   "./data/help.json",
   "./assets/icon.svg",
   "./assets/icon-192.png",
+  "./assets/img/credits.json",
+  "./assets/img/drakensberg.webp",
+  "./assets/img/tablemount.webp",
+  "./assets/img/sunflowers.webp",
+  "./assets/img/springbok.webp",
+  "./assets/img/drakensberg.jpg",
+  "./assets/img/tablemount.jpg",
+  "./assets/img/sunflowers.jpg",
+  "./assets/img/springbok.jpg",
 ];
 
 self.addEventListener("install", (event) => {

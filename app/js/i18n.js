@@ -105,6 +105,8 @@ export const STRINGS = {
     aboutSources: "Waar die Skrifte vandaan kom",
     aboutPrivacy: "Jou privaatheid",
     aboutLimits: "Wat dit nie is nie",
+    aboutImages: "Beelde",
+    imageBy: "Foto:",
 
     footerNote:
       "Pad van Genade bied Skrif, gebed en ’n praktiese stap. Dit vervang nie mediese of sielkundige hulp nie. In ’n noodgeval bel 112.",
@@ -212,6 +214,8 @@ export const STRINGS = {
     aboutSources: "Where the Scripture comes from",
     aboutPrivacy: "Your privacy",
     aboutLimits: "What this is not",
+    aboutImages: "Images",
+    imageBy: "Photo:",
 
     footerNote:
       "Path of Grace offers Scripture, prayer and a practical step. It does not replace medical or mental health care. In an emergency dial 112.",

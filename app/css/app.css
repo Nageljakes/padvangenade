@@ -118,14 +118,53 @@ a:hover { color: var(--brand-ink); }
 
 /* ---------------------------------------------------------------- header */
 
+/* Masthead with a photographic background.
+   The photo is decorative only: it sits behind a scrim that keeps the contrast
+   ratio for the heading and text well above the WCAG AA minimum, in both light
+   and dark colour schemes. The scrim is a separate layer rather than baked
+   into the image so the same file works for both schemes. */
 .masthead {
-  background: linear-gradient(160deg, var(--brand-ink), var(--brand));
+  position: relative;
+  isolation: isolate;
   color: #fff;
   padding-block: clamp(2rem, 6vw, 3.25rem);
+  background-color: var(--brand-ink);
+  background-image: linear-gradient(160deg, var(--brand-ink), var(--brand));
+  background-size: cover;
+  background-position: center 38%;
+  background-repeat: no-repeat;
+}
+.masthead::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  /* The copy is left-aligned, so the scrim is heaviest on the left and lifts
+     toward the right. That keeps text contrast high without flattening the
+     photograph into a dark wash across its whole width. */
+  background:
+    linear-gradient(100deg,
+      rgba(10, 38, 34, .86) 0%,
+      rgba(10, 38, 34, .70) 38%,
+      rgba(10, 38, 34, .46) 72%,
+      rgba(10, 38, 34, .34) 100%),
+    linear-gradient(to bottom, rgba(8, 30, 27, .34), rgba(8, 30, 27, .12));
 }
 @media (prefers-color-scheme: dark) {
-  .masthead { background: linear-gradient(160deg, #12211d, #16302a); }
+  .masthead { background-position: center 35%; }
+  .masthead::before {
+    background:
+      linear-gradient(100deg,
+        rgba(5, 20, 18, .88) 0%,
+        rgba(5, 20, 18, .74) 38%,
+        rgba(5, 20, 18, .56) 72%,
+        rgba(5, 20, 18, .46) 100%),
+      linear-gradient(to bottom, rgba(3, 14, 13, .38), rgba(3, 14, 13, .16));
+  }
 }
+/* app.js replaces background-image with the photograph once it loads.
+   The gradient above is the default, so the header still looks intentional if
+   scripting is unavailable or the image fails. */
 .masthead__eyebrow {
   font-size: .74rem; font-weight: 700; letter-spacing: .14em;
   text-transform: uppercase; opacity: .82; margin-bottom: .6rem;
@@ -429,3 +468,9 @@ main { padding-block: clamp(1.75rem, 5vw, 3rem) 4rem; min-height: 60vh; }
   margin-top: .6rem; padding-top: .5rem; border-top: 1px solid var(--line-soft);
   font-size: .78rem; color: var(--muted);
 }
+
+/* Image credits on the About page. */
+.credits { list-style: none; padding: 0; margin: 0; }
+.credits li { padding: .7rem 0; border-bottom: 1px solid var(--line-soft); }
+.credits li:last-child { border-bottom: 0; }
+.credits__subject { color: var(--ink); font-size: .95rem; line-height: 1.45; }

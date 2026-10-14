@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Pad van Genade">
+  <rect width="512" height="512" rx="112" fill="#1f5f57"/>
+  <!-- an open path: two ways converging on the same horizon -->
+  <path d="M136 420c0-96 44-152 120-152s120 56 120 152" fill="none" stroke="#faf8f4" stroke-width="26" stroke-linecap="round"/>
+  <path d="M136 420c0-96 44-152 120-152s120 56 120 152" fill="none" stroke="#9a6b2f" stroke-width="8" stroke-linecap="round" opacity=".85"/>
+  <circle cx="256" cy="188" r="26" fill="#faf8f4"/>
+  <!-- sunrise rays -->
+  <g stroke="#faf8f4" stroke-width="14" stroke-linecap="round" opacity=".55">
+    <path d="M256 96v-34"/>
+    <path d="M164 128l-24-24"/>
+    <path d="M348 128l24-24"/>
+  </g>
+</svg>

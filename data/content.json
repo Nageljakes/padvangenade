@@ -1,0 +1,481 @@
+{
+ "version": 2,
+ "sources": {
+  "af": {
+   "label": "Die Bybel in Afrikaans (1953)",
+   "via": "Wordproject",
+   "url": "https://www.wordproject.org/bibles/af_2/"
+  },
+  "en": {
+   "label": "Berean Standard Bible",
+   "via": "CC0 / scrollmapper",
+   "url": "https://github.com/scrollmapper/bible_databases"
+  }
+ },
+ "groups": [
+  {
+   "id": "verslawing",
+   "af": "Verslawing",
+   "en": "Addiction",
+   "blurb": {
+    "af": "Wat jou keuses oor die hand begin beheer.",
+    "en": "When your choices start controlling you."
+   }
+  },
+  {
+   "id": "emosies",
+   "af": "Emosies",
+   "en": "Emotions",
+   "blurb": {
+    "af": "Wat in jou binneste te woed voel.",
+    "en": "What roars inside you."
+   }
+  },
+  {
+   "id": "geloof",
+   "af": "Geloof en twyfel",
+   "en": "Faith and doubt",
+   "blurb": {
+    "af": "Wanneer die Bybel en jou hart uitpas.",
+    "en": "When Scripture and your heart disagree."
+   }
+  },
+  {
+   "id": "verhoudings",
+   "af": "Verhoudings",
+   "en": "Relationships",
+   "blurb": {
+    "af": "Huwelik, gesin, vriende, gemeente.",
+    "en": "Marriage, family, friends, church."
+   }
+  },
+  {
+   "id": "lewe",
+   "af": "Lewe en praktyk",
+   "en": "Life and practice",
+   "blurb": {
+    "af": "Geld, werk, siekte, tyd.",
+    "en": "Money, work, illness, time."
+   }
+  },
+  {
+   "id": "pyn",
+   "af": "Pyn en rou",
+   "en": "Pain and grief",
+   "blurb": {
+    "af": "Wanneer iets gebreek het wat nie terugkom nie.",
+    "en": "When something breaks and does not come back."
+   }
+  }
+ ],
+ "topics": [
+  {
+   "slug": "pornografie",
+   "group": "verslawing",
+   "title": {
+    "af": "Pornografie",
+    "en": "Pornography"
+   },
+   "intro": {
+    "af": "Dit is nie net ’n sake van skrif teenstanders nie. Dit is ’n gewoonte wat jou dag, jou fokus en jou verhoudings stil-stuk-stuk vat. ’n Paar Skrifverse help jou om die sneller te herken en die waarheid oor genade te sien.",
+    "en": "This is not only a matter of guilt. It is a habit that quietly takes your day, your focus and your relationships. A few passages help you recognise the pattern early and see the truth about grace."
+   },
+   "pastoral": {
+    "af": {
+     "reflect": "Die eerste vraag is nie of jy sterk genoeg is nie, maar of jy bereid is om weg te vlug. Versoeking word seldsam oorwinned deur standhouding alleen nie.",
+     "prayer": "Here, maak my oë reg en gee my die krag om van hierdie goed weg te loop. Vergeef my elke keer wat ek al probeer het om weg te hou, en hou my aan jou vas.",
+     "step": "Skryf vandag op wanneer die versoeking die sterkste is en watter een aksie jy die volgende keer gaan neem. Vertel een betroubare mens hierdie week."
+    },
+    "en": {
+     "reflect": "The first question is not whether you are strong enough, but whether you are willing to flee. Temptation is rarely won by endurance alone.",
+     "prayer": "Lord, make my eyes right and give me strength to walk away from this. Forgive me for every time I have tried to hold it alone, and hold me close to you.",
+     "step": "Write down today when the temptation is strongest and what you will do next time. Tell one trustworthy person this week."
+    }
+   },
+   "passages": [
+    {
+     "field": {
+      "af": "Vlug weg",
+      "en": "Flee"
+     },
+     "af": {
+      "ref": "1 Korintiërs 6:18",
+      "text": "Vlug vir die hoerery. Enige sonde wat ‘n mens doen, is buite die liggaam; maar wie hoerery bedryf sondig teen sy eie liggaam."
+     },
+     "en": {
+      "ref": "1 Corinthians 6:18",
+      "text": "Flee from sexual immorality. Every other sin a man can commit is outside his body, but he who sins sexually sins against his own body."
+     }
+    },
+    {
+     "field": {
+      "af": "Hy is naby",
+      "en": "He is near"
+     },
+     "af": {
+      "ref": "Psalms 34:18",
+      "text": "Kof. Die HERE is naby die wat gebroke is van hart, en Hy verlos die wat verslae is van gees."
+     },
+     "en": {
+      "ref": "Psalms 34:18",
+      "text": "The LORD is near to the brokenhearted; He saves the contrite in spirit."
+     }
+    },
+    {
+     "field": {
+      "af": "Jou liggaam is ’n tempel",
+      "en": "Your body is a temple"
+     },
+     "af": {
+      "ref": "1 Korintiërs 6:19",
+      "text": "Of weet julle nie dat julle liggaam ‘n tempel is van die Heilige Gees wat in julle is, wat julle van God het, en dat julle nie aan julself behoort nie?"
+     },
+     "en": {
+      "ref": "1 Corinthians 6:19",
+      "text": "Do you not know that your body is a temple of the Holy Spirit who is in you, whom you have received from God? You are not your own;"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "alkohol",
+   "group": "verslawing",
+   "title": {
+    "af": "Alkohol",
+    "en": "Alcohol"
+   },
+   "intro": {
+    "af": "As drank reeds werklik werklik funksioneer in jou lewe, is die vraag nie net oor hoeveel nie. ’n Groot deel van die geneesing begin met erkenning en met hulp uit buite jou eie.",
+    "en": "If drinking has become load-bearing in your life, the question is not only how much. Much of the healing begins with honesty and with help from outside your own strength."
+   },
+   "pastoral": {
+    "af": {
+     "reflect": "Paulus skryf nie vir mense wat nie wil oorwin nie. Hy skryf vir mense wat uit alle krag besluit om nie deur iets te laat beheer nie — en wat weet hulp maak nie gevaag self nie.",
+     "prayer": "Here, gee my die nederigheid om hulp te vra voor dit my grens bereik. Hou my standhoudend in elke uur van versoeking.",
+     "step": "Skakel vandag die Suid-Afrikaanse Verslawingshulplyn (0800 12 13 14) of praat met ’n huisarts. Moenie alkohol skielik opheg sonder mediese advies nie."
+    },
+    "en": {
+     "reflect": "Paul is not writing to people who have no intention of winning. He writes to people who have decided, out of all their strength, that they will not let anything rule them — and who know that help is not a sign of weakness.",
+     "prayer": "Lord, give me the humility to ask for help before I hit bottom. Keep me steady in every hour of temptation.",
+     "step": "Call the South African Substance Abuse Helpline (0800 12 13 14) today or speak to your GP. Do not stop drinking suddenly without medical advice."
+    }
+   },
+   "passages": [
+    {
+     "field": {
+      "af": "Laat niks jou beheer",
+      "en": "Let nothing control you"
+     },
+     "af": {
+      "ref": "1 Korintiërs 6:12",
+      "text": "Alles is my geoorloof, maar nie alles is nuttig nie; alles is my geoorloof, maar ek sal my nie deur iets laat oorheers nie."
+     },
+     "en": {
+      "ref": "1 Corinthians 6:12",
+      "text": "“Everything is permissible for me,” but not everything is beneficial. “Everything is permissible for me,” but I will not be mastered by anything."
+     }
+    },
+    {
+     "field": {
+      "af": "Vryheid",
+      "en": "Freedom"
+     },
+     "af": {
+      "ref": "Johannes 8:36",
+      "text": "As die Seun julle dan vrygemaak het, sal julle waarlik vry wees."
+     },
+     "en": {
+      "ref": "John 8:36",
+      "text": "So if the Son sets you free, you will be free indeed."
+     }
+    },
+    {
+     "field": {
+      "af": "Krag in Christus",
+      "en": "Strength in Christ"
+     },
+     "af": {
+      "ref": "Filippense 4:13",
+      "text": "Ek is tot alles in staat deur Christus wat my krag gee."
+     },
+     "en": {
+      "ref": "Philippians 4:13",
+      "text": "I can do all things through Christ who gives me strength."
+     }
+    }
+   ]
+  },
+  {
+   "slug": "woede",
+   "group": "emosies",
+   "title": {
+    "af": "Woede",
+    "en": "Anger"
+   },
+   "intro": {
+    "af": "Woede is nie altyd ’n duiwel nie — Jesus het self teen die geldwisselaars uitgeloop. Maar woede wat jou herhaaldelik oorweldig, is nie meer dieselfde ding nie.",
+    "en": "Anger is not always the enemy — Jesus himself overturned the money changers. But anger that keeps overwhelming you is a different matter."
+   },
+   "pastoral": {
+    "af": {
+     "reflect": "Die Bybel verbied nie gevoelens nie; dit verbied dat woede in julle woon. Die verskil is dat jy beheer word, of dat jy beheer.",
+     "prayer": "Here, hou my mond toe wanneer woorde wat seer maak op my lippe lê. Gee my kalmte om te antwoord voordat ek regter moet wees.",
+     "step": "Skryf vandag een sin wat jy sou wou sê as jy kwaad is, maar nie gesê het nie. Gee dit aan die Here eerder as aan die persoon."
+    },
+    "en": {
+     "reflect": "The Bible does not forbid feelings; it forbids anger living in you. The difference is whether you are being ruled or whether you are still in control.",
+     "prayer": "Lord, close my mouth when words that hurt are on my lips. Give me calm enough to answer before I try to be right.",
+     "step": "Write today the sentence you would say if you were angry, but did not say. Give it to the Lord instead of to the person."
+    }
+   },
+   "passages": [
+    {
+     "field": {
+      "af": "Wees stadig",
+      "en": "Be slow to anger"
+     },
+     "af": {
+      "ref": "Jakobus 1:19",
+      "text": "So dan, my geliefde broeders, elke mens moet gou wees om te hoor, stadig om te praat, stadig om toornig te word."
+     },
+     "en": {
+      "ref": "James 1:19",
+      "text": "My beloved brothers, understand this: Everyone should be quick to listen, slow to speak, and slow to anger,"
+     }
+    },
+    {
+     "field": {
+      "af": "Moenie sonder kwaadheid word nie",
+      "en": "Do not let sin reign"
+     },
+     "af": {
+      "ref": "Effesiërs 4:26",
+      "text": "Word toornig en moenie sondig nie; laat die son nie ondergaan oor julle toorn nie;"
+     },
+     "en": {
+      "ref": "Ephesians 4:26",
+      "text": "“Be angry, yet do not sin.” Do not let the sun set upon your anger,"
+     }
+    },
+    {
+     "field": {
+      "af": "Laat die Here jou reg maak",
+      "en": "Vengeance belongs to the Lord"
+     },
+     "af": {
+      "ref": "Romeine 12:19",
+      "text": "Moenie julle wreek nie, geliefdes, maar gee plek vir die toorn; want daar is geskrywe: Aan My kom die wraak toe, Ek sal vergeld, spreek die Here."
+     },
+     "en": {
+      "ref": "Romans 12:19",
+      "text": "Do not avenge yourselves, beloved, but leave room for God’s wrath. For it is written: “Vengeance is Mine; I will repay, says the Lord.”"
+     }
+    }
+   ]
+  },
+  {
+   "slug": "angs",
+   "group": "emosies",
+   "title": {
+    "af": "Angs en bekommernis",
+    "en": "Anxiety and worry"
+   },
+   "intro": {
+    "af": "Bekommernis oor môre is 'n menslike ding. Die Bybel below nie om nie te bekommer nie — dit below om nie te dra wat nie joune is nie.",
+    "en": "Worrying about tomorrow is human. Scripture does not tell you to stop worrying; it tells you not to carry what is not yours to carry."
+   },
+   "pastoral": {
+    "af": {
+     "reflect": "As die benadering van ’n volgende dag altyd swaar voel, kan angs ’n gesondheidskwessie wees en nie net ’n geestelike een nie. Beide verdien ernstige aandag.",
+     "prayer": "Here, as ek se dat ek nie besorg hoef te wees nie, leer my wat om te doen met die vrees wat nog daar is. Hou my kinders en my huis in Jou hande.",
+     "step": "Skryf vandag jou bekommernisse neer en rangskik dit: wat kan ek beheer, en wat moet ek aan die Here oorlaat?"
+    },
+    "en": {
+     "reflect": "If facing tomorrow always feels heavy, that anxiety may be a health matter as much as a spiritual one. Both deserve serious attention.",
+     "prayer": "Lord, teach me what to do with the fear that remains even when you say I need not worry. Hold my children and my home in your hands.",
+     "step": "Write down your worries today and sort them: what can I control, and what must I hand back to the Lord?"
+    }
+   },
+   "passages": [
+    {
+     "field": {
+      "af": "Sorg niks nie",
+      "en": "Be anxious about nothing"
+     },
+     "af": {
+      "ref": "Filippense 4:6",
+      "text": "Wees oor niks besorg nie, maar laat julle begeertes in alles deur gebed en smeking met danksegging bekend word by God."
+     },
+     "en": {
+      "ref": "Philippians 4:6",
+      "text": "Be anxious for nothing, but in everything, by prayer and petition, with thanksgiving, present your requests to God."
+     }
+    },
+    {
+     "field": {
+      "af": "Elke dag se sorg",
+      "en": "Each day’s worry"
+     },
+     "af": {
+      "ref": "Matteus 6:34",
+      "text": "Kwel julle dus nie oor môre nie, want môre sal hom oor sy eie dinge kwel. Elke dag het genoeg aan sy eie kwaad."
+     },
+     "en": {
+      "ref": "Matthew 6:34",
+      "text": "Therefore do not worry about tomorrow, for tomorrow will worry about itself. Today has enough trouble of its own."
+     }
+    },
+    {
+     "field": {
+      "af": "Gooi jou besorgenis op Hom",
+      "en": "Cast your anxiety on Him"
+     },
+     "af": {
+      "ref": "1 Petrus 5:7",
+      "text": "Werp al julle bekommernis op Hom, want Hy sorg vir julle."
+     },
+     "en": {
+      "ref": "1 Peter 5:7",
+      "text": "Cast all your anxiety on Him, because He cares for you."
+     }
+    }
+   ]
+  },
+  {
+   "slug": "skuldsprong",
+   "group": "lewe",
+   "title": {
+    "af": "Skuldsprong en finansiële druk",
+    "en": "Debt and financial pressure"
+   },
+   "intro": {
+    "af": "In ’n land waar maandelikse uitgaw teenoor ’n onseker inkomste staan, is skuld nie ’n tegnou ’n godsdiens. Hierdie verse help jou om werklike dinge te doen sonder om jou waarde daaraan te verloor.",
+    "en": "In a country where monthly costs meet uncertain income, debt is as much a pastoral reality as a financial one. These passages help you act practically without losing your dignity."
+   },
+   "pastoral": {
+    "af": {
+     "reflect": "Vertrou op God en werk hard is nie teenoorgestelde nie. Die Bybel verbied nie nie om geld te hanteer nie — dit waarsku teen die verleideling om op die Here te vertrou om Sy werk te doen.",
+     "prayer": "Here, gee my wysheid om elke rand te maak wat ek kan maak, en vrede met wat ek nie kan verander nie. Hou my huis en my gesin.",
+     "step": "Bel vandag een krediteur of ’n gemeenskapskantoor en vra om ’n formeleplan. Moenie skaam wees om hulp te vra nie."
+    },
+    "en": {
+     "reflect": "Trusting God and working hard are not opposites. The Bible does not forbid handling money — it warns against the temptation to trust the Lord to do His part while you neglect yours.",
+     "prayer": "Lord, give me wisdom to make every cut I can make, and peace with what I cannot change. Hold my home and my family.",
+     "step": "Call one creditor or a community office today and ask about a formal arrangement. Do not be ashamed to ask for help."
+    }
+   },
+   "passages": [
+    {
+     "field": {
+      "af": "Jou behoeftes",
+      "en": "Your needs"
+     },
+     "af": {
+      "ref": "Filippense 4:19",
+      "text": "En my God sal elke behoefte van julle vervul na sy rykdom in heerlikheid deur Christus Jesus."
+     },
+     "en": {
+      "ref": "Philippians 4:19",
+      "text": "And my God will supply all your needs according to His glorious riches in Christ Jesus."
+     }
+    },
+    {
+     "field": {
+      "af": "Moenie besorg wees oor et nie",
+      "en": "Do not worry about food"
+     },
+     "af": {
+      "ref": "Matteus 6:25",
+      "text": "Daarom sê Ek vir julle: Moenie julle kwel oor jul lewe—wat julle sal eet en wat julle sal drink nie; of oor jul liggaam—wat julle sal aantrek nie. Is die lewe nie meer as die voedsel en die liggaam as die klere nie?"
+     },
+     "en": {
+      "ref": "Matthew 6:25",
+      "text": "Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothes?"
+     }
+    },
+    {
+     "field": {
+      "af": "Die regverdige en sy skuld",
+      "en": "The righteous and their debt"
+     },
+     "af": {
+      "ref": "Spreuke 22:7",
+      "text": "Die ryke heers oor die armes, en hy wat leen, is ‘n slaaf van die man wat uitleen."
+     },
+     "en": {
+      "ref": "Proverbs 22:7",
+      "text": "The rich rule over the poor, and the borrower is slave to the lender."
+     }
+    }
+   ]
+  },
+  {
+   "slug": "verlies",
+   "group": "pyn",
+   "title": {
+    "af": "Verlies en rou",
+    "en": "Loss and grief"
+   },
+   "intro": {
+    "af": "Die Bybel praat nie min oor die wat wees en rou nie. Jesus huil self. Hierdie verse is vir die dae wanneer daar niks regtig voel nie.",
+    "en": "The Bible does not speak lightly of those who grieve. Jesus wept himself. These passages are for the days when nothing feels right."
+   },
+   "pastoral": {
+    "af": {
+     "reflect": "Rou is nie ’n teken dat jou geloof swak is nie. In die Bybel is dit juis diegene wat God na toe bring. Moenie jou rou versnel of onderdruk nie.",
+     "prayer": "Here, ek rou voor jou omdat jy niks van my versteek nie. Hou my tydens die dae wat ek nie weet hoe om te leef nie.",
+     "step": "Praat vandag met iemand wat weet hoe dit is om te verloor. As jy nie weet nie, bel die Lifeline (0861 322 322)."
+    },
+    "en": {
+     "reflect": "Grief is not a sign that your faith is weak. In the Bible it is precisely those God draws near. Do not rush or suppress your mourning.",
+     "prayer": "Lord, I grieve in front of you because you hide nothing from me. Hold me through the days when I do not know how to live.",
+     "step": "Speak today to someone who knows what it is to lose. If you have no one, call Lifeline (0861 322 322)."
+    }
+   },
+   "passages": [
+    {
+     "field": {
+      "af": "Sy goedertigheid is ewig",
+      "en": "His mercies are new"
+     },
+     "af": {
+      "ref": "Klaagliedere 3:22",
+      "text": "Get. dit is die goedertierenhede van die HERE dat ons nie omgekom het nie, want sy barmhartighede het geen einde nie;"
+     },
+     "en": {
+      "ref": "Lamentations 3:22",
+      "text": "Because of the loving devotion of the LORD we are not consumed, for His mercies never fail."
+     }
+    },
+    {
+     "field": {
+      "af": "Naby die gebroke",
+      "en": "Near the brokenhearted"
+     },
+     "af": {
+      "ref": "Psalms 34:18",
+      "text": "Kof. Die HERE is naby die wat gebroke is van hart, en Hy verlos die wat verslae is van gees."
+     },
+     "en": {
+      "ref": "Psalms 34:18",
+      "text": "The LORD is near to the brokenhearted; He saves the contrite in spirit."
+     }
+    },
+    {
+     "field": {
+      "af": "Die salig rou",
+      "en": "Blessed are those who mourn"
+     },
+     "af": {
+      "ref": "Matteus 5:4",
+      "text": "Salig is die wat treur, want hulle sal vertroos word."
+     },
+     "en": {
+      "ref": "Matthew 5:4",
+      "text": "Blessed are those who mourn, for they will be comforted."
+     }
+    }
+   ]
+  }
+ ]
+}

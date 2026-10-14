@@ -1,0 +1,171 @@
+{
+  "_readme": "Editorial source for Pad van Genade. Groups and topics in order. Every passage must name a real book/chapter/verse; tools/build.py resolves the actual text from the two public-domain sources, so no verse wording is ever hand-typed here. `field` supplies the short label shown above the verse in each language. Pastoral content (reflect/prayer/step) is authored per topic per language.",
+
+  "groups": [
+    { "id": "verslawing",   "af": "Verslawing",           "en": "Addiction",              "blurb": { "af": "Wat jou keuses oor die hand begin beheer.", "en": "When your choices start controlling you." } },
+    { "id": "emosies",      "af": "Emosies",              "en": "Emotions",               "blurb": { "af": "Wat in jou binneste te woed voel.", "en": "What roars inside you." } },
+    { "id": "geloof",       "af": "Geloof en twyfel",     "en": "Faith and doubt",        "blurb": { "af": "Wanneer die Bybel en jou hart uitpas.", "en": "When Scripture and your heart disagree." } },
+    { "id": "verhoudings",  "af": "Verhoudings",          "en": "Relationships",          "blurb": { "af": "Huwelik, gesin, vriende, gemeente.", "en": "Marriage, family, friends, church." } },
+    { "id": "lewe",         "af": "Lewe en praktyk",      "en": "Life and practice",      "blurb": { "af": "Geld, werk, siekte, tyd.", "en": "Money, work, illness, time." } },
+    { "id": "pyn",          "af": "Pyn en rou",           "en": "Pain and grief",         "blurb": { "af": "Wanneer iets gebreek het wat nie terugkom nie.", "en": "When something breaks and does not come back." } }
+  ],
+
+  "topics": [
+    {
+      "slug": "pornografie",
+      "group": "verslawing",
+      "title": { "af": "Pornografie", "en": "Pornography" },
+      "intro": {
+        "af": "Dit is nie net ’n sake van skrif teenstanders nie. Dit is ’n gewoonte wat jou dag, jou fokus en jou verhoudings stil-stuk-stuk vat. ’n Paar Skrifverse help jou om die sneller te herken en die waarheid oor genade te sien.",
+        "en": "This is not only a matter of guilt. It is a habit that quietly takes your day, your focus and your relationships. A few passages help you recognise the pattern early and see the truth about grace."
+      },
+      "passages": [
+        { "book": "1co", "ch": 6, "vs": 18, "field": { "af": "Vlug weg", "en": "Flee" } },
+        { "book": "psa", "ch": 34, "vs": 18, "field": { "af": "Hy is naby", "en": "He is near" } },
+        { "book": "1co", "ch": 6, "vs": 19, "field": { "af": "Jou liggaam is ’n tempel", "en": "Your body is a temple" } }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Die eerste vraag is nie of jy sterk genoeg is nie, maar of jy bereid is om weg te vlug. Versoeking word seldsam oorwinned deur standhouding alleen nie.",
+          "prayer": "Here, maak my oë reg en gee my die krag om van hierdie goed weg te loop. Vergeef my elke keer wat ek al probeer het om weg te hou, en hou my aan jou vas.",
+          "step": "Skryf vandag op wanneer die versoeking die sterkste is en watter een aksie jy die volgende keer gaan neem. Vertel een betroubare mens hierdie week."
+        },
+        "en": {
+          "reflect": "The first question is not whether you are strong enough, but whether you are willing to flee. Temptation is rarely won by endurance alone.",
+          "prayer": "Lord, make my eyes right and give me strength to walk away from this. Forgive me for every time I have tried to hold it alone, and hold me close to you.",
+          "step": "Write down today when the temptation is strongest and what you will do next time. Tell one trustworthy person this week."
+        }
+      }
+    },
+    {
+      "slug": "alkohol",
+      "group": "verslawing",
+      "title": { "af": "Alkohol", "en": "Alcohol" },
+      "intro": {
+        "af": "As drank reeds werklik werklik funksioneer in jou lewe, is die vraag nie net oor hoeveel nie. ’n Groot deel van die geneesing begin met erkenning en met hulp uit buite jou eie.",
+        "en": "If drinking has become load-bearing in your life, the question is not only how much. Much of the healing begins with honesty and with help from outside your own strength."
+      },
+      "passages": [
+        { "book": "1co", "ch": 6, "vs": 12, "field": { "af": "Laat niks jou beheer", "en": "Let nothing control you" } },
+        { "book": "jhn", "ch": 8, "vs": 36, "field": { "af": "Vryheid", "en": "Freedom" } },
+        { "book": "php", "ch": 4, "vs": 13, "field": { "af": "Krag in Christus", "en": "Strength in Christ" } }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Paulus skryf nie vir mense wat nie wil oorwin nie. Hy skryf vir mense wat uit alle krag besluit om nie deur iets te laat beheer nie — en wat weet hulp maak nie gevaag self nie.",
+          "prayer": "Here, gee my die nederigheid om hulp te vra voor dit my grens bereik. Hou my standhoudend in elke uur van versoeking.",
+          "step": "Skakel vandag die Suid-Afrikaanse Verslawingshulplyn (0800 12 13 14) of praat met ’n huisarts. Moenie alkohol skielik opheg sonder mediese advies nie."
+        },
+        "en": {
+          "reflect": "Paul is not writing to people who have no intention of winning. He writes to people who have decided, out of all their strength, that they will not let anything rule them — and who know that help is not a sign of weakness.",
+          "prayer": "Lord, give me the humility to ask for help before I hit bottom. Keep me steady in every hour of temptation.",
+          "step": "Call the South African Substance Abuse Helpline (0800 12 13 14) today or speak to your GP. Do not stop drinking suddenly without medical advice."
+        }
+      }
+    },
+    {
+      "slug": "woede",
+      "group": "emosies",
+      "title": { "af": "Woede", "en": "Anger" },
+      "intro": {
+        "af": "Woede is nie altyd ’n duiwel nie — Jesus het self teen die geldwisselaars uitgeloop. Maar woede wat jou herhaaldelik oorweldig, is nie meer dieselfde ding nie.",
+        "en": "Anger is not always the enemy — Jesus himself overturned the money changers. But anger that keeps overwhelming you is a different matter."
+      },
+      "passages": [
+        { "book": "jas", "ch": 1, "vs": 19, "field": { "af": "Wees stadig", "en": "Be slow to anger" } },
+        { "book": "eph", "ch": 4, "vs": 26, "field": { "af": "Moenie sonder kwaadheid word nie", "en": "Do not let sin reign" } },
+        { "book": "rom", "ch": 12, "vs": 19, "field": { "af": "Laat die Here jou reg maak", "en": "Vengeance belongs to the Lord" } }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Die Bybel verbied nie gevoelens nie; dit verbied dat woede in julle woon. Die verskil is dat jy beheer word, of dat jy beheer.",
+          "prayer": "Here, hou my mond toe wanneer woorde wat seer maak op my lippe lê. Gee my kalmte om te antwoord voordat ek regter moet wees.",
+          "step": "Skryf vandag een sin wat jy sou wou sê as jy kwaad is, maar nie gesê het nie. Gee dit aan die Here eerder as aan die persoon."
+        },
+        "en": {
+          "reflect": "The Bible does not forbid feelings; it forbids anger living in you. The difference is whether you are being ruled or whether you are still in control.",
+          "prayer": "Lord, close my mouth when words that hurt are on my lips. Give me calm enough to answer before I try to be right.",
+          "step": "Write today the sentence you would say if you were angry, but did not say. Give it to the Lord instead of to the person."
+        }
+      }
+    },
+    {
+      "slug": "angs",
+      "group": "emosies",
+      "title": { "af": "Angs en bekommernis", "en": "Anxiety and worry" },
+      "intro": {
+        "af": "Bekommernis oor môre is 'n menslike ding. Die Bybel below nie om nie te bekommer nie — dit below om nie te dra wat nie joune is nie.",
+        "en": "Worrying about tomorrow is human. Scripture does not tell you to stop worrying; it tells you not to carry what is not yours to carry."
+      },
+      "passages": [
+        { "book": "php", "ch": 4, "vs": 6, "field": { "af": "Sorg niks nie", "en": "Be anxious about nothing" } },
+        { "book": "mat", "ch": 6, "vs": 34, "field": { "af": "Elke dag se sorg", "en": "Each day’s worry" } },
+        { "book": "1pe", "ch": 5, "vs": 7, "field": { "af": "Gooi jou besorgenis op Hom", "en": "Cast your anxiety on Him" } }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "As die benadering van ’n volgende dag altyd swaar voel, kan angs ’n gesondheidskwessie wees en nie net ’n geestelike een nie. Beide verdien ernstige aandag.",
+          "prayer": "Here, as ek se dat ek nie besorg hoef te wees nie, leer my wat om te doen met die vrees wat nog daar is. Hou my kinders en my huis in Jou hande.",
+          "step": "Skryf vandag jou bekommernisse neer en rangskik dit: wat kan ek beheer, en wat moet ek aan die Here oorlaat?"
+        },
+        "en": {
+          "reflect": "If facing tomorrow always feels heavy, that anxiety may be a health matter as much as a spiritual one. Both deserve serious attention.",
+          "prayer": "Lord, teach me what to do with the fear that remains even when you say I need not worry. Hold my children and my home in your hands.",
+          "step": "Write down your worries today and sort them: what can I control, and what must I hand back to the Lord?"
+        }
+      }
+    },
+    {
+      "slug": "skuldsprong",
+      "group": "lewe",
+      "title": { "af": "Skuldsprong en finansiële druk", "en": "Debt and financial pressure" },
+      "intro": {
+        "af": "In ’n land waar maandelikse uitgaw teenoor ’n onseker inkomste staan, is skuld nie ’n tegnou ’n godsdiens. Hierdie verse help jou om werklike dinge te doen sonder om jou waarde daaraan te verloor.",
+        "en": "In a country where monthly costs meet uncertain income, debt is as much a pastoral reality as a financial one. These passages help you act practically without losing your dignity."
+      },
+      "passages": [
+        { "book": "php", "ch": 4, "vs": 19, "field": { "af": "Jou behoeftes", "en": "Your needs" } },
+        { "book": "mat", "ch": 6, "vs": 25, "field": { "af": "Moenie besorg wees oor et nie", "en": "Do not worry about food" } },
+        { "book": "pro", "ch": 22, "vs": 7, "field": { "af": "Die regverdige en sy skuld", "en": "The righteous and their debt" } }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Vertrou op God en werk hard is nie teenoorgestelde nie. Die Bybel verbied nie nie om geld te hanteer nie — dit waarsku teen die verleideling om op die Here te vertrou om Sy werk te doen.",
+          "prayer": "Here, gee my wysheid om elke rand te maak wat ek kan maak, en vrede met wat ek nie kan verander nie. Hou my huis en my gesin.",
+          "step": "Bel vandag een krediteur of ’n gemeenskapskantoor en vra om ’n formeleplan. Moenie skaam wees om hulp te vra nie."
+        },
+        "en": {
+          "reflect": "Trusting God and working hard are not opposites. The Bible does not forbid handling money — it warns against the temptation to trust the Lord to do His part while you neglect yours.",
+          "prayer": "Lord, give me wisdom to make every cut I can make, and peace with what I cannot change. Hold my home and my family.",
+          "step": "Call one creditor or a community office today and ask about a formal arrangement. Do not be ashamed to ask for help."
+        }
+      }
+    },
+    {
+      "slug": "verlies",
+      "group": "pyn",
+      "title": { "af": "Verlies en rou", "en": "Loss and grief" },
+      "intro": {
+        "af": "Die Bybel praat nie min oor die wat wees en rou nie. Jesus huil self. Hierdie verse is vir die dae wanneer daar niks regtig voel nie.",
+        "en": "The Bible does not speak lightly of those who grieve. Jesus wept himself. These passages are for the days when nothing feels right."
+      },
+      "passages": [
+        { "book": "lam", "ch": 3, "vs": 22, "field": { "af": "Sy goedertigheid is ewig", "en": "His mercies are new" } },
+        { "book": "psa", "ch": 34, "vs": 18, "field": { "af": "Naby die gebroke", "en": "Near the brokenhearted" } },
+        { "book": "mat", "ch": 5, "vs": 4, "field": { "af": "Die salig rou", "en": "Blessed are those who mourn" } }
+      ],
+      "pastoral": {
+        "af": {
+          "reflect": "Rou is nie ’n teken dat jou geloof swak is nie. In die Bybel is dit juis diegene wat God na toe bring. Moenie jou rou versnel of onderdruk nie.",
+          "prayer": "Here, ek rou voor jou omdat jy niks van my versteek nie. Hou my tydens die dae wat ek nie weet hoe om te leef nie.",
+          "step": "Praat vandag met iemand wat weet hoe dit is om te verloor. As jy nie weet nie, bel die Lifeline (0861 322 322)."
+        },
+        "en": {
+          "reflect": "Grief is not a sign that your faith is weak. In the Bible it is precisely those God draws near. Do not rush or suppress your mourning.",
+          "prayer": "Lord, I grieve in front of you because you hide nothing from me. Hold me through the days when I do not know how to live.",
+          "step": "Speak today to someone who knows what it is to lose. If you have no one, call Lifeline (0861 322 322)."
+        }
+      }
+    }
+  ]
+}

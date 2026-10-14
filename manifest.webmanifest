@@ -1,0 +1,54 @@
+{
+  "name": "Pad van Genade",
+  "short_name": "Pad van Genade",
+  "description": "Skrifte, gebed en ’n volgende stap vir elke stryd — en altyd ’n werklike weg na hulp.",
+  "lang": "af",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#faf8f4",
+  "theme_color": "#1f5f57",
+  "categories": ["education", "lifestyle", "books"],
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-maskable.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Vandag se vers",
+      "short_name": "Vandag",
+      "url": "./index.html#/today",
+      "description": "Lees vandag se Skrif, gebed en stap."
+    },
+    {
+      "name": "Kry hulp",
+      "short_name": "Hulp",
+      "url": "./index.html#/help",
+      "description": "Suid-Afrikaanse krisis- en ondersteuningslyne."
+    }
+  ]
+}

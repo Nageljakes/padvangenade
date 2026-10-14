@@ -60,6 +60,9 @@ function applyHero() {
   // not the document, which breaks the moment the CSS lives in a subfolder.
   // Resolving against document.baseURI also keeps the GitHub Pages subpath working.
   const webp = new URL(`assets/img/${id}.webp`, document.baseURI).href;
+  // Hero keeps the photo at full strength; the page behind the content gets a
+  // softer copy of the same image so hero and body feel like one photograph.
+  document.documentElement.style.setProperty("--page-bg", `url("${webp}")`);
   el.style.backgroundImage = `url("${webp}")`;
   document.documentElement.dataset.hero = id;
   // Warm the JPEG fallback so a browser without WebP support is not left
@@ -137,8 +140,20 @@ function setPage(page, opts = {}) {
   });
   const hash = opts.topic ? `#/${page}/${opts.topic}` : `#/${page}`;
   if (location.hash !== hash) history.replaceState(null, "", hash);
-  window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" });
+
+  // Keep the reader where they were. Force-scrolling to the top on every menu
+  // press threw away their place, which is especially jarring when moving
+  // between tabs deep in a long topic list. The position is restored *after*
+  // rendering, then clamped, so switching to a shorter page cannot leave you
+  // stranded past the end of the content.
+  const keep = window.scrollY;
   renderPage(page);
+  // Callers that want to scroll somewhere specific (opening a topic) opt out.
+  if (opts.keepScroll === false) return;
+  requestAnimationFrame(() => {
+    const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    window.scrollTo({ top: Math.min(keep, max), behavior: "auto" });
+  });
 }
 
 function routeTopicFromHash() {
@@ -177,6 +192,9 @@ function renderPage(page) {
 
 /* -------------------------------------------------------------------- nav */
 
+// The language switch is a sibling of #nav-inner, not a child: renderNav
+// replaces #nav-inner's contents on every repaint, which would otherwise
+// delete the switcher along with the links.
 function renderNav() {
   const items = [["today", t("navToday")], ["struggle", t("navStruggle")], ["journal", t("navJournal")], ["help", t("navHelp")], ["share", t("navShare")], ["about", t("navAbout")]];
   $("#nav-inner").innerHTML = items
@@ -428,7 +446,7 @@ function openTopic(slug, { passage = 0 } = {}) {
   state.passage = state.positions[slug] ?? passage;
   if (state.passage >= topic.passages.length) state.passage = 0;
   // Keep the slug in the URL so a particular topic can be linked to directly.
-  setPage("struggle", { topic: slug });
+  setPage("struggle", { topic: slug, keepScroll: false });
   renderTopicResults();
   renderReader();
   $("#page-reader")?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -931,9 +949,6 @@ function renderShell() {
       </div>
     </footer>
 
-    // The language switch is a sibling of #nav-inner, not a child: renderNav
-  // replaces #nav-inner's contents on every repaint, which would otherwise
-  // delete the switcher along with the links.
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   `;
 }

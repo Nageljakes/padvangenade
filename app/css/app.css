@@ -127,44 +127,71 @@ a:hover { color: var(--brand-ink); }
   position: relative;
   isolation: isolate;
   color: #fff;
-  padding-block: clamp(2rem, 6vw, 3.25rem);
+  /* Full-bleed hero: the photograph fills the viewport and the copy sits on top
+     of it inside a blurred panel. min-height uses svh so mobile browser chrome
+     collapsing does not cut the copy off. */
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  padding-block: clamp(2rem, 8vh, 5rem);
   background-color: var(--brand-ink);
   background-image: linear-gradient(160deg, var(--brand-ink), var(--brand));
   background-size: cover;
   background-position: center 38%;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+/* No photograph yet: keep a calm gradient hero rather than a white void. */
+.masthead:not([style*="background-image"]) {
+  background-image: linear-gradient(160deg, var(--brand-ink), var(--brand));
 }
 .masthead::before {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
-  /* The copy is left-aligned, so the scrim is heaviest on the left and lifts
-     toward the right. That keeps text contrast high without flattening the
-     photograph into a dark wash across its whole width. */
+  /* Lighter than before: the copy now sits in its own blurred panel, so this
+     only has to set an overall mood, not carry the contrast on its own. */
   background:
-    linear-gradient(100deg,
-      rgba(10, 38, 34, .86) 0%,
-      rgba(10, 38, 34, .70) 38%,
-      rgba(10, 38, 34, .46) 72%,
-      rgba(10, 38, 34, .34) 100%),
-    linear-gradient(to bottom, rgba(8, 30, 27, .34), rgba(8, 30, 27, .12));
+    linear-gradient(to bottom, rgba(6, 26, 23, .52), rgba(6, 26, 23, .30) 55%, rgba(6, 26, 23, .58)),
+    radial-gradient(110% 80% at 20% 20%, rgba(255, 255, 255, .08), transparent 62%);
 }
 @media (prefers-color-scheme: dark) {
   .masthead { background-position: center 35%; }
   .masthead::before {
     background:
-      linear-gradient(100deg,
-        rgba(5, 20, 18, .88) 0%,
-        rgba(5, 20, 18, .74) 38%,
-        rgba(5, 20, 18, .56) 72%,
-        rgba(5, 20, 18, .46) 100%),
-      linear-gradient(to bottom, rgba(3, 14, 13, .38), rgba(3, 14, 13, .16));
+      linear-gradient(to bottom, rgba(3, 14, 13, .58), rgba(3, 14, 13, .42) 55%, rgba(3, 14, 13, .64)),
+      radial-gradient(110% 80% at 20% 20%, rgba(255, 255, 255, .05), transparent 62%);
   }
 }
 /* app.js replaces background-image with the photograph once it loads.
    The gradient above is the default, so the header still looks intentional if
    scripting is unavailable or the image fails. */
+/* The copy panel: frosted glass over the photograph, so the text stays
+   legible without another heavy scrim across the whole image. */
+.masthead__row { width: 100%; }
+.masthead__panel {
+  max-width: 40rem;
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, .22);
+  background: rgba(10, 32, 29, .42);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  backdrop-filter: blur(16px) saturate(140%);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, .34);
+}
+/* backdrop-filter is well supported, but without it the panel must still
+   stand on its own, so the fallback background is opaque enough. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .masthead__panel { background: rgba(8, 28, 25, .88); }
+}
+@media (prefers-color-scheme: dark) {
+  .masthead__panel { background: rgba(4, 18, 16, .56); border-color: rgba(255, 255, 255, .16); }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .masthead__panel { background: rgba(3, 14, 13, .93); }
+  }
+}
 .masthead__eyebrow {
   font-size: .74rem; font-weight: 700; letter-spacing: .14em;
   text-transform: uppercase; opacity: .82; margin-bottom: .6rem;
@@ -474,3 +501,19 @@ main { padding-block: clamp(1.75rem, 5vw, 3rem) 4rem; min-height: 60vh; }
 .credits li { padding: .7rem 0; border-bottom: 1px solid var(--line-soft); }
 .credits li:last-child { border-bottom: 0; }
 .credits__subject { color: var(--ink); font-size: .95rem; line-height: 1.45; }
+
+/* Highlight when the other-language verse is brought into view. */
+.verse__alt.is-flagged {
+  animation: altFlash 1.6s ease-out;
+}
+@keyframes altFlash {
+  from { background: var(--brand-soft); box-shadow: 0 0 0 6px var(--brand-soft); }
+  to   { background: transparent; box-shadow: 0 0 0 6px transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .verse__alt.is-flagged { animation: none; background: var(--brand-soft); }
+}
+
+.masthead__actions { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin-top: 1.25rem; }
+.masthead__cta { background: rgba(255, 255, 255, .14); border-color: rgba(255, 255, 255, .34); color: #fff; }
+.masthead__cta:hover { background: #fff; color: var(--brand-ink); border-color: #fff; }

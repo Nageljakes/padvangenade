@@ -193,6 +193,8 @@ function renderMast() {
   $("#brand-tag").textContent = t("tagline");
   $("#mast-eyebrow").textContent = t("mastEyebrow");
   $("#mast-tag").textContent = t("mastTag");
+  const cta = $("#hero-cta");
+  if (cta) cta.textContent = t("tellMeWhat");
   document.title = `${t("brand")} — ${t("tagline")}`;
 }
 
@@ -404,8 +406,8 @@ function renderReader() {
       </section>
 
       <div class="btn-row" style="margin-top:1.5rem">
-        <button class="btn" data-speak="${esc(state.lang)}">${esc(t("readAloud"))}</button>
-        <button class="btn" data-speak="${esc(otherLang)}">${esc(t("showOther"))}</button>
+        ${state.lang === "en" ? `<button class="btn" data-speak="en">${esc(t("readAloud"))}</button>` : ""}
+        <button class="btn" data-alt="${esc(otherLang)}">${esc(t("showOther"))}</button>
         <button class="btn" id="toggle-saved" data-topic="${esc(topic.slug)}">${esc(isSaved ? t("savedTopic") : t("saveTopic"))}</button>
         <button class="btn" data-journal="${esc(topic.slug)}">${esc(t("writeHere"))}</button>
       </div>
@@ -726,8 +728,17 @@ function bindGlobal() {
       return;
     }
 
+    // Read aloud is English-only. Afrikaans text-to-speech is unintelligible on
+    // most system voices, which made the feature actively harmful rather than
+    // merely unhelpful, so the button is not offered at all in Afrikaans.
     const speak = e.target.closest("[data-speak]");
     if (speak) return speakVerse(speak.dataset.speak);
+
+    // Separate from read-aloud: this only reveals the other-language text.
+    // Previously it carried data-speak, so choosing to *see* the Afrikaans also
+    // started reading it aloud in a mangled accent.
+    const alt = e.target.closest("[data-alt]");
+    if (alt) return showAltLang(alt.dataset.alt);
 
     const copy = e.target.closest("[data-share-copy]");
     if (copy) return shareText("copy", Number(copy.dataset.shareCopy));
@@ -818,16 +829,28 @@ function exportJournal() {
 }
 
 function speakVerse(lang) {
+  if (lang !== "en") return;
   const topic = state.content?.topics.find((x) => x.slug === state.topic);
   if (!topic) return;
   const passage = topic.passages[state.passage];
-  const text = `${passage[lang].text}`;
   if (!("speechSynthesis" in window)) return;
   speechSynthesis.cancel();
-  const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = lang === "af" ? "af-ZA" : "en-ZA";
-  utter.rate = 0.92;
+  const utter = new SpeechSynthesisUtterance(passage.en.text);
+  utter.lang = "en-ZA";
+  utter.rate = 0.95;
   speechSynthesis.speak(utter);
+}
+
+/* Bring the other-language rendering of the verse into view. Purely visual:
+   no speech, so it cannot hijack the "read aloud" action. */
+function showAltLang() {
+  const alt = $("#page-reader .verse__alt");
+  if (!alt) return;
+  alt.scrollIntoView({ behavior: "smooth", block: "center" });
+  alt.classList.remove("is-flagged");
+  // Restart the animation so repeated presses replay it.
+  void alt.offsetWidth;
+  alt.classList.add("is-flagged");
 }
 
 function shareText(kind, index) {
@@ -863,13 +886,16 @@ function renderShell() {
 
     <header class="masthead">
       <div class="wrap masthead__row">
-        <div>
+        <div class="masthead__panel">
           <p class="masthead__eyebrow" id="mast-eyebrow"></p>
           <h1 id="brand-name"></h1>
           <p class="masthead__tag" id="brand-tag"></p>
           <p class="masthead__tag" id="mast-tag" style="margin-top:.75rem;font-family:var(--sans);font-size:.95rem"></p>
+          <div class="masthead__actions">
+            <span class="chip" id="offline-badge" hidden style="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff"></span>
+            <button class="btn masthead__cta" data-page="struggle" id="hero-cta"></button>
+          </div>
         </div>
-        <span class="chip" id="offline-badge" hidden style="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff"></span>
       </div>
     </header>
 

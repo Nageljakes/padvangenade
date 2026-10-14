@@ -46,7 +46,7 @@ export const STRINGS = {
     savedBadge: "Gestoor",
 
     readAloud: "Lees hardop",
-    showOther: "Wys die ander taal",
+    showOther: "Wys die Engelse teks",
     whatSays: "Wat dit sê",
     prayer: "Gebed",
     step: "Vandag se stap",
@@ -155,7 +155,7 @@ export const STRINGS = {
     savedBadge: "Saved",
 
     readAloud: "Read aloud",
-    showOther: "Show the other language",
+    showOther: "Show the other text",
     whatSays: "What this says",
     prayer: "Prayer",
     step: "Today's step",

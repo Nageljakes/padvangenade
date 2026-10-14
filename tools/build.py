@@ -22,8 +22,11 @@ ROOT = os.path.dirname(HERE)
 SRC = os.path.join(HERE, "content.src.json")
 OUT = os.path.join(ROOT, "data", "content.json")
 # Base URL used only for the absolute links search engines need in a sitemap.
-# Change this to the real deployment origin before publishing.
-SITE = os.environ.get("PVG_SITE", "https://padvangenade.org.za").rstrip("/")
+# This must match where the site is actually served, or the sitemap advertises
+# a domain that does not exist. Override with PVG_SITE when deploying elsewhere.
+SITE = os.environ.get(
+    "PVG_SITE", "https://nageljakes.github.io/padvangenade"
+).rstrip("/")
 SITEMAP = os.path.join(ROOT, "sitemap.xml")
 
 # Attribution is written into the bundle itself so the running site can always

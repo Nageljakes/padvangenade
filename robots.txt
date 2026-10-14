@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
+
+# The build tooling is not part of the published site.
 Disallow: /tools/
 
-Sitemap: /sitemap.xml
+Sitemap: https://nageljakes.github.io/padvangenade/sitemap.xml

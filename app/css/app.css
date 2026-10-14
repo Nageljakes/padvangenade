@@ -545,3 +545,24 @@ body::before {
 .masthead__actions { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin-top: 1.25rem; }
 .masthead__cta { background: rgba(255, 255, 255, .14); border-color: rgba(255, 255, 255, .34); color: #fff; }
 .masthead__cta:hover { background: #fff; color: var(--brand-ink); border-color: #fff; }
+
+/* Language switch inside the hero panel, next to the call to action. */
+.langswitch--hero {
+  background: rgba(255, 255, 255, .12);
+  border-color: rgba(255, 255, 255, .28);
+}
+.langswitch--hero button { color: rgba(255, 255, 255, .82); }
+.langswitch--hero button[aria-pressed="true"] { background: #fff; color: var(--brand-ink); }
+.langswitch--hero .langswitch__label {
+  font-size: .78rem; font-weight: 600; letter-spacing: .02em;
+  color: rgba(255, 255, 255, .8); padding: 0 .15rem 0 .6rem; white-space: nowrap;
+}
+@media (max-width: 420px) {
+  /* Stack the hero actions so the button and the switcher stay tappable. */
+  .masthead__actions { flex-direction: column; align-items: stretch; }
+  .masthead__cta { width: 100%; }
+  .langswitch--hero { justify-content: center; }
+}
+/* The hero switcher starts out just under the 44px touch target minimum once
+   it is full width, so give it a little more height. */
+.langswitch--hero button { min-height: 40px; padding: .45rem .8rem; }

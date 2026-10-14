@@ -121,6 +121,10 @@ async function boot() {
 
 const PAGES = ["today", "struggle", "journal", "help", "share", "about"];
 
+// The first setPage runs during boot and must not scroll: a visitor landing on
+// the site should arrive on the hero, not be scrolled past it.
+let booted = false;
+
 function routeFromHash() {
   const id = (location.hash || "").replace(/^#\/?/, "").split("/")[0];
   return PAGES.includes(id) ? id : "today";
@@ -150,9 +154,20 @@ function setPage(page, opts = {}) {
   renderPage(page);
   // Callers that want to scroll somewhere specific (opening a topic) opt out.
   if (opts.keepScroll === false) return;
+  if (!booted) { booted = true; return; }
+
+  // Where the real content starts, just below the full-height hero.
+  const hero = $(".masthead");
+  const contentTop = hero ? hero.getBoundingClientRect().bottom + window.scrollY : 0;
+
   requestAnimationFrame(() => {
     const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-    window.scrollTo({ top: Math.min(keep, max), behavior: "auto" });
+    // If the reader was still sitting on the hero, preserving that position
+    // would leave them staring at the same picture while the page silently
+    // changed underneath. Move them to the content instead, so the action
+    // visibly does something. Further down the page, keep their place.
+    const target = keep < contentTop - 8 ? contentTop : keep;
+    window.scrollTo({ top: Math.min(target, max), behavior: "auto" });
   });
 }
 
@@ -200,9 +215,17 @@ function renderNav() {
   $("#nav-inner").innerHTML = items
     .map(([id, label]) => `<a class="nav__link" href="#/${id}" data-page="${id}">${esc(label)}</a>`)
     .join("");
-  $("#lang-switch").innerHTML = ["af", "en"]
+  // The hero switcher carries the label too, since it may be the first control
+  // a visitor sees and "AF / EN" alone is not self-explanatory.
+  const langButtons = ["af", "en"]
     .map((code) => `<button type="button" data-lang="${code}" aria-pressed="${state.lang === code}" lang="${code}">${code.toUpperCase()}</button>`)
     .join("");
+  $("#lang-switch").innerHTML = langButtons;
+  const heroLang = $("#hero-lang");
+  if (heroLang) {
+    heroLang.innerHTML =
+      `<span class="langswitch__label">${esc(state.lang === "af" ? "Lees in" : "Read in")}</span>` + langButtons;
+  }
   $("#offline-badge").hidden = state.online;
 }
 
@@ -910,8 +933,13 @@ function renderShell() {
           <p class="masthead__tag" id="brand-tag"></p>
           <p class="masthead__tag" id="mast-tag" style="margin-top:.75rem;font-family:var(--sans);font-size:.95rem"></p>
           <div class="masthead__actions">
-            <span class="chip" id="offline-badge" hidden style="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff"></span>
             <button class="btn masthead__cta" data-page="struggle" id="hero-cta"></button>
+            <!-- The nav switcher sits below a full-height hero, so on a phone it
+                 is off-screen until you scroll. Offer it here too, so the
+                 language can be set before diving into the content. -->
+            <div class="langswitch langswitch--hero" id="hero-lang" role="group"
+                 aria-label="Language / Taal"></div>
+            <span class="chip" id="offline-badge" hidden style="background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff"></span>
           </div>
         </div>
       </div>

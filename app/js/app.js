@@ -29,6 +29,7 @@ const state = {
   positions: {},
   streak: { count: 0, last: "" },
   dailyIndex: null,        // null = today's verse
+  overrideDismissed: false, // session-only: "next verse" during a day override
   online: navigator.onLine,
   hero: true,
 };
@@ -42,7 +43,44 @@ const L = (obj) => obj[state.lang];
    chosen image is ever requested. */
 const HEROES = ["drakensberg", "tablemount", "sunflowers", "springbok"];
 
+/* One-day override: 2026-10-16 — 1 Korintiërs 13:4-7 with the sunflower hero.
+   Verse text generated from tools/verses.py (same public-domain sources as
+   data/daily.json), not hand-typed. Date-gated, so the normal rotation of
+   daily verse + hero photo resumes automatically afterwards. */
+const DAY_OVERRIDE = "2026-10-16";
+const DAY_OVERRIDE_HERO = "sunflowers";
+const DAY_OVERRIDE_ENTRY = {
+  field: { af: "Die liefde", en: "Love" },
+  af: {
+    ref: "1 Korintiërs 13:4–7",
+    text: "Die liefde is lankmoedig en vriendelik; die liefde is nie jaloers nie; die liefde praat nie groot nie, is nie opgeblase nie, handel nie onwelvoeglik nie, soek nie sy eie belang nie, word nie verbitterd nie, reken die kwaad nie toe nie, is nie bly oor die ongeregtigheid nie, maar is bly saam met die waarheid. Dit bedek alles, glo alles, hoop alles, verdra alles.",
+  },
+  en: {
+    ref: "1 Corinthians 13:4–7",
+    text: "Love is patient, love is kind. It does not envy, it does not boast, it is not proud. It is not rude, it is not self-seeking, it is not easily angered, it keeps no account of wrongs. Love takes no pleasure in evil, but rejoices in the truth. It bears all things, believes all things, hopes all things, endures all things.",
+  },
+};
+
+function localISODate(d = new Date()) {
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${d.getFullYear()}-${m}-${day}`;
+}
+
+function dayOverrideActive() {
+  return localISODate() === DAY_OVERRIDE;
+}
+
+/* The verse shown as "today": the override passage on the override date,
+   otherwise the rotation entry. Shared by the Today and Share screens so
+   both agree on what today's verse is. */
+function todayEntry() {
+  if (dayOverrideActive() && !state.overrideDismissed) return DAY_OVERRIDE_ENTRY;
+  return state.daily?.entries?.[state.dailyIndex ?? 0];
+}
+
 function heroForToday() {
+  if (dayOverrideActive()) return DAY_OVERRIDE_HERO;
   const now = new Date();
   const start = new Date(now.getFullYear(), 0, 0);
   const day = Math.floor((now - start) / 86400000);
@@ -261,7 +299,7 @@ function renderToday() {
   const host = $("#page-today");
   if (!state.content) return;
 
-  const entry = state.daily?.entries?.[state.dailyIndex ?? 0];
+  const entry = todayEntry();
   const streak = state.streak.count > 1
     ? `${t("streak")}: ${state.streak.count} ${t("dayOf")}`
     : "";
@@ -591,7 +629,7 @@ function renderShare() {
   const host = $("#page-share");
   if (!host) return;
   const help = state.help?.cards?.[0];
-  const entry = state.daily?.entries?.[state.dailyIndex ?? 0];
+  const entry = todayEntry();
 
   const cards = [];
   if (state.topic) {
@@ -749,11 +787,12 @@ function bindGlobal() {
 
     if (e.target.closest("#daily-next")) {
       const total = state.daily.entries.length;
+      state.overrideDismissed = true; // let the reader browse the archive
       if (total) state.dailyIndex = ((state.dailyIndex ?? 0) + 1) % total;
       renderToday();
       return;
     }
-    if (e.target.closest("#daily-reset")) { state.dailyIndex = dailyIndexForToday(); renderToday(); return; }
+    if (e.target.closest("#daily-reset")) { state.overrideDismissed = false; state.dailyIndex = dailyIndexForToday(); renderToday(); return; }
     if (e.target.closest("#daily-struggle")) return setPage("struggle");
 
     const helpMode = e.target.closest("[data-helpmode]");

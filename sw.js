@@ -5,7 +5,7 @@
 
 // Bump when the precache list changes, or returning visitors keep the old
 // shell and never fetch the new assets.
-const VERSION = "pvg-v2";
+const VERSION = "pvg-v3";
 const SHELL = [
   "./",
   "./index.html",
